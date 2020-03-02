@@ -15,7 +15,7 @@ nav li {
     display: inline-block; }
 
 nav li a {
-    color: #3dad11;
+    color: #63aa47;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -27,7 +27,7 @@ nav li a {
     padding-bottom:5px;
     margin-left:7px;
     margin-right:7px;
-    border-bottom: 2px solid rgb(58, 138, 69);
+    border-bottom: 2px solid rgb(76, 163, 87);
     transition: color 0.3s ease; }
 
 header {
@@ -43,7 +43,7 @@ header .blog-name {
     text-align: left;
     font-size: 18px;
     font-family: "Lucida Console", Monaco, monospace;
-    padding-top: 8px;}
+    padding-top: 4px;}
 
 header .blog-name a {
     color: #72706f;

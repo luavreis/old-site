@@ -35,7 +35,7 @@ Uma bijeção diferenciável $F: M\to N$ e cuja inversa é diferenciável.
 
 O lema da cola só fala de abertos. Como colar mapas definidos em fechados?
 
-Defininimos uma função suave definida por partes. Também defininimos uma função **cutoff** e uma função **bump**.
+Defininimos uma função que é suave mesmo sendo definida por partes. Também defininimos uma função **cutoff** e uma função **bump**:
 
 - $\text{supp}f = \overline{\{ p \in M \mid f(p) \neq 0 \}}$
 - $f$ tem suporte compacto $\iff \text{supp}f$ é compacto.
@@ -45,12 +45,12 @@ Enfim, chegamos às **partições de unidade**: seja $M$ uma variedade suave, na
 + $\text{supp }\psi_a \subseteq X_a$ para todo $a \in A$.
 + A família $(\text{supp }\psi_a)_{a \in A}$ é localmente finita, ou seja, para todo ponto $x$ da variedade, existe uma vizinhança de $x$ que intersecta um número finito de elementos da família.
 + $\sum_{a \in A} \psi_a(x) = 1$ para todo $x \in M$.
-
+<!-- 
 **Teorema 2.23 (Existência de Partições de Unidade)**
 : Suponha que $M$ seja uma variedade suave com ou sem fronteira, e $\mathcal{X} = \lparen X_a\rparen_{a\in A}$ *qualquer* cobertura aberta indexada de $M$. Então *existe uma partição de unidade suave subordinada a $\mathcal{X}$*.
 
 **Prova**  
-Cada conjunto $X_a$ é uma variedade suave por si só, e portanto possui uma base $\mathcal{B} _a$ de bolas de coordenadas regulares.[^p] Também temos que a união $\mathcal{B} = \bigcup _{a} \mathcal{B} _a$ dessas bases é uma base para a topologia de $M$, e com seus elementos podemos construir um refinamento contável e localmente finito $\{B_i\}$ da cobertura $\mathcal{X}$.[^t] Outra propriedade é que a cobertura $\{\bar{B_i} \}$ também é localmente finita.[^l]  
+Cada conjunto $X_a$ é uma variedade suave por si só, e portanto possui uma base $\mathcal{B} _a$ de bolas de coordenadas regulares. Também temos que a união $\mathcal{B} = \bigcup _{a} \mathcal{B} _a$ dessas bases é uma base para a topologia de $M$, e com seus elementos podemos construir um refinamento contável e localmente finito $\{B_i\}$ da cobertura $\mathcal{X}$. Outra propriedade é que a cobertura $\{\bar{B_i} \}$ também é localmente finita. 
 Para cada $i$, o fato de $B_i$ ser uma bola de coordenadas regular em algum $X_a$ garante que existe uma bola de coordenadas $B_i' \subseteq X_a$ tal que $B_i' \supseteq \bar{B} _i$, e uma carta suave $\varphi_i : B_i' \to \Reals^n$ com a propriedade que $\varphi_i(\bar{B} _i) = \bar{B} _{r_i}(0)$ e $\varphi_i(B_i') = B _{r'_i}(0)$ para um par $r_i < r_i'$.
 Agora, para cada $i$, definimos uma função $f_i:M\to \Reals$ como:
 
@@ -61,20 +61,15 @@ f_i = \begin{cases}
 \end{cases}
 $$
 
-Onde $H_i:\Reals^n \to \Reals$ é uma função suave que é positiva se em $B_{r_i}(0)$ e zero se fora dessa bola aberta, como a função bump. No conjunto $B_i'\smallsetminus \bar{B} _i$, onde as duas definições se aplicam, as duas definições correspondem à função constante zero, de forma que $f_i$ é bem definida e suave, e $\text{supp }f_i = \bar{B} _i$.
+Onde $H_i:\Reals^n \to \Reals$ é uma função suave que é positiva se em $B_{r_i}(0)$ e zero se fora dessa bola aberta, como a função bump. No conjunto $B_i'\smallsetminus \bar{B} _i$, onde as duas definições se aplicam, as duas definições correspondem à função constante zero, de forma que $f_i$ é bem definida e suave, e $\text{supp }f_i = \bar{B} _i$. -->
 
-Basta então 
+ 
 
  --- 
 **Referências:**  
 > Lee, John Marshall. Introduction to Smooth Manifolds. 2nd ed., Springer, 2013.
 
- ---
 
 
-[nlab-física]: https://ncatlab.org/nlab/show/exotic+smooth+structure#ReferencesForApplicationsToPhysics "nLab - exotic smooth structure"
-
-[^p]: Link
-[^t]: Link2
-[^l]: Link3
+[nlab-física]: https://ncatlab.org/nlab/show/exotic+smooth+structure#ReferencesForApplicationsToPhysics
 

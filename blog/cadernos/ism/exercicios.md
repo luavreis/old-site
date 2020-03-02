@@ -28,11 +28,11 @@ Para ver isso, primeiro vamos mostrar que $(b)\hArr(c)$:
 Agora, vamos completar a prova que $(a)\hArr(b)\hArr(c)$. 
 A direção $((b)\hArr(c))\rArr(a)$ é simples. Por outro lado, se todo ponto $p$ está associado à um homeomorfismo $\varphi : U \to \hat{U} \in \Reals^n$, existe uma bola aberta $B ⊂ \hat{U}$ que contém $φ(p)$, e a restrição $\varphi | _{φ^{-1}(B)}$ também é um homeomorfismo. Se definirmos um novo homeomorfismo para cada ponto dessa forma, temos $(a)\rArr((b)\hArr(c))$, como queríamos.
 
-## $\boxed{1}.2$
+<!-- ## $\boxed{1}.2$
 O espaço $ℝℙ^n$ é uma n-variedade topológica, como iremos provar:
 
 ## $\boxed{1}.3$
-Vamos mostrar que o espaço $\proj{n}$ é compacto:
+Vamos mostrar que o espaço $\proj{n}$ é compacto: -->
 
 
 <!-- TODO -->
