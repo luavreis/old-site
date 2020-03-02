@@ -1,4 +1,4 @@
-# Blog
+# Blog 
 Em construção... ~~~<i class="twa twa-building-construction"></i>~~~
 ## ~~~<i class="twa twa-notebook-with-decorative-cover"></i>~~~
 
@@ -41,7 +41,7 @@ println("~~~")
 ```
 
 \textoutput{exlist}
-
+<!-- 
 ### Structure and Interpretation of Classical Mechanics
 
-### Fundamentos da Teoria Ergódica
+### Fundamentos da Teoria Ergódica -->
