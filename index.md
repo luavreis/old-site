@@ -1,11 +1,11 @@
 @def title = "Cat-ergódico"
-@def hasmath = true
-@def hascode = true
+@def hasmath = false
+@def hascode = false
 <!-- Note: by default hasmath == true and hascode == false. You can change this in
 the config file by setting hasmath = false for instance and just setting it to true
 where appropriate -->
 
-Olá! Essa é a página principal de Gat-ergódico. Seja muito bem vindo. 😊
+Olá! Essa é a página principal de Cat-ergódico. Seja muito bem vindo. 😊
 
 Cat-ergódico é um site acompanhante aos estudos de [Lucas](/sobre). Nele, você deve encontrar conteúdo de matemática, física e biologia e alguns applets interativos sobre esses temas, além de [textos e poemas](/pages/artes/textos), [artes (principalmente digitais)](/artes), tópicos mais pessoais e outras coisas aleatórias.
 

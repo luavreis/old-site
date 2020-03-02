@@ -1,13 +1,4 @@
-# Blog
-Em construção... ~~~<i class="twa twa-building-construction"></i>~~~
-## ~~~<i class="twa twa-notebook-with-decorative-cover"></i>~~~
-
-### Introduction to Smooth Manifolds
-<!-- [Variedades Topológicas](cadernos/ism/variedades-topologicas)\
-[Mapas Suaves](cadernos/ism/mapas-suaves)\
-[Espaços Tangente](cadernos/ism/espaco-tangente-e-derivadas) -->
-
-```julia:exlist
+# This file was generated, do not modify it. # hide
 #hideall
 
 using Franklin
@@ -38,10 +29,3 @@ for (root, _, files) in walkdir("blog/cadernos/ism")
 end
 println("</ol>")
 println("~~~")
-```
-
-\textoutput{exlist}
-
-### Structure and Interpretation of Classical Mechanics
-
-### Fundamentos da Teoria Ergódica

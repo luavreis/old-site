@@ -1,12 +1,4 @@
----
-layout: post
-title: Variedades Topológicas
-date: 2019-11-05 22:41
-category: Iniciação Científica (anotações)
-author: 
-tags: []
-summary: 
----
+# Variedades Topológicas
 
  > Essas notas são baseadas no livro Introduction to Smooth Manifolds, 2nd ed. de John M. Lee, Springer Press, &copy; 2013. Ainda assim, conteúdo desse site é unicamente de minha responsabilidade.
 
@@ -38,19 +30,19 @@ Perceba que ser paracompato é diferente de ser segundamente contável, pois no 
 
 Mais importante para distinguirmos, a definição de paracompacto lembra a definição de compacto, mas não são as mesmas. Afinal, basta trocar "refinamento aberto" por "subcobertura" ***ou*** "localmente finito" por "finito" que de repente temos uma definição equivalente à de espaço compacto!
 
-Para ver isso: o segundo caso é bem simples, então você pode tentar fazer.[^r1] No primeiro caso, considere um aberto $G$, o qual fixamos de uma cobertura $\mathcal{U}$. A coleção $\mathcal{V} = \\{U\cup G\\}_{U\in\,\mathcal{U}}$ também é uma cobertura. Note que toda subcobertura de $\mathcal{V}$ que é localmente finita *precisa* ser finita: lembre dos pontos $x\in G$, que intersectam todos os elementos de $\mathcal{V}$. Agora, os elementos dessa subcobertura de $\mathcal{V}$ têm uma correspondência um-a-um com os de uma subcobertura de $\mathcal{U}$ (basta separar o $G$). Como trocamos "refinamento aberto" por "subcobertura", então existe essa subcobertura finita, e a definição seria equivalente à de espaço compacto.
+Para ver isso: o segundo caso é bem simples, então você pode tentar fazer.[^r1] No primeiro caso, considere um aberto $G$, o qual fixamos de uma cobertura $\mathcal{U}$. A coleção $\mathcal{V} = \{U\cup G\}_{U\in\,\mathcal{U}}$ também é uma cobertura. Note que toda subcobertura de $\mathcal{V}$ que é localmente finita *precisa* ser finita: lembre dos pontos $x\in G$, que intersectam todos os elementos de $\mathcal{V}$. Agora, os elementos dessa subcobertura de $\mathcal{V}$ têm uma correspondência um-a-um com os de uma subcobertura de $\mathcal{U}$ (basta separar o $G$). Como trocamos "refinamento aberto" por "subcobertura", então existe essa subcobertura finita, e a definição seria equivalente à de espaço compacto.
 
 De fato, todo espaço compacto é paracompacto, pois para toda cobertura há uma subcobertura que é finita, portanto também localmente finita. O contrário que não é sempre verdade. Como exemplo, tome uma cobertura construída de forma semelhante à do parágrafo anterior, em $\Reals^2$: bolas abertas centradas em pontos inteiros, com raio 2, mas em que cada uma dessas bolas é unida à bola de raio 1 centrada na origem. Não existe subcobertura finita para essa cobertura; não só isso, mas não existe sequer subcobertura *localmente finita*, pois um ponto na origem têm interseção com todos os elementos da cobertura. Apesar disso, sabemos que $\Reals^2$ com a topologia usual é paracompacto, e de fato, existe um *refinamento aberto localmente finito* dessa nossa cobertura, pois podemos "separar" a bola da origem das outras bolas no nosso refinamento, coisa que não é possível com uma subcobertura.
 
 ***Lema 1.13***
 : Suponha que $\mathcal{X}$ é uma coleção localmente finita de um espaço topológico. Então:
-   1. A coleção $\\{\bar{X} : X \in \mathcal{X}\\}$ é localmente finita;
+   1. A coleção $\{\bar{X} : X \in \mathcal{X}\}$ é localmente finita;
    2. $\overline{\bigcup_{X\in\mathcal{X}}X}=\bigcup_{X\in\mathcal{X}}\bar{X}$.
 
 *Prova*
    1. Considere um ponto $p$ qualquer na variedade. Se qualquer vizinhança $V$ de $p$ que intersecta um $\bar{X}$ também intersecta o $X$ correspondente, então o número de interseções com conjuntos $\bar{X}$ é limitado ('por cima') pelo número de interseções com conjuntos $X$. Portanto basta pegar para cada ponto a vizinhança que por hipótese intersecta um número finito desses conjuntos, de forma que o limite impõe que a coleção em questão é localmente finita. Para provar a primeira afirmação, seja $x\in \bar{X}\cap V$. Se $x\in X$, tudo bem, já temos o que queremos. Senão, então $x\in\partial\bar{X}$, e por definição toda vizinhança de $x$ intersecta $X$. Como $V$ também é uma vizinhança de $x$, então $V\cap X \neq \varnothing$. 
 
-   2. Começamos por $E \to D$. Se um $x \in \overline{\bigcup_{X\in\mathcal{X}}X}$ está no interior do fecho, então ele está no interior de algum dos $\bar{X}$. Senão, ele está na borda, e toda vizinhança intersecta ao menos um dos $X$. Agora, como a coleção é localmente finita, existe uma vizinhança $V^\*$ de $x$ tal que a subcoleção $\mathcal{L} = \\{X : X \cap V^\* \neq \varnothing\\}$ é finita, e $x$ estar na borda garante que ela é não-vazia. Queremos mostrar que $x \in \bar{X}$ para algum $X\in \mathcal{L}$. Mas se isso não fosse verdade, então para todo elemento $X$ de $\mathcal{L}$, o fato de que $x$ não está em $\bar{X}$ implica que existe uma vizinhança $V_{X}$ de $x$ tal que $V_X \cap X = \varnothing$, e como $\mathcal{L}$ é uma coleção finita, $\bigcap_{X \in \mathcal{L}} V_X$ seria uma vizinhança de $x$ que não intersecta nenhum $X \in \mathcal{L}$. Mas toda vizinhança $U$ de $x$ ***precisa*** ter interseção com algum conjunto em $\mathcal{L}$, senão $V \cap U \in V$ seria uma vizinhança sem interseção com nenhum dos $X \in \mathcal{X}$. Ou seja, um absurdo!  
+   2. Começamos por $E \to D$. Se um $x \in \overline{\bigcup_{X\in\mathcal{X}}X}$ está no interior do fecho, então ele está no interior de algum dos $\bar{X}$. Senão, ele está na borda, e toda vizinhança intersecta ao menos um dos $X$. Agora, como a coleção é localmente finita, existe uma vizinhança $V^\*$ de $x$ tal que a subcoleção $\mathcal{L} = \{X : X \cap V^\* \neq \varnothing\}$ é finita, e $x$ estar na borda garante que ela é não-vazia. Queremos mostrar que $x \in \bar{X}$ para algum $X\in \mathcal{L}$. Mas se isso não fosse verdade, então para todo elemento $X$ de $\mathcal{L}$, o fato de que $x$ não está em $\bar{X}$ implica que existe uma vizinhança $V_{X}$ de $x$ tal que $V_X \cap X = \varnothing$, e como $\mathcal{L}$ é uma coleção finita, $\bigcap_{X \in \mathcal{L}} V_X$ seria uma vizinhança de $x$ que não intersecta nenhum $X \in \mathcal{L}$. Mas toda vizinhança $U$ de $x$ ***precisa*** ter interseção com algum conjunto em $\mathcal{L}$, senão $V \cap U \in V$ seria uma vizinhança sem interseção com nenhum dos $X \in \mathcal{X}$. Ou seja, um absurdo!  
    Por outro lado, $D \to E$ é bem mais trivial: se todas as vizinhanças de $x$ intersectam um dos $X$, então as vizinhanças também intersectam a união de todos os $X$.
    
 $\Box$

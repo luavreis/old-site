@@ -1,12 +1,4 @@
----
-layout: post
-title: Espaços Tangente
-date: 2019-12-08 17:17
-category: 
-author: 
-tags: [itsm]
-summary: 
----
+# Espaços Tangente
 
 Um *espaço tangente geométrico de $\R^n$ em $a$* é o conjunto $\R^n_a=\{a\}\times\R^n$. Seus elementos são os *vetores tangente geométricos* em $a$, onde abreviamos $v_a=(a,v) \in \R^n_a$.
 
