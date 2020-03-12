@@ -10,27 +10,34 @@ Alguns desenhos de computação gráfica que fiz entre o fim do ensino fundament
 ### *Suzanne's Condition*
 *paródia da série Human Condition, de René Magritte*
 
-![](../../assets/artes/hc.jpg)
-{: style="width:48%;"}
-![](../../assets/artes/viewport.png)
-{: style="width:48%; float:right;"}
+~~~
+<img src="/assets/artes/hc.jpg" alt style="width:35%;">
+<img src="/assets/artes/viewport.png" alt style="width:35%;">
+~~~
 
 ---
-{: style="clear: right;"}
 
 ### *Fernando, Isaura, Tristão e Isolda*
-{: style="text-align:right;"}
-*[animação](https://vimeo.com/166984835) que fiz (em grupo) para um projeto de literatura, no 1º ano e.m.*
-{: style="text-align:right;"}
+[animação](https://vimeo.com/166984835) que fiz (em grupo) para um projeto de literatura, no 1º ano e.m.
 
-[![](../../assets/artes/bra.png)](https://vimeo.com/166984835)
-{: style="width:100%; float: right;"}
+[![](/assets/artes/bra.png)](https://vimeo.com/166984835)
 
 ---
-{: style="clear: right;"}
 
 
-### *Artificial*
+### _Artificial_
 *Uma cereja, e uma garrafa*
 
-![](../../assets/artes/artificial.png){: style="width:40%;"} ![](../../assets/artes/untitled1.png){: style="width:40%; float:right;"}
+~~~
+<img src="/assets/artes/artificial.png" alt style="width:35%;">
+<img src="/assets/artes/untitled1.png" alt style="width:35%;">
+~~~
+
+### _Montanha_
+![](/assets/artes/nevado.png)
+
+### _Ilha_
+![](/assets/artes/untitled.png)
+
+### _Sabre_
+![](/assets/artes/lightsaber.png)

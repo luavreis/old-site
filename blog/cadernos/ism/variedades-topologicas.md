@@ -2,6 +2,8 @@
 
  > Essas notas são baseadas no livro Introduction to Smooth Manifolds, 2nd ed. de John M. Lee, Springer Press, &copy; 2013. Ainda assim, conteúdo desse site é unicamente de minha responsabilidade.
 
+\toc
+
 ## Propriedades Topológicas das Variedades
 
 **Lema 1.10** 
@@ -62,7 +64,7 @@ Seja $(K)_{j=1}^{\infty}$ uma exaustão de $M$ por conjuntos compactos, que sabe
 
  --- 
  \
-**Referências:**  
+## Referências
 > Marketa, Weakening paracompactness condition, URL (version: 2010-12-09): [https://math.stackexchange.com/q/13624](https://math.stackexchange.com/q/13624)
 
 > Lee, John Marshall. Introduction to Smooth Manifolds. 2nd ed., Springer, 2013.

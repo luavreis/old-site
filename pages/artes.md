@@ -1,3 +1,2 @@
-[# Artes visuais](visuais)
-
-[# Textos](textos)
+- [Textos](textos)
+<!-- - [Artes visuais](visuais) -->

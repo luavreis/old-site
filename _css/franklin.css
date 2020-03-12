@@ -4,6 +4,7 @@
 
 html {
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
     font-size  : 17px;
     color: #1c1c1c;
 }

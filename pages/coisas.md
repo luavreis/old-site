@@ -1,4 +1,3 @@
 
-[# Cálculo de erros de expressões](https://github.com/lucasvreis/incerteza-lab)
-
-[# Atratores](atratores)
+<!-- - [Erros de expressões (útil para labs)](https://github.com/lucasvreis/incerteza-lab) -->
+- [Atratores](atratores)
