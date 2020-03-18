@@ -15,17 +15,17 @@ function find_title(pg)
 end
 
 println("~~~")
-println("<ol>")
-for (root, _, files) in walkdir("blog/cadernos/sicm")
+println("<ul>")
+for (root, _, files) in walkdir("blog/cadernos/ism")
     for file in files
         md   = joinpath(root, file)
         html = replace(md, joinpath("src", "pages") => "pub")
         html = replace(html, r".md$" => "")
-        
+
         t = find_title(md)
         l = Franklin.unixify(html)
         println("<li><a href=\"/$l\">$t</a></li>")
     end
 end
-println("</ol>")
+println("</ul>")
 println("~~~")
