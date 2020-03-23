@@ -17,7 +17,7 @@ For instance:
 ------------------------------------------------------->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
-
+ 
 
 <!-- Put a box around something and pass some css styling to the box
 (useful for images for instance) e.g. :
