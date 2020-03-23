@@ -3,7 +3,7 @@
 @def mintoclevel=2
 \toc
 
-~~~ <div style="text-align: center; font-family: times-new-roman"> ~~~
+~~~ <div style="text-align: center; font-family: 'Times New Roman'"> ~~~
 ### dendrocronologia
 de todo, me vejo ultimamente cortado\
 e em parte, nas minhas metades,\
@@ -22,7 +22,7 @@ poda.
 
 ---
 
-~~~ <div style="text-align: center; font-family: times-new-roman"> ~~~
+~~~ <div style="text-align: center; font-family: 'Times New Roman'"> ~~~
 ### outono (simetria iii.)
 
 céu,\
@@ -38,14 +38,14 @@ azul.
 
 
 ### o inseguro
-~~~ <div style="text-align: left; font-family: times-new-roman"> ~~~
+~~~ <div style="text-align: left; font-family: 'Times New Roman'"> ~~~
 a possibilidade tenta.\
 eu? não!\
 desespero na espera.
 ~~~ </div> ~~~
 
 
-~~~<div style="text-align: center; font-family: times-new-roman">~~~
+~~~<div style="text-align: center; font-family: 'Times New Roman'">~~~
 ### decadência
 
 O maquinal velho.\
@@ -93,7 +93,7 @@ de papéis em branco.
 
 ---
 
-~~~<div style="text-align: center; font-family: times-new-roman">~~~
+~~~<div style="text-align: center; font-family: 'Times New Roman'">~~~
 ### reflexos (simetria ii.)
 a solidão\
 nos olhares,\
@@ -125,7 +125,7 @@ nos olhares,\
 a solidão
 ~~~ </div> ~~~
 
-~~~ <div style="text-align: right; font-family: times-new-roman"> ~~~
+~~~ <div style="text-align: right; font-family: 'Times New Roman'"> ~~~
 ### pequeno i.
 e era esperando pelas voltas\
 que a menina corria,\
