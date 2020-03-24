@@ -3,8 +3,7 @@
 ================================================================== */
 
 html {
-    font-family: Cambria, Helvetica, Arial, sans-serif;
-    text-align: justify;
+    font-family: "PT Serif", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
     font-size  : 16px;
     color: #1c1c1c;
@@ -62,7 +61,9 @@ html {
     position: relative;
     padding-left: 12.5%;
     padding-right: 12.5%;
-    line-height: 1.35em; }
+    line-height: 1.35em; 
+    text-align: justify;
+}
 
 /* on wide screens, fix content width to a max value */
 @media (min-width: 940px) {
@@ -76,7 +77,8 @@ html {
 @media (max-width: 480px) {
     .franklin-content {
         padding-left: 6%;
-        padding-right: 6%; }
+        padding-right: 6%;
+        text-align: left; }
     }
 
 /* ==================================================================
@@ -204,6 +206,14 @@ body { counter-reset: eqnum; }
 .katex-display .katex {
     display: inline-block; } /* overwrite katex settings */
 
+@media only screen and (max-width: 600px) {
+    .katex-display > .katex {
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    }
+    
 /* .katex-display::after {
     counter-increment: eqnum;
     content: "(" counter(eqnum) ")";

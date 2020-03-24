@@ -18,7 +18,7 @@ Vou precisar que você saiba um pouco de álgebra linear e números complexos no
 
 ![](/assets/svg/qubit.svg)
 
-Mas como assim, o qubit é uma esfera? E ele é _**a**_ esfera ou algo _**na**_ esfera? E como assim uma "média" daqueles dois vetores deu um vetor perpendicular e... porque esse $\sqrt{2}$? Além desses $|0\rang$, $|1\rang$ estranhos.
+Mas como assim, o qubit é uma esfera? E ele é _a_ esfera ou algo _na_ esfera? E como assim uma "média" daqueles dois vetores deu um vetor perpendicular e... porque esse $\sqrt{2}$? Além desses $|0\rang$, $|1\rang$ estranhos.
 
 Bom, primeiramente um qubit _não é_ uma esfera, pelo menos no sentido físico. A priori, ele é um objeto matemático da teoria quântica, e existem alguns objetos físicos (que não são esféricos) que se comportam como qubits. Também gostaria de avisá-lo que a grande maioria dos textos que tentam explicar o que é, como funciona, o que se pode fazer com um qubit sem tocar na matemática criam analogias bonitinhas mas muito erradas. Às vezes extremamente erradas. Mas vamos prosseguir pela matemática.
 
