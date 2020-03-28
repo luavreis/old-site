@@ -9,6 +9,10 @@ The website_* must be defined for the RSS to work
 
 @def author = "Lucas Viana"
 
+@def date_format = raw"dd \d\e U \d\e yyyy"
+@def date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+
 <!-----------------------------------------------------
 Add here global latex commands to use throughout your
 pages. It can be math commands but does not need to be.

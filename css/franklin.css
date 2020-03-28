@@ -266,3 +266,20 @@ code {
     margin-bottom: 5px;
     border-radius: 0 10px 10px 0;
     border-left: 5px solid #4C9CF1; }
+
+/* ==================================================================
+    TOC
+================================================================== */
+.franklin-toc {
+    position: fixed;
+    right: 5%;
+    top: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .franklin-toc {
+        position: unset;
+        right: unset;
+        top: unset;
+    }
+    }
