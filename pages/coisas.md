@@ -1,7 +1,9 @@
 # Coisas
+~~~ <base target="_blank">~~~
+### pessoas interessantes
+- [Grothendieck](https://piaui.folha.uol.com.br/materia/a-voz-das-coisas/)
+- [John Baez](http://math.ucr.edu/home/baez/)
 
-<!-- - [Erros de expressões (útil para labs)](https://github.com/lucasvreis/incerteza-lab) -->
-  
 ### coisas legais
 - [Atratores](atratores)
 - [Julia](https://julialang.org/)

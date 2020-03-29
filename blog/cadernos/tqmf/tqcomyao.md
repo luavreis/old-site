@@ -45,24 +45,6 @@ Como o teste clássico mais simples distingue entre duas possibilidades (senão 
 
 Agora colocamos como postulado que a probabilidade de um teste ter uma de suas alternativas clássicas como resultado pode ser obtido decompondo o estado do sistema nessa base, e considerando o quadrado da norma da componente que corresponde a essa alternativa. Por exemplo, tome nossa base computacional $\{\z,\u\}$, e um vetor de estado $\ket{v}\in\Bbb{E}$. Sabemos que $\proj{0}{v} = \braket{0}{v}$ e $\proj{1}{v} = \braket{1}{v}$, e como a base é ortonormal, $\ket{v} = \braket{0}{v}\ket{0} + \braket{1}{v}\ket{1}$. Se queremos saber a probabilidade de um teste com a base computacional resultar em $\z$ para o estado $\ket{v}$, calculamos $|\braket{0}{v}|^2$.
 
-### Experimentando com Julia
-
-```julia:ex1
-using LinearAlgebra
-
-# Vamos definir a base computacional como |0⟩ = [1,0] e |1⟩ = [0,1]
-base0 = [1,0]
-base1 = [0,1]
-estado = normalize(base0 + base1)
-@show estado
-
-prob0 = norm(dot(base0', estado))^2
-@show prob0
-```
-
-\output{ex1}
-
-
 Agora que temos a teoria, vamos olhar para a geometria do nosso espaço de eventos e tentar descobrir em que ela tem a ver com a consagrada esfera. Primeiro, perceba que $\Complex^2$ é um espaço de dimensão real 4. Mas estamos interessados somente nos elementos com norma 1, que formam uma "esfera complexa", homeomorfa a $\Bbb{S}^3$, a esfera (tridimensional) de $\R^4$. Vamos construir essa paramatrização dessa esfera. Primeiro, note que o nosso espaço de estados é basicamente um produto de dois planos complexos:
 
 ~~~ <img src="/assets/svg/c2space.svg" alt style="width:90%; padding-left:5%"> ~~~

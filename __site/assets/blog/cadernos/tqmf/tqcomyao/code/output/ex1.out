@@ -1,2 +1,1 @@
-estado = [0.7071067811865475, 0.7071067811865475]
-prob0 = 0.4999999999999999
+UndefVarError: normalize not defined
