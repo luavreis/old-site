@@ -61,7 +61,7 @@ html {
     position: relative;
     padding-left: 12.5%;
     padding-right: 12.5%;
-    line-height: 1.35em; 
+    line-height: 1.5em; 
     text-align: left;
 }
 
@@ -201,7 +201,7 @@ html {
 
 body { counter-reset: eqnum; }
 
-.katex { font-size: 1em !important; }
+.katex { font-size: 1.1em !important; }
 
 .katex-display .katex {
     display: inline-block; } /* overwrite katex settings */
