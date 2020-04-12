@@ -62,7 +62,15 @@ $$ \ket{v}(\phi,\varphi,\theta) = (e^{iφ}\sinϕ)\z + (e^{iθ}\cosϕ)\u $$
 
 Todas as crianças dessa forma são válidas como estados, mas será que são todas mesmo diferentes? Afinal, os estados dados por essa parametrização ainda estão numa esfera de $\R^4$, e o que todos os textos na internet prometeram é uma esfera como a da primeira figura, mais conhecida.
 
-Seja $\mathcal{T}=\{\ket{a},\ket{b}\}$ uma base ortonormal qualquer.
+A verdade é que, de certo modo, a esfera de $\R^4$ é uma esfera 
+
+$$ \ket{v}(\phi,\varphi,\delta) = e^{iφ}\left[(\sin\phi)\z + (e^{i\delta}\cos\phi)\u \right] $$
+
+Perceba que trocamos $\delta=\theta-\varphi$. Agora, usaremos $e^{i\delta} = \cos\delta+i\sin\delta$ para:
+
+$$ \ket{v}(\phi,\varphi,\delta) = e^{iφ}\left[(\sin\phi)\z + ((\cos\delta+i\sin\delta)\cos\phi)\u \right] $$
+$$ \ket{v}(\phi,\varphi,\delta) = e^{iφ}\left[(\sin\phi)\z + (\cos\delta\cos\phi+i\sin\delta\cos\phi)\u  \right] $$
+
 
 ~~~
 <p style="margin-top:8em"></p>
