@@ -25,3 +25,12 @@ For instance:
 (useful for images for instance) e.g. :
 \style{width:80%;}{![](path/to/img.png)} -->
 \newcommand{\style}[2]{~~~<div style="!#1;margin-left:auto;margin-right:auto;">~~~!#2~~~</div>~~~}
+
+\newcommand{\figenv}[3]{
+~~~
+<figure style="text-align:center;">
+<img src="!#2" style="padding:0;#3" alt="#1"/>
+<figcaption>#1</figcaption>
+</figure>
+~~~
+}

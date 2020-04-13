@@ -11,7 +11,7 @@ Muitas coisas acontecendo pelo mundo. Algumas delas particularmente assustadoras
 
 Pois bem, nesse semestre me matriculei em uma disciplina um pouco estranha. O nome dela é [Teoria Quântica para Matemátic@s em Formação](https://www.ime.unicamp.br/~tcunha/Teach/TopQuant-1S20.html), ministrada pelo Marcelo Terra Cunha. Tivemos apenas três aulas, uma das quais não pude ir e outra que o professor não pôde ir. Agora, as aulas estão suspensas. Mas com essa uma aula, e o que tivemos até agora de EAD, ainda tenho um pouco sobre o que escrever.
 
-A disciplina é até então exclusiva desse semestre e serviria como motivação para o Marcelo escrever um livro sobre o assunto, com o mesmo nome. Nesse sentido, ele já foi um dos autores de um outro livro com nome tão parecido que até agora não entendi muito bem qual vai ser a diferença entre os dois. Segundo o Marcelo, eles são "parecidos em espírito". Segundo o índice e a ementa da disciplina, o novo é uma reestruturação do anterior com coisas novas, mas sem o "prelúdio" que tinha alguns pré-requisitos e que achei muito bom. Enfim, o livro pai se chama [Mecânica Quântica para Matemáticos em Formação](https://impa.br/wp-content/uploads/2017/04/28CBM_12.pdf), e talvez você queira voltar ao parágrafo anterior para encontrar a diferença dos nomes (além do @ bem colocado).
+A disciplina é até então exclusiva desse semestre e serviria como motivação para o Marcelo escrever um livro sobre o assunto, com o mesmo nome. Nesse sentido, ele já foi um dos autores de um outro livro com nome tão parecido que até agora não entendi muito bem qual vai ser a diferença entre os dois. Segundo o Marcelo, eles são "parecidos em espírito". Segundo o índice e a ementa da disciplina, o novo é uma reestruturação do anterior com coisas novas, mas sem o "prelúdio" que tinha alguns pré-requisitos e que achei muito bom. Enfim, o livro pai se chama \cite{mqmf}, e talvez você queira voltar ao parágrafo anterior para encontrar a diferença dos nomes (além do @ bem colocado).
 
 Vou precisar que você saiba um pouco de álgebra linear e números complexos no que se segue. No "Mecânica [...] em Formação" tem um "prelúdio" bom sobre isso, e você acha muitas coisas na internet.
 
@@ -94,13 +94,33 @@ de $ψ^⋆_v$ para $\ket{v}$. Lembre que essas partes não dependem de $φ$. Ass
  &= |e^{i(φ-φ_a)}|⋅|⟨ψ^⋆_a|ψ^⋆_v⟩| = 1⋅|⟨ψ^⋆_a|ψ^⋆_v⟩|
 \end{align}
 
-Ou seja, os resultados dos testes só dependem dos parâmetros $φ$ e $δ$, e podemos
+Ou seja, os resultados dos testes só dependem dos parâmetros $ϕ$ e $δ$, e podemos
 escrever qualquer estado como:
 
 $$ ψ^⋆(ϕ,δ) = \sinϕ\z + e^{iδ}\cosϕ\u $$
 
-Com duas dimensões, estamos mais pertos da esfera! Perceba que não faz diferença
-se restringirmos $ϕ∈[0,π/2]$ e $δ∈[0,2π)$.
+Com duas dimensões, estamos bem mais pertos da esfera! Perceba que não faz diferença
+se restringirmos $ϕ∈[0,π/2]$ e $δ∈[0,2π)$. Mas com isso já podemos representar
+nossos estados em $\Bbb{S}^2$, em que $∠2ϕ$ é o ângulo a partir do polo norte
+e $∠δ$ é a longitude. Essa representação é chamada de Esfera de Bloch:
+
+\figenv{Esfera de Bloch}{/assets/svg/qubit2.svg}{width:40%;padding-right:5%;}
+
+E presumivelmente é ela que aparece internet afora dando caras ao qubit. E
+para o leitor, talvez agora com um pouco mais sentido.
+
+A "redução" que fizemos da esfera $\Bbb{S}^3$ para a $\Bbb{S}^2$, "retirando"
+uma circunferência de cada ponto, tem um nome matemático: se chama \cite{hopf}.
+Com ela, conseguimos demonstrar que a esfera em $\R^4$ localmente se parece
+com um espaço produto de uma circunferência e uma esfera em $\R^3$, gerando o
+que é chamado de _\cite{fiber}_. Sim, e você também pode [brincar com ela](https://philogb.github.io/page/hopf/#) na internet. Afinal somos todos crianças em algum espaço de estados.
+
+
+## Referências
+* \biblabel{mqmf}{Mecânica Quântica para Matemáticos em Formação} **Bárbara Amaral, Alexandre Tavares Baraviera e Marcelo O. Terra Cunha**, [Mecânica Quântica para Matemáticos em Formação](https://impa.br/wp-content/uploads/2017/04/28CBM_12.pdf), Impa 2011.
+* \biblabel{fiber}{maço de fibras} **Wikipedia**, [Fiber Bundle](https://en.wikipedia.org/wiki/Fiber_bundle).
+* \biblabel{hopf}{Fibração de Hopf} **Wikipedia**, [Fibração de Hopf](https://pt.wikipedia.org/wiki/Fibra%C3%A7%C3%A3o_de_Hopf).
+* \biblabel{hopf}{Fibração de Hopf} **@philogb**, [HOPF FIBRATIONS](https://philogb.github.io/page/hopf/#).
 
 ~~~
 <p style="margin-top:8em"></p>

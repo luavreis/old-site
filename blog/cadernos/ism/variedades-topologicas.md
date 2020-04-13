@@ -9,7 +9,7 @@
 **Lema 1.10** 
 : Toda variedade possui uma base pré-compacta de bolas de coordenadas.
 
-### **Compactividade local e Paracompactividade**
+### Compactividade local e Paracompactividade
 
 **Preposição 1.12** 
 : Variedades são localmente compactas!
@@ -30,7 +30,7 @@ Paracompacta
 Perceba que ser paracompato é diferente de ser segundamente contável, pois no primeiro queremos que exista um número finito de abertos em uma vizinhança de um dado ponto, enquanto no segundo falamos de uma base contável para o espaço, que pode ser infinita.
 <!-- paracompacto => seg. contável? -->
 
-Mais importante para distinguirmos, a definição de paracompacto lembra a definição de compacto, mas não são as mesmas. Afinal, basta trocar "refinamento aberto" por "subcobertura" **ou** "localmente finito" por "finito" que de repente temos uma definição equivalente à de espaço compacto!
+Mais importante para distinguirmos, a definição de paracompacto lembra a definição de compacto, mas não são as mesmas. Afinal, basta trocar "refinamento aberto" por "subcobertura" ou "localmente finito" por "finito" que de repente temos uma definição equivalente à de espaço compacto!
 
 Para ver isso: o segundo caso é bem simples, então você pode tentar fazer.[^r1] No primeiro caso, considere um aberto $G$, o qual fixamos de uma cobertura $\mathcal{U}$. A coleção $\mathcal{V} = \{U\cup G\}_{U\in\,\mathcal{U}}$ também é uma cobertura. Note que toda subcobertura de $\mathcal{V}$ que é localmente finita *precisa* ser finita: lembre dos pontos $x\in G$, que intersectam todos os elementos de $\mathcal{V}$. Agora, os elementos dessa subcobertura de $\mathcal{V}$ têm uma correspondência um-a-um com os de uma subcobertura de $\mathcal{U}$ (basta separar o $G$). Como trocamos "refinamento aberto" por "subcobertura", então existe essa subcobertura finita, e a definição seria equivalente à de espaço compacto.
 
