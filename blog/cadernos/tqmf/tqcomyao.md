@@ -1,6 +1,13 @@
 @def hascode=true
 @def mintoclevel=2
 
+~~~
+<meta property="og:url" content="https://lucasvreis.github.io/blog/cadernos/tqmf/tqcomyao/" />
+<meta property="og:title" content="Um pouco de teoria quântica, parte 1" />
+<meta property="og:description" content="Talvez você já tenha se deparado com alguém por aí apontando para uma esfera e chamando ela de um qubit..." />
+<meta property="og:image" content="https://lucasvreis.github.io/assets/svg/qubit.svg" />
+~~~
+
 # Um pouco de teoria quântica, parte 1
 
 \toc
