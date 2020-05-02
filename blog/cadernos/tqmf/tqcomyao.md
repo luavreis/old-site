@@ -1,5 +1,4 @@
-@def hascode=true
-@def mintoclevel=2
+@def date = Date(2020,4,12)
 
 ~~~
 <meta property="og:url" content="https://lucasvreis.github.io/blog/cadernos/tqmf/tqcomyao/" />
