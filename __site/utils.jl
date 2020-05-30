@@ -3,7 +3,7 @@ using Franklin: pagevar, fd_date, locvar
 
 function get_date(fpath)
   date = pagevar(fpath, "date")
-  date == Date(1) && return "Sem data"
+  (isnothing(date) || date == Date(1)) && return "Sem data"
   return fd_date(DateTime(date))
 end
 
@@ -18,6 +18,6 @@ function blog_page_data(dir)
   end
   return data
 end
-tqmf_pages = blog_page_data("blog/cadernos/tqmf")
+# tqmf_pages = blog_page_data("blog/cadernos/tqmf")
 ism_pages = blog_page_data("blog/cadernos/ism")
 

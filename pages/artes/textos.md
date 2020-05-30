@@ -3,6 +3,10 @@
 @def mintoclevel=2
 \toc
 
+Algumas de 2016, a maior parte de 2017.
+
+---
+
 ~~~ <div style="text-align: center; font-family: 'Times New Roman'"> ~~~
 ### dendrocronologia
 de todo, me vejo ultimamente cortado\
@@ -37,15 +41,15 @@ azul.
 ~~~ </div> ~~~
 
 
+~~~ <div style="text-align: right; font-family: 'Times New Roman'"> ~~~
 ### o inseguro
-~~~ <div style="text-align: left; font-family: 'Times New Roman'"> ~~~
 a possibilidade tenta.\
 eu? não!\
 desespero na espera.
 ~~~ </div> ~~~
 
 
-~~~<div style="text-align: center; font-family: 'Times New Roman'">~~~
+~~~<div style="text-align: left; font-family: 'Times New Roman'">~~~
 ### decadência
 
 O maquinal velho.\
