@@ -41,7 +41,7 @@ Um _espaço de estados_ de um sistema quântico é um espaço vetorial complexo 
 \newcommand{\braket}[2]{\langle #1 | #2 ⟩}
 \newcommand{\proj}[2]{\text{proj}_{\ket{#1}} \ket{#2}}
 
-Assim, seguindo essa definição, temos espaço de estados $\Bbb{E}≅\Complex^n$ para algum $n≥1$, e escrevemos $\ket{\,\cdot\,}$ para denotar os elementos do espaço vetorial (os estados), e seguindo a convenção do Marcelo, também chamados de _crianças_, onde o "$\,\cdot\,$" é o _nome da nossa criança_. Dados estados $\ket{a}$ e $\ket{b}$, escrevemos o produto interno entre eles como $\braket{a}{b}$. 
+Assim, seguindo essa definição, temos espaço de estados $\Bbb{E}≅\Complex^n$ para algum $n≥1$, e escrevemos $\ket{\,\cdot\,}$ para denotar os elementos do espaço vetorial (os estados), e seguindo a convenção do Marcelo, também chamados de _crianças_, onde o "$\,\cdot\,$" é o _nome da nossa criança_. Dados estados $\ket{a}$ e $\ket{b}$, escrevemos o produto interno entre eles como $\braket{a}{b}$.
 
 Já que temos um produto interno, podemos identificar cada estado de $\Bbb{E}$ com um funcional linear de $\Bbb{E}$, ou seja, uma função linear com tipo $\Bbb{E}\to\Complex$. Fazemos isso definindo um funcional $L_{v_0} : \Bbb{E}\to\Complex$ dado por $\ket{v}\mapsto \braket{v_0}{v}$. Na notação de Dirac (essa que estamos usando) escrevemos esse funcional como $\bra{v_0}$, de forma que fica sugestiva sua aplicação a uma criança $\ket{v}$ dada pelo produto interno $\braket{v_0}{v}$.
 
@@ -53,11 +53,11 @@ Agora colocamos como postulado que a probabilidade de um teste ter uma de suas a
 
 ## Rumo à esfera
 
-Agora que temos a teoria, vamos olhar para a geometria do nosso espaço de eventos e tentar descobrir em que ela tem a ver com a consagrada esfera. Primeiro, perceba que $\Complex^2$ é um espaço de dimensão real 4. Mas estamos interessados somente nos elementos com norma 1, que formam uma "esfera complexa", homeomorfa a $\Bbb{S}^3$, a esfera (tridimensional) de $\R^4$. Vamos construir essa paramatrização dessa esfera. Primeiro, note que o nosso espaço de estados é basicamente um produto de dois planos complexos:
+Agora que temos a teoria, vamos olhar para a geometria do nosso espaço de eventos e tentar descobrir em que ela tem a ver com a consagrada esfera. Primeiro, perceba que $\Complex^2$ é um espaço de dimensão real 4. Mas estamos interessados somente nos elementos com norma 1, que formam uma "esfera complexa", homeomorfa a $\Bbb{S}^3$, a esfera (tridimensional) de $\R^4$. Vamos construir uma parametrização dessa esfera. Primeiro, note que esse espaço de estados é basicamente um produto de dois planos complexos:
 
 ~~~ <img src="/assets/svg/c2space.svg" alt style="width:90%; padding-left:5%"> ~~~
 
-Qualquer número complexo pode ser escrito como $z=re^{i\theta}$ para $r$ e $\theta$ reais. Então vamos escolher um número complexo em cada plano, cada um multiplicando um elemento da base, e assim definindo um único ponto no espaço de estados. Sejam eles $r_0e^{i\phi}\z$ e $r_1e^{i\theta}\u$. O ponto que obtemos é então $\ket{v}=r_0e^{i\phi}\z+r_1e^{i\theta}\u$. Mas para ser um estado de verdade, ele precisa ter norma 1! Vamos fazer isso, calculando $\braket{v}{v}$ e obrigando que o resultado seja 1:
+Qualquer número complexo pode ser escrito como $z=re^{i\theta}$ para $r$ e $\theta$ reais. Então podemos escolher um número complexo em cada plano, cada um multiplicando um elemento da base, e assim definindo um único ponto no espaço de estados. Sejam eles $r_0e^{i\phi}\z$ e $r_1e^{i\theta}\u$. O ponto que obtemos é então $\ket{v}=r_0e^{i\phi}\z+r_1e^{i\theta}\u$. Mas para ser um estado de verdade, ele precisa ter norma 1! Vamos fazer isso, calculando $\braket{v}{v}$ e obrigando que o resultado seja 1:
 
 $$
 \braket{v}{v} = \left[r_0e^{-iφ}\bra{0} + r_1e^{-iθ}\bra{1}\right]\cdot\left[r_0e^{iφ}\z + r_1e^{iθ}\u\right] = 1\\\,\\
@@ -68,32 +68,18 @@ Na última passagem usamos $\braket{0}{1}=\braket{1}{0}=0\;$ e $\;\braket{0}{0}=
 
 $$ ψ(φ,ϕ,θ) = (e^{iφ}\sinϕ)\z + (e^{iθ}\cosϕ)\u $$
 
-Todas as crianças dessa forma são válidas como estados, mas será que são todas
-mesmo diferentes? Afinal, os estados dados por essa parametrização ainda estão
-numa esfera de $\R^4$, e o que todos os textos na internet prometeram é uma
-esfera como a da primeira figura, mais conhecida.
+Todas as crianças dessa forma são válidas como estados, mas será que se os parâmetros forem distintos, os estados associados são mesmo (fisicamente) diferentes? Afinal, os estados dados por essa parametrização ainda estão numa esfera de $\R^4$, e o que todos os textos na internet prometeram é uma esfera como a da primeira figura, com uma dimensão a menos.
 
 A verdade é que, de certo modo, a esfera de $\R^4$ pode ser identificada com uma
-esfera em $\R^3$ em que colamos um círculo em cada ponto. "de certo modo" pois
-ainda assim, $\Bbb{S}^3\neq\Bbb{S}^1\times\Bbb{S}^2$. Mas como? Vamos escrever
+esfera em $\R^3$ em que colamos um círculo em cada ponto, e no nosso contexto a informação desse círculo é irrelevante para calcular probabilidades para nossos estados (que é o que importa para a teoria, na sua capacidade de fazer previsões físicas). Mas eu disse "de certo modo" pois
+ainda assim, $\Bbb{S}^3\neq\Bbb{S}^1\times\Bbb{S}^2$. Então como faríamos isso? Vamos escrever
 a parametrização anterior assim:
 
 $$ ψ(φ,ϕ,δ) = e^{iφ}\left[\sinϕ\z + e^{iδ}\cosϕ\u \right] $$
 
-Perceba que foi feita a troca $\delta=\theta-\varphi$. Predigo: o $φ$ não serve
-pra nada. Por que? Vamos calcular a decomposição de $\ket{v}=ψ(ϕ,φ,δ)$ em uma base
-ortonormal qualquer $\{\ket{a},\ket{b}\}$. Afinal, a decomposição é a palavra
-final da teoria: a medição, a única coisa que observamos no fim das contas.
-Mas veja que com isso, o que foi insinuado no último parágrafo faz algum sentido,
-pois "retiramos um círculo", que é o termo $e^{iφ}$, da expressão para nossos
-estados. Bastaria verificar se o que sobra pode ser entendido de alguma forma
-como a esfera que estamos habituados.
+Perceba que foi feita a troca $\delta=\theta-\varphi$. Predigo: o $φ$ não influencia nas probabilidades. Veja que com isso, o que foi insinuado no último parágrafo faz algum sentido, pois "retiramos um círculo", que é o termo $e^{iφ}$, da expressão para nossos estados. Bastaria verificar se o que sobra pode ser entendido de alguma forma como a esfera que estamos habituados. Vamos calcular a decomposição de $\ket{v}=ψ(ϕ,φ,δ)$ em uma base ortonormal qualquer $\{\ket{a},\ket{b}\}$, o procedimento para calcular as probabilidades em uma medição.
 
-Bom, sabemos que $\ket{a} = ψ(ϕ_a,φ_a,δ_a)$ para alguma combinação de parâmetros.
-Só precisamos calcular a probabilidade do resultado $a$, dada por $P_a=|\braket{a}{v}|^2$,
-já que do fato da base ser ortonormal temos $P_b=1-P_a$. Podemos chamar a parte
-da parametrização dentro dos colchetes de $ψ^⋆_a$ para $\ket{a}$, e
-de $ψ^⋆_v$ para $\ket{v}$. Lembre que essas partes não dependem de $φ$. Assim:
+Bom, sabemos que $\ket{a} = ψ(ϕ_a,φ_a,δ_a)$ para alguma combinação desses parâmetros. Só precisamos calcular a probabilidade do resultado $a$, dada por $P_a=|\braket{a}{v}|^2$, já que do fato da base ser ortonormal temos $P_b=1-P_a$. Podemos chamar a parte da parametrização dentro dos colchetes (na última equação) de $ψ^⋆_a$ para $\ket{a}$, e de $ψ^⋆_v$ para $\ket{v}$. Lembre que essas partes não dependem de $φ$. Assim:
 
 \begin{align}
 |\braket{a}{v}| &= |⟨e^{iφ_a}ψ^⋆_a|e^{iφ}ψ^⋆_v⟩| = |e^{i(φ-φ_a)}⟨ψ^⋆_a|ψ^⋆_v⟩| \\\\
@@ -105,21 +91,18 @@ escrever qualquer estado como:
 
 $$ ψ^⋆(ϕ,δ) = \sinϕ\z + e^{iδ}\cosϕ\u $$
 
-Com duas dimensões, estamos bem mais pertos da esfera! Perceba que não faz diferença
-se restringirmos $ϕ∈[0,π/2]$ e $δ∈[0,2π)$. Mas com isso já podemos representar
-nossos estados em $\Bbb{S}^2$, em que $∠2ϕ$ é o ângulo a partir do polo norte
-e $∠δ$ é a longitude. Essa representação é chamada de Esfera de Bloch:
+Agora, com duas dimensões, estamos bem mais pertos da esfera da imagem. Perceba que não faz diferença se restringirmos $ϕ∈[0,π/2]$ e $δ∈[0,2π)$, pois a parametrização continua sobrejetiva a menos de um sinal, e o sinal também não importa na hora de calcular as probabilidades (você pode checar isso). Mas com isso já podemos representar nossos estados em $\Bbb{S}^2$, em que $∠2ϕ$ é o ângulo a partir do polo norte e $∠δ$ é a longitude. Essa representação é chamada de Esfera de Bloch:
 
 \figenv{Esfera de Bloch}{/assets/svg/qubit2.svg}{width:40%;padding-right:5%;}
 
-E presumivelmente é ela que aparece internet afora dando caras ao qubit. E
+Presumivelmente, é ela que aparece internet afora dando caras ao qubit. E
 para o leitor, talvez agora com um pouco mais sentido.
 
 A "redução" que fizemos da esfera $\Bbb{S}^3$ para a $\Bbb{S}^2$, "retirando"
 uma circunferência de cada ponto, tem um nome matemático: se chama \cite{hopf}.
 Com ela, conseguimos demonstrar que a esfera em $\R^4$ localmente se parece
 com um espaço produto de uma circunferência e uma esfera em $\R^3$, gerando o
-que é chamado de _\cite{fiber}_. Sim, e você também pode [brincar com ela](https://philogb.github.io/page/hopf/#) na internet. Afinal somos todos crianças em algum espaço de estados.
+que é chamado de _\cite{fiber}_. Explicar o que isso significa em termos exatos é um pouco mais complicado, mas você pode [brincar com ela](https://philogb.github.io/page/hopf/#) na internet, e se ficar curioso, procurar mais sobre o assunto. Afinal somos todos crianças em algum espaço de estados.
 
 
 ## Referências
@@ -140,4 +123,3 @@ que é chamado de _\cite{fiber}_. Sim, e você também pode [brincar com ela](ht
         async>
 </script>
 ~~~
-
