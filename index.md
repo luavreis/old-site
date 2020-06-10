@@ -8,5 +8,3 @@ Olá! Essa é a página principal de Gat-ergódico. Seja bem vindo \emoji{slight
 Cat-ergódico é um site acompanhante aos estudos de [Lucas](/sobre). Nele, você deve encontrar algumas coisas aleatórias, por enquanto.
 
 Também pretendo cobrir o que for possível da minha iniciação científica, já que ela foi o motivo principal para criar e buscar manter o [blog](/blog). O próprio nome da página já fala um pouco sobre o tema: sistemas dinâmicos, no qual está inserida a teoria ergódica. Ainda não posso dizer que entendo muito bem o que ele é, então não vou tentar explicar nada por agora.
-
-Não sabe asda como??
