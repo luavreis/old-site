@@ -1,6 +1,13 @@
 @def date = Date(2020,11,1)
 @def title = "Autovalores nas propriedades estatísticas de dinâmicas"
 
+~~~
+<meta property="og:url" content="https://lucasvreis.github.io/blog/ic/autovalores/index.html" />
+<meta property="og:title" content="Autovalores nas propriedades estatísticas de dinâmicas" />
+<meta property="og:description" content="Seja na física, ciência da computação, biologia ou matemática, muitas vezes nos deparamos com um processo determinístico..." />
+<meta property="og:image" content="https://lucasvreis.github.io/blog/ic/autovalores/img5.svg" />
+~~~
+
 \newcommand{\floor}[1]{\lfloor #1 \rfloor}
 $$\newcommand{\emoji}[1]{\htmlClass{twa twa-#1}{}}$$
 
