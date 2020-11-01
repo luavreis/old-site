@@ -7,7 +7,7 @@ Algumas de 2016, a maior parte de 2017.
 
 ---
 
-~~~ <div style="text-align: center; font-family: 'Times New Roman'"> ~~~
+~~~ <div style="text-align: left; > ~~~
 ### dendrocronologia
 de todo, me vejo ultimamente cortado\
 e em parte, nas minhas metades,\
@@ -26,7 +26,7 @@ poda.
 
 ---
 
-~~~ <div style="text-align: center; font-family: 'Times New Roman'"> ~~~
+~~~ <div style="text-align: center; > ~~~
 ### outono (simetria iii.)
 
 céu,\
@@ -41,7 +41,7 @@ azul.
 ~~~ </div> ~~~
 
 
-~~~ <div style="text-align: right; font-family: 'Times New Roman'"> ~~~
+~~~ <div style="text-align: right; > ~~~
 ### o inseguro
 a possibilidade tenta.\
 eu? não!\
@@ -49,7 +49,7 @@ desespero na espera.
 ~~~ </div> ~~~
 
 
-~~~<div style="text-align: left; font-family: 'Times New Roman'">~~~
+~~~<div style="text-align: left; >~~~
 ### decadência
 
 O maquinal velho.\
@@ -97,7 +97,7 @@ de papéis em branco.
 
 ---
 
-~~~<div style="text-align: center; font-family: 'Times New Roman'">~~~
+~~~<div style="text-align: center; >~~~
 ### reflexos (simetria ii.)
 a solidão\
 nos olhares,\
@@ -129,7 +129,7 @@ nos olhares,\
 a solidão
 ~~~ </div> ~~~
 
-~~~ <div style="text-align: right; font-family: 'Times New Roman'"> ~~~
+~~~ <div style="text-align: right; > ~~~
 ### pequeno i.
 e era esperando pelas voltas\
 que a menina corria,\

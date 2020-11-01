@@ -20,8 +20,7 @@ pages. It can be math commands but does not need to be.
 For instance:
 * \newcommand{\phrase}{This is a long phrase to copy.}
 ----------------------------------------------------- -->
-\newcommand{\emoji}[1]{~~~<i class="twa twa-!#1"></i>~~~}
-
+\newcommand{\temoji}[1]{~~~<i class="twa twa-!#1"  aria-role="presentation" aria-label="!#1"></i>~~~}
 
 <!-- Put a box around something and pass some css styling to the box
 (useful for images for instance) e.g. :
@@ -35,4 +34,45 @@ For instance:
 <figcaption>#1</figcaption>
 </figure>
 ~~~
+}
+
+<!-- Teoremas, etc -->
+<!-- define document counter enumerated by utils.jl -->
+
+\newcommand{\chapter}[1]{
+# #1
+\setlevel{chapter} \increment{}
+\setlevel{subsection} \resetcount{} <!-- reset subsection -->
+\setlevel{section} \resetcount{}    <!-- reset section -->
+}
+\newcommand{\section}[1]{
+## #1
+
+\setlevel{section} \increment{}     <!-- increment section -->
+\setlevel{subsection} \resetcount{} <!-- reset subsection -->
+}
+\newcommand{\subsection}[1]{### #1}
+
+<!-- theorem_name, label, title, statement-->
+\newcommand{\theoremcounter}[4]{
+\increment{}
+\recordTheoremNumber{!#2}
+\generateLabel{!#2}
+@@!#1\getTheoremNumber{} \generateTheoremName{!#3} \\ <!-- newline -->
+!#4
+@@
+}
+
+<!-- \command{label}{name}{statement} -->
+\newcommand{\definition}[3]{\theoremcounter{definition}{#1}{#2}{#3}}
+\newcommand{\lemma}[3]{\theoremcounter{lemma}{#1}{#2}{#3}}
+\newcommand{\prop}[3]{\theoremcounter{prop}{#1}{#2}{#3}}
+\newcommand{\theorem}[3]{\theoremcounter{theorem}{#1}{#2}{#3}}
+\newcommand{\example}[3]{\theoremcounter{example}{#1}{#2}{#3}}
+\newcommand{\remark}[3]{\theoremcounter{remark}{#1}{#2}{#3}}
+\newcommand{\proof}[1]{
+@@proof \\ <!-- new line -->
+!#1
+@@
+\\ <!-- new line-->
 }

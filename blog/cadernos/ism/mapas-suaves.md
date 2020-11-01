@@ -2,6 +2,8 @@
 
  > Essas notas são baseadas no livro Introduction to Smooth Manifolds, 2nd ed. de John M. Lee. Ainda assim, conteúdo desse site é unicamente de minha responsabilidade.
 
+\toc
+
 ## Funções e mapas suaves $→$ difeomorfismos
 
 Particularidade de notação: funções $\neq$ mapas.
