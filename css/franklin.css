@@ -4,7 +4,7 @@
 
 html {
     font-family: "Crimson Text", serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     font-size  : 18px;
     color: #1c1c1c;
 }
@@ -186,9 +186,10 @@ html {
 ================================================================== */
 
 .franklin-content img {
-    width: 70%;
-    text-align: center;
-    padding-left: 15%; }
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 .franklin-content figcaption {
         display: block;
@@ -198,6 +199,13 @@ html {
     width: 50%;
     text-align: center;
     padding-left: 25%; }
+
+@media only screen and (max-width: 600px) {
+    .franklin-content > img {
+        /* max-width: 100%; */
+        overflow: auto;
+    }
+}
 
 /* ==================================================================
     KATEX

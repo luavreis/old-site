@@ -1,4 +1,5 @@
 @def date = Date(2020,11,1)
+@def title = "Autovalores nas propriedades estatísticas de dinâmicas"
 
 \newcommand{\floor}[1]{\lfloor #1 \rfloor}
 $$\newcommand{\emoji}[1]{\htmlClass{twa twa-#1}{}}$$
@@ -193,6 +194,8 @@ provável que hoje chova também, mas saber ou não o clima de anteontem
 poderíamos representar o nosso modelo como um grafo direcionado, por
 exemplo:
 
+![alt](img1.svg)
+
 e chamamos as probabilidades nas arestas de *probabilidades de
 transição*. Cada grafo desse tipo corresponde a uma matriz
 $(P_{i,j})_{i,j\in X}$, onde $P_{ij}$ é a probabilidade do próximo
@@ -337,6 +340,8 @@ grafo e chegar a qualquer outro com probabilidade maior que zero. A
 seguir estão alguns exemplos de grafos de matrizes aperiódicas ou não,
 onde desenhamos apenas as arestas que têm probabilidade maior que zero:
 
+![alt](img2.svg)
+
 Os três primeiros grafos são de matrizes não aperiódicas: na primeira,
 saindo da aresta A, se andamos por um número par de passos, sempre
 estaremos na aresta A ou D, e por um número ímpar, na aresta B ou C; na
@@ -447,6 +452,8 @@ dessa vez matematicamente mais concreto que os anteriores. Considere a
 transformação $f(x)=3x\pmod{1}=3x-\floor{3x}$ no intervalo $[0,1]$. O
 gráfico dessa função é o seguinte:
 
+![alt](img3.svg)
+
 Dividimos o intervalo $[0,1]$ nos três subintervalos coloridos
 ${\textsf{\color{orange}\textbf{0}}}$, ${\textsf{\color{lime}\textbf{1}}}$ e ${\textsf{\color{blue}\textbf{2}}}$ que,
 como veremos, constituem uma boa escolha para o nosso alfabeto $X$, e
@@ -464,6 +471,8 @@ Para instigar um pouco a curiosidade, vamos antes de tudo ver como se
 comportam os iterados pela função $f$ de dois pontos ligeiramente
 distintos, anotando o valor do observável a cada passo:
 
+![alt](img4.svg)
+
 A trajetória de $x_0=0.1$ é periódica, mas começando no ponto
 ligeiramente diferente $x_0=0.100005$, depois de alguns poucos passos a
 sequência de observações parece não ter mais nenhuma relação com a
@@ -477,6 +486,8 @@ medida, se sabemos apenas o resultado atual do observável $\varphi$, a
 próxima medição tem probabilidades iguais de resultar em qualquer
 intervalo, cada um com probabilidade $p=1/3$. Portanto, o grafo da
 matriz estocástica teria a seguinte forma:
+
+![alt](img5.svg)
 
 Claramente essa matriz estocástica é aperiódica, e portanto o
 deslocamento de Markov associado é misturador para uma medida $\mu$.
