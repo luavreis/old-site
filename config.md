@@ -3,17 +3,18 @@ Add here global page variables to use throughout your
 website.
 The website_* must be defined for the RSS to work
 ----------------------------------------------------- -->
-@def website_title = "Gat-ergódico"
-@def website_descr = "Um site sobre matemática e coisas aleatórias"
-@def website_url   = "https://lucasvreis.github.io/"
++++
+website_title = "Gat-ergódico"
+website_descr = "Um site sobre matemática e coisas aleatórias"
+website_url   = "https://lucasvreis.github.io/"
 
-@def author = "Lucas Viana Reis"
+author = "Lucas Viana Reis"
 
-@def date_format = raw"dd \d\e U \d\e yyyy"
-@def date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+date_format = raw"dd \d\e U \d\e yyyy"
+date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
-@def mintoclevel=2
-
+mintoclevel=2
++++
 <!-- ---------------------------------------------------
 Add here global latex commands to use throughout your
 pages. It can be math commands but does not need to be.
@@ -41,24 +42,15 @@ For instance:
 
 \newcommand{\chapter}[1]{
 # #1
-\setlevel{chapter} \increment{}
-\setlevel{subsection} \resetcount{} <!-- reset subsection -->
-\setlevel{section} \resetcount{}    <!-- reset section -->
 }
 \newcommand{\section}[1]{
 ## #1
-
-\setlevel{section} \increment{}     <!-- increment section -->
-\setlevel{subsection} \resetcount{} <!-- reset subsection -->
 }
 \newcommand{\subsection}[1]{### #1}
 
 <!-- theorem_name, label, title, statement-->
 \newcommand{\theoremcounter}[4]{
-\increment{}
-\recordTheoremNumber{!#2}
-\generateLabel{!#2}
-@@!#1\getTheoremNumber{} \generateTheoremName{!#3} \\ <!-- newline -->
+@@!#1\\ <!-- newline -->
 !#4
 @@
 }

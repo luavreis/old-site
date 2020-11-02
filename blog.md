@@ -1,3 +1,10 @@
++++
+date_format = raw"dd \d\e U \d\e yyyy"
+date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
++++
+
+Olá, essa é a página principal de Gat-ergódico. Seja bem vindo \temoji{slightly-smiling-face} 
+
 # Blog 
 Em construção... ~~~<i class="twa twa-building-construction"></i>~~~
 

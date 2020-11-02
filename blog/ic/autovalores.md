@@ -1,5 +1,7 @@
-@def date = Date(2020,11,1)
-@def title = "Autovalores nas propriedades estatísticas de dinâmicas"
++++
+date = Date(2020,11,1)
+title = "Autovalores nas propriedades estatísticas de dinâmicas"
++++
 
 ~~~
 <meta property="og:url" content="https://lucasvreis.github.io/blog/ic/autovalores/index.html" />
@@ -391,8 +393,8 @@ projeção em $\mathbb{R}p$ com respeito a essa decomposição, ou seja,
 caracterizada por $Bp=p$ e $Bh=0$ para todo $h\in H$. Seja $h_i=e_i-p$,
 para todo $e_i$ elemento da base canônica. Como a soma das entradas
 tanto de $e_i$ como de $p$ são 1, a soma das entradas de $h_i$ vale
-zero, e portanto $h_i\in H$. Isso significa que para todo $i$,
-$Be_i=B(p+h_i)=p$, ou seja, $B_{i,j}=p_i$. Então:
+zero, e portanto $h_i\in H$. Isso significa que para todo $j$,
+$Be_j=B(p+h_j)=p$, ou seja, $B_{i,j}=p_i$ para todo $i,j$. Então:
 $$\lim_{n\to\infty} P_{i,j}^n = \lim_{n\to\infty} (P^\mathsf{T})^n_{j,i}= B_{j,i}=p_j.$$
 }
 
@@ -431,10 +433,12 @@ $$\begin{aligned}
 
 Provado isso, estamos prontos para o teorema:
 
+\theorem{}{}{
 Suponha que $P$ é aperiódica. Então o deslocamento de Markov é
 misturador, ou seja, para todo $A$ e $B$ mensuráveis,
 $$\lim_{j\to\infty}\mu(A\cap \sigma^{-j}(B))=\mu(A)\mu(B)$$
-
+}
+\proof{
 Tal qual a invariância da medida, pode-se mostrar que basta verificar o
 resultado quando $A=[m;a_m,...,a_q]$ e $B=[r;b_r,...,b_s]$ são
 cilindros, pois eles geram a coleção de subconjuntos mensuráveis. Assim,
@@ -448,7 +452,7 @@ os dois resultados, o limite converge:
 $$\lim_{j\to\infty}\mu(A\cap \sigma^{-j}(B))=
 \lim_{j\to\infty} \mu(A)\mu(B)\frac{P^{r-q+j}_{a_q,b_r}}{p_{b_r}}=
 \mu(A)\mu(B)$$
-
+}
 \section{Sistemas equivalentes}
 
 
