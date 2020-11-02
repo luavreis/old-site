@@ -21,7 +21,7 @@
 </url>
 <url>
     <loc>https://lucasvreis.github.io/blog/index.html</loc>
-    <lastmod>2020-11-01</lastmod>
+    <lastmod>2020-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34,12 +34,6 @@
 <url>
     <loc>https://lucasvreis.github.io/index.html</loc>
     <lastmod>2020-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://lucasvreis.github.io/blog/test/index.html</loc>
-    <lastmod>2020-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -75,7 +69,7 @@
 </url>
 <url>
     <loc>https://lucasvreis.github.io/blog/ic/autovalores/index.html</loc>
-    <lastmod>2020-11-01</lastmod>
+    <lastmod>2020-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -94,12 +88,6 @@
 <url>
     <loc>https://lucasvreis.github.io/blog/cadernos/ism/variedades-topologicas/index.html</loc>
     <lastmod>2020-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://lucasvreis.github.io/mosaico/1/index.html</loc>
-    <lastmod>2020-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
