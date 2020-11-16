@@ -23,6 +23,7 @@ end
 tqmf_pages = blog_page_data("blog/cadernos/tqmf")
 ism_pages = blog_page_data("blog/cadernos/ism")
 ic_pages = blog_page_data("blog/ic")
+# feed_pages = blog_page_data("blog/feed")
 
 
 # Teoremas, etc
