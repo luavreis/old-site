@@ -1,14 +1,16 @@
 +++
 date = Date(2020,11,1)
-title = "Autovalores nas propriedades estatísticas de dinâmicas"
+title = "Autovalores e dinâmicas (trabalho de álgebra linear)"
 +++
 
 ~~~
 <meta property="og:url" content="https://lucasvreis.github.io/blog/ic/autovalores/index.html" />
-<meta property="og:title" content="Autovalores nas propriedades estatísticas de dinâmicas" />
+<meta property="og:title" content="Autovalores e dinâmicas (trabalho de álgebra linear)" />
 <meta property="og:description" content="Seja na física, ciência da computação, biologia ou matemática, muitas vezes nos deparamos com um processo determinístico..." />
 <meta property="og:image" content="https://lucasvreis.github.io/blog/ic/autovalores/img5.svg" />
 ~~~
+
+O texto a seguir foi feito como um trabalho para a disciplina de álgebra linear avançada, achei que poderia ser útil postar aqui.
 
 \newcommand{\floor}[1]{\lfloor #1 \rfloor}
 $$\newcommand{\emoji}[1]{\htmlClass{twa twa-#1}{}}$$

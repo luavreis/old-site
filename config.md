@@ -50,7 +50,7 @@ For instance:
 
 <!-- theorem_name, label, title, statement-->
 \newcommand{\theoremcounter}[4]{
-@@!#1\\ <!-- newline -->
+@@!#1 <!-- newline -->
 !#4
 @@
 }

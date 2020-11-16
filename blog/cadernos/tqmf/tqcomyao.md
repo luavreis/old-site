@@ -29,7 +29,7 @@ Vou precisar que você saiba um pouco de álgebra linear e números complexos no
 
 Mas como assim, o qubit é uma esfera? E ele é _a_ esfera ou algo _na_ esfera? E como assim uma "média" daqueles dois vetores deu um vetor perpendicular e... porque esse $\sqrt{2}$? Além desses $|0\rang$, $|1\rang$ estranhos.
 
-Bom, primeiramente um qubit _não é_ uma esfera, pelo menos no sentido físico. A priori, ele é um objeto matemático da teoria quântica, e existem alguns objetos físicos (que não são esféricos) que se comportam como qubits. Também gostaria de avisá-lo que a grande maioria dos textos que tentam explicar o que é, como funciona, o que se pode fazer com um qubit sem tocar na matemática criam analogias bonitinhas mas muito erradas. Às vezes extremamente erradas. Mas vamos prosseguir pela matemática.
+Bom, primeiramente um qubit _não é_ uma esfera, pelo menos no sentido físico. A priori, ele é um objeto matemático da teoria quântica, e existem alguns objetos físicos (que não são esféricos) que se comportam como qubits. Também gostaria de avisá-lo que a grande maioria dos textos na internet que tentam explicar o que é, como funciona, o que se pode fazer com um qubit sem tocar na matemática criam analogias bonitinhas mas muito erradas. Mas vamos prosseguir pela matemática.
 
 ## Um pouco de teoria
 
@@ -47,7 +47,7 @@ Já que temos um produto interno, podemos identificar cada estado de $\Bbb{E}$ c
 
 Vamos ver como isso fica no caso de um qubit, usando o produto interno usual.
 
-Como o teste clássico mais simples distingue entre duas possibilidades (senão seria um teste trivial), nossa base ortonormal precisa de dois elementos, e podemos usar um espaço de estados $\Bbb{E}≅\Complex^2$. Vamos definir $\{\z,\u\}$ como uma base do nosso espaço, e essas duas crianças compõem o que chamaremos de base computacional. Não estranhe muito o fato de não estarmos utilizando uma notação vetorial, $\{\z,\u\}$ é como $\{e_1,e_2\}$, a notação de base que estamos acostumados, e lembre que os números dentro dos símbolos são apenas nomes.
+Como o teste clássico mais simples distingue entre duas possibilidades (senão seria um teste trivial), nossa base ortonormal precisa de dois elementos, e podemos usar um espaço de estados $\Bbb{E}≅\Complex^2$. Vamos definir $\{\z,\u\}$ como uma base do nosso espaço, e essas duas crianças compõem o que chamaremos de base computacional. Não estranhe muito o fato de não estarmos utilizando uma notação vetorial, $\{\z,\u\}$ é como $\{e_1,e_2\}$, a notação de base que estamos acostumados, e lembre que os números dentro dos bra-kets são apenas nomes.
 
 Agora colocamos como postulado que a probabilidade de um teste ter uma de suas alternativas clássicas como resultado pode ser obtido decompondo o estado do sistema nessa base e calculando o quadrado da norma da componente que corresponde a essa alternativa. Por exemplo, tome nossa base computacional $\{\z,\u\}$, e um vetor de estado $\ket{v}\in\Bbb{E}$. Sabemos que $\proj{0}{v} = \braket{0}{v}$ e $\proj{1}{v} = \braket{1}{v}$, e como a base é ortonormal, $\ket{v} = \braket{0}{v}\ket{0} + \braket{1}{v}\ket{1}$. Se queremos saber a probabilidade de um teste com a base computacional resultar em $\z$ para o estado $\ket{v}$, calculamos $|\braket{0}{v}|^2$.
 
