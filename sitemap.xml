@@ -33,7 +33,7 @@
 </url>
 <url>
     <loc>https://lucasvreis.github.io/index.html</loc>
-    <lastmod>2020-11-01</lastmod>
+    <lastmod>2020-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -94,6 +94,12 @@
 <url>
     <loc>https://lucasvreis.github.io/pages/coisas/atratores/index.html</loc>
     <lastmod>2020-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://lucasvreis.github.io/blog/feed/empty/index.html</loc>
+    <lastmod>2020-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
