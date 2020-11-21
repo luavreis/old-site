@@ -7,14 +7,14 @@ date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julh
 # Blog 
 Em construção... ~~~<i class="twa twa-building-construction"></i>~~~
 
-<!-- ## Feed
+## Feed
 ~~~
 <ul>
 {{for (p, d) in feed_pages}}
   <li>{{fill d}} - <a href="{{fill fd_url p}}">{{fill title p}}</a></li>
 {{end}}
 </ul>
-~~~ -->
+~~~
 
 ## \temoji{notebook-with-decorative-cover} Cadernos
 
