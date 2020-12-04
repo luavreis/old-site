@@ -131,6 +131,7 @@ instead, display a burger menu.
     header li a { border-bottom: none; }
     header li a:hover { border-bottom: none; }
     nav:hover ul{
+        top: 90px;
         display: block; }
     #menu-icon {
         display: inline-block;
