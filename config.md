@@ -17,12 +17,7 @@ robots_disallow = ["/"]
 
 mintoclevel=2
 +++
-<!-- ---------------------------------------------------
-Add here global latex commands to use throughout your
-pages. It can be math commands but does not need to be.
-For instance:
-* \newcommand{\phrase}{This is a long phrase to copy.}
------------------------------------------------------ -->
+
 \newcommand{\temoji}[1]{~~~<i class="twa twa-!#1"  aria-role="presentation" aria-label="!#1"></i>~~~}
 
 <!-- Put a box around something and pass some css styling to the box
@@ -38,6 +33,17 @@ For instance:
 </figure>
 ~~~
 }
+
+\newcommand{\contents}{
+@@contents
+~~~<details><summary>Conteúdo</summary>~~~
+\toc
+~~~</details>~~~
+@@}
+
+\newenvironment{details}[1]
+{~~~<details><summary>#1</summary>~~~}
+{~~~</details>~~~}
 
 <!-- Teoremas, etc -->
 <!-- define document counter enumerated by utils.jl -->
@@ -61,12 +67,11 @@ For instance:
 \newcommand{\definition}[3]{\theoremcounter{definition}{#1}{#2}{#3}}
 \newcommand{\lemma}[3]{\theoremcounter{lemma}{#1}{#2}{#3}}
 \newcommand{\prop}[3]{\theoremcounter{prop}{#1}{#2}{#3}}
-\newcommand{\theorem}[3]{\theoremcounter{theorem}{#1}{#2}{#3}}
+\newcommand{\theorem}[3]{\theoremcounter{theorem}{!#1}{!#2}{!#3}}
 \newcommand{\example}[3]{\theoremcounter{example}{#1}{#2}{#3}}
 \newcommand{\remark}[3]{\theoremcounter{remark}{#1}{#2}{#3}}
 \newcommand{\proof}[1]{
-@@proof \\ <!-- new line -->
+@@proof <!-- new line -->
 !#1
-@@
-\\ <!-- new line-->
+@@ <!-- new line-->
 }

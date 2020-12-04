@@ -4,8 +4,8 @@
 
 html {
     font-family: "Crimson Text", serif;
-    /* scroll-behavior: smooth; */
-    font-size  : 18px;
+    scroll-behavior: smooth;
+    font-size  : 20px;
     color: #1c1c1c;
 }
 
@@ -283,19 +283,39 @@ code {
     TOC
 ================================================================== */
 .franklin-toc {
+    font-size: 14pt;
+    font-weight: initial;
+    font-style: initial;
+
+    /* float: right; */
+    /* clear: right; */
+    /* width: 20%; */
+    /* margin-left: 40em; */
+    /* position: fixed;  */
+    /* bottom: 10%; */
+}
+
+.contents {
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: normal;
     float: right;
     clear: right;
     width: 20%;
-    margin-left: 40em;
     position: fixed; 
-    bottom: 10%;
+    bottom: 3em;
+    right: 1em;
 }
-.franklin-toc::before {
-    content: "Conteúdo";
-    margin-left: 1cm;
-    font-size: larger;
-    font-weight: bold;
-    font-style: normal;
+
+@media only screen and (max-width: 1300px) {
+    .contents {
+        float: unset;
+        clear: unset;
+        width: unset;
+        margin-left: unset;
+        position: unset; 
+        bottom: 10%;
+    }
 }
 
 .sidenote,
@@ -342,14 +362,3 @@ blockquote .marginnote {
     min-width: 59%;
     text-align: left; 
 }
-
-@media only screen and (max-width: 1300px) {
-    .franklin-toc {
-        float: unset;
-        clear: unset;
-        width: unset;
-        margin-left: unset;
-        position: unset; 
-        bottom: 10%;
-        }
-    }

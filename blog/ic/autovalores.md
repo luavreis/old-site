@@ -3,20 +3,14 @@ date = Date(2020,11,1)
 title = "Autovalores e dinâmicas (trabalho de álgebra linear)"
 +++
 
-~~~
-<meta property="og:url" content="https://lucasvreis.github.io/blog/ic/autovalores/index.html" />
-<meta property="og:title" content="Autovalores e dinâmicas (trabalho de álgebra linear)" />
-<meta property="og:description" content="Seja na física, ciência da computação, biologia ou matemática, muitas vezes nos deparamos com um processo determinístico..." />
-<meta property="og:image" content="https://lucasvreis.github.io/blog/ic/autovalores/img5.svg" />
-~~~
+# Autovalores nas propriedades estatísticas de dinâmicas
+
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+
 
 O texto a seguir foi feito como um trabalho para a disciplina de álgebra linear avançada, achei que poderia ser útil postar aqui.
 
-\newcommand{\floor}[1]{\lfloor #1 \rfloor}
-$$\newcommand{\emoji}[1]{\htmlClass{twa twa-#1}{}}$$
-
-# Autovalores nas propriedades estatísticas de dinâmicas
-\toc
+\contents
 
 \section{O que são sistemas dinâmicos em tempo discreto?}
 \subsection{Introdução}
@@ -192,8 +186,8 @@ Imagine que você tenha um "observável" com um número finito de possíveis
 resultados, que representaremos por um conjunto finito $X$ chamado de
 alfabeto. Por exemplo, suponha que você tenha uma medição que consiste
 em anotar o clima de onde você está como um dos elementos de
-$X=\{\text{\emoji{sun} (sol)},\text{ \emoji{umbrella} (chuva)}\}$, e
-suponha que você repete essa medição por vários dias seguidos. Melhor
+$\newcommand{\emoji}[1]{\htmlClass{twa twa-#1}{}} X=\{\text{\emoji{sun} (sol)},\text{ \emoji{umbrella} (chuva)}\}$, 
+e suponha que você repete essa medição por vários dias seguidos. Melhor
 ainda, você repete por *infinitos* dias seguidos, e anota os resultados
 no seu caderno de laboratório com infinitas páginas:
 $$\text{\emoji{sun}\emoji{sun}\emoji{sun}\emoji{sun}\emoji{sun}\emoji{umbrella}\emoji{sun}\emoji{umbrella}\emoji{sun}\emoji{umbrella}\emoji{umbrella}\emoji{sun}\emoji{umbrella}\emoji{umbrella}\emoji{umbrella}\emoji{sun}\emoji{sun}\emoji{umbrella}}...$$

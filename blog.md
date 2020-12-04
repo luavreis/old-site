@@ -3,47 +3,30 @@ date_format = raw"dd \d\e U \d\e yyyy"
 date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 +++
 
-
-# Blog 
-Em construção... ~~~<i class="twa twa-building-construction"></i>~~~
-
-## Feed
+\newcommand{\list}[1]{
 ~~~
 <ul>
-{{for (p, d) in feed_pages}}
-  <li>{{fill d}} - <a href="{{fill fd_url p}}">{{fill title p}}</a></li>
+{{for (p, d) in !#1}}
+  <li><a href="{{fill fd_url p}}">{{fill title p}}</a> - {{fill d}}</li>
 {{end}}
 </ul>
 ~~~
+}
+
+# \temoji{memo} Escritos
 
 ## \temoji{notebook-with-decorative-cover} Cadernos
 
+Alguns posts com temas:
+
 ### iniciação científica
 
-~~~
-<ul>
-{{for (p, d) in ic_pages}}
-  <li>{{fill d}} - <a href="{{fill fd_url p}}">{{fill title p}}</a></li>
-{{end}}
-</ul>
-~~~
+\list{ic_pages}
 
 ### teoria quântica
 
-~~~
-<ul>
-{{for (p, d) in tqmf_pages}}
-  <li>{{fill d}} - <a href="{{fill fd_url p}}">{{fill title p}}</a></li>
-{{end}}
-</ul>
-~~~
+\list{tqmf_pages}
 
 ### variedades suaves
 
-~~~
-<ul>
-{{for (p, d) in ism_pages}}
-  <li>{{fill d}} - <a href="{{fill fd_url p}}">{{fill title p}}</a></li>
-{{end}}
-</ul>
-~~~
+\list{ism_pages}

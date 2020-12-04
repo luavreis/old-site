@@ -9,7 +9,7 @@
 
 # Um pouco de teoria quântica, parte 1
 
-\toc
+\contents
 
 ## Tempos difíceis.
 
@@ -25,7 +25,7 @@ Vou precisar que você saiba um pouco de álgebra linear e números complexos no
 
 É um pouco didático começar com o que se tem de mais simples na teoria quântica. Talvez você já tenha se deparado com alguém por aí apontando para uma esfera e chamando ela de um qubit:
 
-![](/assets/svg/qubit.svg)
+\style{width:min(4in,90%);}{![](/assets/svg/qubit.svg)}
 
 Mas como assim, o qubit é uma esfera? E ele é _a_ esfera ou algo _na_ esfera? E como assim uma "média" daqueles dois vetores deu um vetor perpendicular e... porque esse $\sqrt{2}$? Além desses $|0\rang$, $|1\rang$ estranhos.
 
@@ -55,7 +55,7 @@ Agora colocamos como postulado que a probabilidade de um teste ter uma de suas a
 
 Agora que temos a teoria, vamos olhar para a geometria do nosso espaço de eventos e tentar descobrir em que ela tem a ver com a consagrada esfera. Primeiro, perceba que $\Complex^2$ é um espaço de dimensão real 4. Mas estamos interessados somente nos elementos com norma 1, que formam uma "esfera complexa", homeomorfa a $\Bbb{S}^3$, a esfera (tridimensional) de $\R^4$. Vamos construir uma parametrização dessa esfera. Primeiro, note que esse espaço de estados é basicamente um produto de dois planos complexos:
 
-~~~ <img src="/assets/svg/c2space.svg" alt style="width:90%; padding-left:5%"> ~~~
+\style{width:min(6in,90%);}{![](/assets/svg/c2space.svg)}
 
 Qualquer número complexo pode ser escrito como $z=re^{i\theta}$ para $r$ e $\theta$ reais. Então podemos escolher um número complexo em cada plano, cada um multiplicando um elemento da base, e assim definindo um único ponto no espaço de estados. Sejam eles $r_0e^{i\phi}\z$ e $r_1e^{i\theta}\u$. O ponto que obtemos é então $\ket{v}=r_0e^{i\phi}\z+r_1e^{i\theta}\u$. Mas para ser um estado de verdade, ele precisa ter norma 1! Vamos fazer isso, calculando $\braket{v}{v}$ e obrigando que o resultado seja 1:
 
@@ -93,33 +93,13 @@ $$ ψ^⋆(ϕ,δ) = \sinϕ\z + e^{iδ}\cosϕ\u $$
 
 Agora, com duas dimensões, estamos bem mais pertos da esfera da imagem. Perceba que não faz diferença se restringirmos $ϕ∈[0,π/2]$ e $δ∈[0,2π)$, pois a parametrização continua sobrejetiva a menos de um sinal, e o sinal também não importa na hora de calcular as probabilidades (você pode checar isso). Mas com isso já podemos representar nossos estados em $\Bbb{S}^2$, em que $∠2ϕ$ é o ângulo a partir do polo norte e $∠δ$ é a longitude. Essa representação é chamada de Esfera de Bloch:
 
-\figenv{Esfera de Bloch}{/assets/svg/qubit2.svg}{width:40%;padding-right:5%;}
+\figenv{Esfera de Bloch}{/assets/svg/qubit2.svg}{width:min(2in,90%);padding-right:5%;}
 
 Presumivelmente, é ela que aparece internet afora dando caras ao qubit. E
 para o leitor, talvez agora com um pouco mais sentido.
 
+<!-- 
 A "redução" que fizemos da esfera $\Bbb{S}^3$ para a $\Bbb{S}^2$, "retirando"
-uma circunferência de cada ponto, tem um nome matemático: se chama \cite{hopf}.
-Com ela, conseguimos demonstrar que a esfera em $\R^4$ localmente se parece
+uma circunferência de cada ponto, tem um nome matemático: se chama Fibração de Hopf. Com ela, conseguimos demonstrar que a esfera em $\R^4$ localmente se parece
 com um espaço produto de uma circunferência e uma esfera em $\R^3$, gerando o
-que é chamado de _\cite{fiber}_. Explicar o que isso significa em termos exatos é um pouco mais complicado, mas você pode [brincar com ela](https://philogb.github.io/page/hopf/#) na internet, e se ficar curioso, procurar mais sobre o assunto. Afinal somos todos crianças em algum espaço de estados.
-
-
-## Referências
-* \biblabel{mqmf}{Mecânica Quântica para Matemáticos em Formação} **Bárbara Amaral, Alexandre Tavares Baraviera e Marcelo O. Terra Cunha**, [Mecânica Quântica para Matemáticos em Formação](https://impa.br/wp-content/uploads/2017/04/28CBM_12.pdf), Impa 2011.
-* \biblabel{fiber}{maço de fibras} **Wikipedia**, [Fiber Bundle](https://en.wikipedia.org/wiki/Fiber_bundle).
-* \biblabel{hopf}{Fibração de Hopf} **Wikipedia**, [Fibração de Hopf](https://pt.wikipedia.org/wiki/Fibra%C3%A7%C3%A3o_de_Hopf).
-* \biblabel{hopf}{Fibração de Hopf} **@philogb**, [HOPF FIBRATIONS](https://philogb.github.io/page/hopf/#).
-
-~~~
-<p style="margin-top:8em"></p>
-<hr>
-<script src="https://utteranc.es/client.js"
-        repo="lucasvreis/lucasvreis.github.io"
-        issue-term="title"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-~~~
+que é chamado de _maço de fibras_. Explicar o que isso significa em termos exatos é um pouco mais complicado, mas você pode [brincar com ela](https://philogb.github.io/page/hopf/#) na internet, e se ficar curioso, procurar mais sobre o assunto. Afinal somos todos crianças em algum espaço de estados. -->

@@ -2,7 +2,7 @@
 
  > Essas notas são baseadas no livro Introduction to Smooth Manifolds, 2nd ed. de John M. Lee, Springer Press, &copy; 2013. Ainda assim, conteúdo desse site é unicamente de minha responsabilidade.
 
-\toc
+\contents
 
 ## Propriedades Topológicas das Variedades
 

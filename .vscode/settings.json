@@ -1,0 +1,14 @@
+{
+    "editor.fontFamily": "'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "*.toml": true,
+        "_css": true,
+        "_libs": true,
+        "__site": true,
+    }
+}

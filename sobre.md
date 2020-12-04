@@ -1,3 +1,17 @@
 # Sobre
 
-Em construção... ~~~<i class="twa twa-building-construction"></i>~~~
+
+Me contate em _lucasvreis at protonmail dot com_. Ou bata na minha porta em [whereby.com/toc-toc-lucas](https://whereby.com/toc-toc-lucas) \temoji{door} (não precisa de conta; me avise por e-mail antes).
+
+Links:
+ - [\temoji{desktop-computer} Github](https://github.com/lucasvreis/)
+ - [\temoji{books} Leitura (desatualizado)](https://www.goodreads.com/user/show/84346581-lucas)
+ - [\temoji{camera} Fotos (desatualizado)](https://www.flickr.com/photos/lucasmagia/)
+
+\begin{details}{Twitter}
+~~~<div class="twitter" style="text-align:center"><a class="twitter-timeline" data-lang="pt" data-width="min(100%, 400px)" data-height="500" data-dnt="true" href="https://twitter.com/lucas_vreis?ref_src=twsrc%5Etfw">Tweets by lucas_vreis</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>~~~
+\end{details}
+
+
+~~~
+~~~
