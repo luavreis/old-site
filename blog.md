@@ -1,6 +1,7 @@
 +++
 date_format = raw"dd \d\e U \d\e yyyy"
 date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+title = "Escritos"
 +++
 
 \newcommand{\list}[1]{
