@@ -13,3 +13,5 @@ Usamos essas bolas em uma das formas de definir a entropia topológica de uma di
 ![](7.png)
 
 ![](8.png)
+
+Código fonte: [.html](dynamics.jl) / [.jl](notebook.jl)
