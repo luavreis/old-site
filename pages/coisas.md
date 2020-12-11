@@ -1,6 +1,7 @@
 # Coisas
 
 ## coisas daqui
+- [Bolas dinâmicas](bolas-din)
 - [Atratores estranhos](atratores)
 - [Gifs](gifs)
 

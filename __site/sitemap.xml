@@ -9,7 +9,7 @@
 </url>
 <url>
     <loc>https://lucasvreis.github.io/pages/coisas/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
+    <lastmod>2020-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -88,6 +88,12 @@
 <url>
     <loc>https://lucasvreis.github.io/pages/projetos/textos/index.html</loc>
     <lastmod>2020-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://lucasvreis.github.io/pages/coisas/bolas-din/index.html</loc>
+    <lastmod>2020-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
