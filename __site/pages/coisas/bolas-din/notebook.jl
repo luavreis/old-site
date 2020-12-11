@@ -21,9 +21,6 @@ begin
 	using PlutoUI
 end
 
-# ╔═╡ 33bbc826-3b31-11eb-14fc-0574739e4034
-const SV = SVector{2};
-
 # ╔═╡ 473d669e-3b2b-11eb-0cf8-6525810c72ea
 f((x,y)) = (cos(y)^5*3^x, x^3+y) .|> p -> mod(p,1);
 
@@ -101,12 +98,11 @@ end
 
 # ╔═╡ Cell order:
 # ╠═0e77075e-3b2b-11eb-3ccc-b5566e9738bf
-# ╠═1173cd5a-3b5a-11eb-376d-99a5b00641bf
-# ╠═33bbc826-3b31-11eb-14fc-0574739e4034
 # ╠═473d669e-3b2b-11eb-0cf8-6525810c72ea
 # ╠═f2cdbc9e-3bc2-11eb-03da-bf1ad0245bb2
 # ╠═9b32c812-3b57-11eb-242b-0bb52e31a065
 # ╠═d7240ae8-3b57-11eb-188b-3f0ee0efecad
+# ╠═1173cd5a-3b5a-11eb-376d-99a5b00641bf
 # ╠═4663058e-3b59-11eb-2929-dbaea3ec1c78
 # ╠═168b884a-3b59-11eb-1e46-8d67f5ead8f8
 # ╠═8284ce6c-3b31-11eb-2796-835ee6d006ca
