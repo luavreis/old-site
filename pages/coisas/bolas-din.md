@@ -1,3 +1,7 @@
+~~~
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@lucasvreis"><meta name="twitter:title" content="Bolas dinâmicas"><meta name="twitter:image" content="https://lucasvreis.github.io/pages/coisas/bolas-din/6.png">
+~~~
+
 # Bolas dinâmicas
 
 A parte preta nas imagens abaixo é o conjunto dos pontos que ficam a menos de $r$ de distância do ponto vermelho $x$ (ele tá bem pequeno, mas está lá) durante toda a trajetória dos primeiros $n-1$ iterados: a bola dinâmica $B(x,n,r)$. Em outras palavras,
