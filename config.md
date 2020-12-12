@@ -13,7 +13,7 @@ author = "Lucas Viana Reis"
 date_format = raw"dd \d\e U \d\e yyyy"
 date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
-robots_disallow = ["/"]
+# robots_disallow = ["/"]
 
 mintoclevel=2
 +++
