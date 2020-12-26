@@ -4,7 +4,7 @@ website.
 The website_* must be defined for the RSS to work
 ----------------------------------------------------- -->
 +++
-website_title = "interseções"
+website_title = "gat-ergódico"
 website_descr = "matemática e entrelinhas"
 website_url   = "https://lucasvreis.github.io/"
 
