@@ -4,7 +4,7 @@
 - [Bolas dinâmicas](bolas-din)
 - [Atratores estranhos](atratores)
 - [Gifs](gifs)
-
+<!-- 
 ## coisas de fora
 ### linguagens
 - [Julia](https://julialang.org/)
@@ -19,4 +19,4 @@
 - [Grothendieck](https://piaui.folha.uol.com.br/materia/a-voz-das-coisas/)
 - [John Baez](http://math.ucr.edu/home/baez/)
 ### ensino
-- [https://www.michael-penn.net/teaching](https://www.michael-penn.net/teaching)
+- [https://www.michael-penn.net/teaching](https://www.michael-penn.net/teaching) -->
