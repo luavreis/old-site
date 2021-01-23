@@ -50,13 +50,25 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://lucasvreis.github.io/blog/ic/diagramas/teste/index.html</loc>
+    <lastmod>2021-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://lucasvreis.github.io/libs/katex/README/index.html</loc>
+    <lastmod>2021-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://lucasvreis.github.io/pages/coisas/gifs/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/libs/katex/README/index.html</loc>
+    <loc>https://lucasvreis.github.io/libs/katex-12/README/index.html</loc>
     <lastmod>2020-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

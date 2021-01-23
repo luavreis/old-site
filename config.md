@@ -25,6 +25,14 @@ mintoclevel=2
 \style{width:80%;}{![](path/to/img.png)} -->
 \newcommand{\style}[2]{~~~<div style="!#1;margin-left:auto;margin-right:auto;">~~~!#2~~~</div>~~~}
 
+\newcommand{\svg}[1]{
+~~~
+<figure style="text-align:center;">
+<object data="!#1" type="image/svg+xml" />
+</figure>
+~~~
+}
+
 \newcommand{\figenv}[3]{
 ~~~
 <figure style="text-align:center;">

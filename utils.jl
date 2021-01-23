@@ -1,5 +1,7 @@
 using Dates
 using Franklin: pagevar, fd_date, locvar
+using TikzPictures
+using Random
 
 function get_date(fpath)
   date = pagevar(fpath, "date")
@@ -20,134 +22,40 @@ function blog_page_data(dir)
   end
   return data
 end
+
+function env_cap(com, _)
+  option = Franklin.content(com.braces[1])
+  content = Franklin.content(com)
+  output = replace(content, option => uppercase(option))
+  return "~~~<b>~~~$output~~~</b>~~~"
+end
+
+function env_latex(e, _)
+end
+
+function env_tikzpicture(e, _)
+  content = strip(Franklin.content(e))
+  opt = strip(Franklin.content(e.braces[1]))
+  preamble = open(joinpath(splitext(
+                      Franklin.locvar(:fd_rpath))[1],
+                      "tikzpreamble.tex")) do file
+    strip(read(file,String)) 
+  end
+  name = randstring(8)
+  # save SVG at __site/assets/[path/to/file]/$name.svg
+  rpath = joinpath("assets", splitext(Franklin.locvar(:fd_rpath))[1], "$name.svg")
+  outpath = joinpath(Franklin.path(:site), rpath)
+  # if the directory doesn't exist, create it
+  outdir = dirname(outpath)
+  isdir(outdir) || mkpath(outdir)
+  # save the file and show it
+  save(SVG(outpath), TikzPicture(content,adjustboxOptions="scale=1.5",options=opt,preamble=preamble))
+  return "\\fig{/$(Franklin.unixify(rpath))}"
+end
+
+include("utils/theorems.jl")
+
 tqmf_pages = blog_page_data("blog/cadernos/tqmf")
 ism_pages = blog_page_data("blog/cadernos/ism")
 ic_pages = blog_page_data("blog/ic")
 # feed_pages = blog_page_data("blog/feed")
-
-
-# Teoremas, etc
-
-mutable struct Theorem
-  chapter::Int
-  section::Int
-  subsection::Int
-  Theorem()=new(0,0,0)
-end
-
-mutable struct State 
-  level::Symbol
-  thm::Theorem
-  label2thm::Dict{Any,Any}
-end
-
-# global state
-state = State(:chapter, Theorem(), Dict())
-
-function lx_initcounter(com, _)
-  global state
-  state = State(:chapter, Theorem(), Dict())
-  return ""
-end
-
-function setlevel(new::Symbol)
-  global state
-  state.level = new
-end
-
-setlevel(new::AbstractString) = setlevel(Symbol(new))
-
-function lx_setlevel(com, _)
-  brace_content = Franklin.content(com.braces[1])
-  setlevel(brace_content)
-  return ""
-end
-
-function record_theorem_number(label)
-  global state
-  state.label2thm[label] = deepcopy(state.thm)
-end
-
-function lx_generateLabel(com, _)
-  label = Franklin.content(com.braces[1])
-  if label != ""
-      return "\\label{$(label)}"
-  else
-      return ""
-  end
-end
-
-function lx_generateTheoremName(com, _)
-  name = Franklin.content(com.braces[1])
-  if name != ""
-      return "($name)"
-  else
-      return ""
-  end
-end
-
-function increment()
-  global state
-  t = state.thm
-  if state.level == :chapter && (t.chapter += 1) end
-  if state.level == :section && (t.section += 1) end
-  if state.level == :subsection && (t.subsection += 1) end
-  # update
-  state.thm = t
-end
-
-function lx_increment(com, _)
-  increment()
-  return ""
-end
-
-function resetcount()
-  global state
-  t = state.thm
-  if state.level == :chapter && (t.chapter = 0) end
-  if state.level == :section && (t.section = 0) end
-  if state.level == :subsection && (t.subsection = 0) end
-  # update
-  state.thm = t
-end
-
-function lx_resetcount(com, _)
-  resetcount()
-  return ""
-end
-
-
-get_theorem_number(t::Theorem)="$(t.chapter).$(t.section).$(t.subsection)"
-
-function get_theorem_number()
-  global state 
-  get_theorem_number(state.thm)
-end
-
-function lx_getTheoremNumber(com, _)
-  global state 
-  get_theorem_number(state.thm)
-end
-
-function ref(label::AbstractString)
-  global state
-  try
-      n = get_theorem_number(state.label2thm[label])    
-      return "[$n](#$label)"
-  catch
-      @warn "fail to ref $label"
-      return "???"
-  end
-
-end
-
-function lx_ref(com, _)
-  brace_content = Franklin.content(com.braces[1])
-  ref(brace_content)
-end
-
-function lx_recordTheoremNumber(com, _)
-  brace_content = Franklin.content(com.braces[1])
-  record_theorem_number(brace_content)
-  return ""
-end
