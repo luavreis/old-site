@@ -2,133 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://lucasvreis.github.io/pages/coisas/atratores/bedhead/index.html</loc>
+    <loc>pages/coisas/atratores/bedhead/index.html</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/coisas/index.html</loc>
+    <loc>pages/coisas/index.html</loc>
     <lastmod>2021-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/sobre/index.html</loc>
+    <loc>sobre/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/index.html</loc>
-    <lastmod>2020-12-10</lastmod>
+    <loc>blog/index.html</loc>
+    <lastmod>2021-01-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/index.html</loc>
+    <loc>index.html</loc>
     <lastmod>2021-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/coisas/atratores/clifford/index.html</loc>
+    <loc>pages/coisas/atratores/clifford/index.html</loc>
     <lastmod>2020-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/cadernos/sicm/sicm/index.html</loc>
+    <loc>blog/cadernos/sicm/sicm/index.html</loc>
     <lastmod>2020-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/cadernos/ism/mapas-suaves/index.html</loc>
+    <loc>blog/cadernos/ism/mapas-suaves/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/ic/diagramas/teste/index.html</loc>
-    <lastmod>2021-01-23</lastmod>
+    <loc>blog/ic/diagramas/teste/index.html</loc>
+    <lastmod>2021-01-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/libs/katex/README/index.html</loc>
-    <lastmod>2021-01-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://lucasvreis.github.io/pages/coisas/gifs/index.html</loc>
+    <loc>pages/coisas/gifs/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/libs/katex-12/README/index.html</loc>
-    <lastmod>2020-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://lucasvreis.github.io/blog/ic/autovalores/index.html</loc>
+    <loc>blog/ic/autovalores/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/cadernos/ism/espaco-tangente-e-derivadas/index.html</loc>
+    <loc>blog/cadernos/ism/espaco-tangente-e-derivadas/index.html</loc>
     <lastmod>2020-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/cadernos/ism/exercicios/index.html</loc>
+    <loc>blog/cadernos/ism/exercicios/index.html</loc>
     <lastmod>2020-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/cadernos/ism/variedades-topologicas/index.html</loc>
+    <loc>blog/cadernos/ism/variedades-topologicas/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/projetos/textos/index.html</loc>
+    <loc>pages/projetos/textos/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/coisas/bolas-din/index.html</loc>
+    <loc>pages/coisas/bolas-din/index.html</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/projetos/index.html</loc>
+    <loc>pages/projetos/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/coisas/atratores/index.html</loc>
+    <loc>pages/coisas/atratores/index.html</loc>
     <lastmod>2020-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/blog/cadernos/tqmf/tqcomyao/index.html</loc>
+    <loc>blog/cadernos/tqmf/tqcomyao/index.html</loc>
     <lastmod>2020-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://lucasvreis.github.io/pages/coisas/bolas-din/dynamics.jl</loc>
+    <loc>pages/coisas/bolas-din/dynamics.jl</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

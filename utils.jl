@@ -1,7 +1,7 @@
 using Dates
 using Franklin: pagevar, fd_date, locvar
 using TikzPictures
-using Random
+using SHA
 
 function get_date(fpath)
   date = pagevar(fpath, "date")
@@ -31,6 +31,8 @@ function env_cap(com, _)
 end
 
 function env_latex(e, _)
+  content = replace(strip(Franklin.content(e)), r"%.*" => "")
+  return content
 end
 
 function env_tikzpicture(e, _)
@@ -41,19 +43,21 @@ function env_tikzpicture(e, _)
                       "tikzpreamble.tex")) do file
     strip(read(file,String)) 
   end
-  name = randstring(8)
-  # save SVG at __site/assets/[path/to/file]/$name.svg
+  name = sha256(content)[1:16]
+
   rpath = joinpath("assets", splitext(Franklin.locvar(:fd_rpath))[1], "$name.svg")
   outpath = joinpath(Franklin.path(:site), rpath)
-  # if the directory doesn't exist, create it
-  outdir = dirname(outpath)
-  isdir(outdir) || mkpath(outdir)
-  # save the file and show it
-  save(SVG(outpath), TikzPicture(content,adjustboxOptions="scale=1.5",options=opt,preamble=preamble))
-  return "\\fig{/$(Franklin.unixify(rpath))}"
+  if !isfile(outpath)
+    outdir = dirname(outpath)
+    isdir(outdir) || mkpath(outdir)
+    try
+      save(SVG(outpath), TikzPicture(content,adjustboxOptions="scale=1.5",options=opt,preamble=preamble))
+    catch
+      println(content)
+    end
+  end
+  return "\\svg{/$(Franklin.unixify(rpath))}"
 end
-
-include("utils/theorems.jl")
 
 tqmf_pages = blog_page_data("blog/cadernos/tqmf")
 ism_pages = blog_page_data("blog/cadernos/ism")
