@@ -113,7 +113,7 @@ Conhecemos duas "receitas de bolo" para produzir uma transformação linear a pa
 Nos diagramas, a composição de duas funções é ilustrada como na figura da direita.
 Note que se tivermos mais caixas empilhadas, a associatividade da composição garante que não precisamos nos importar com parênteses. \\
 Representamos produtos tensoriais de funções ao colocar as suas caixas lado a lado:
-% Produto tensorial de mapas lineares
+
 \begin{tikzpicture}{disp}
   
   \matrix (c) {
@@ -188,18 +188,8 @@ Representamos produtos tensoriais de funções ao colocar as suas caixas lado a 
   \path[oes={->-}] (s2) 
   to[out=-90,in=60] node[vs] {$X$} (c) 
   to[out=-60,in=90] node[vs] {$U$} (e2);
-
-  % \eq{c};
-
-  % \matrix[rofeq] (c) {
-  %   \node (s) {};
-  %   \node[below= 1 of s, box  ] (f)  {$f\otimes g$};
-  %   \node[below= 1 of f       ] (e)  {}; \\
-  % };
-  % \draw[oes={d->-}] (s)
-  % -- node[vs] {$V\otimes X$} (f) 
-  % -- node[vs] {$W\otimes U$} (e);
 \end{tikzpicture}
+
 Em geral, os diagramas sempre corresponderão a transformações lineares que saem de um produto tensorial de espaços e vão a outro produto tensorial. De fato, os diagramas podem ser convertidos para a notação algébrica usual ao serem lidos linha por linha como uma composição de funções, e vice-versa. Mesmo sendo equivalentes à notação usual, a mágica dos diagramas é que a representação gráfica deixa algumas das regras para manipular tensores mais intuitivas.
 
 Seguindo as definições que vimos acima, os diagramas de tensores têm uma estrutura formada por linhas, onde cada linha corresponde a um produto tensorial de funções e os fios indicam como compor as linhas verticalmente. Como as linhas dos diagramas são lidas de cima para baixo, em muitas passagens ficará mais claro para a leitura introduzir a notação $g\comp f\comp...\comp h$ para significar a composição $h\circ...\circ f\circ g$ de funções escrita na ordem reversa (assim, a leitura da esquerda para direita acompanha a leitura de cima para baixo do diagrama), e usaremos ela no decorrer do texto. A função identidade é ilustrada por um fio vazio e vertical 
@@ -207,7 +197,7 @@ Seguindo as definições que vimos acima, os diagramas de tensores têm uma estr
 {\node {};\draw[->-] (0,0)--(0,-5mm); }. -->
 Note que pela igualdade $(g\comp f)\otimes(h\comp w)=(g\otimes h)\comp(f\otimes w)$, não precisamos nos preocupar com a ordem que interpretamos as operações composição e produto:
 % Comutatividade entre o produto tensorial e a composição
-\begin{center}
+
   \begin{tikzpicture}{disp}
     
     \matrix (c) {
@@ -257,7 +247,7 @@ Note que pela igualdade $(g\comp f)\otimes(h\comp w)=(g\otimes h)\comp(f\otimes 
     \node[box,fit=(g) (h)] {};
     \node[box,fit=(f) (w)] {};
   \end{tikzpicture}
-\end{center}
+
 Mas basta considerar diagramas com mais de duas colunas que vemos que outros detalhes do formalismo também ficam escondidos na maneira que representamos os diagramas; por exemplo, quando colocamos três funções $f,g$ e $h$ lado a lado, subentende-se ser possível identificar as funções $f\ot (g\ot h)$ e $(f\ot g)\ot h$ entre si de "maneira natural", mesmo que elas atuem em espaços diferentes. Por enquanto, vamos subentender que sempre que preciso, aplicamos os isomorfismos canônicos entre esses espaços para que se adequem aos domínios e contradomínios das funções -- é possível abordar essas noções de maneira um pouco mais formal a partir de transformações naturais e outros conceitos da teoria das categorias, mas não faremos isso aqui. %Como vimos anteriormente, essa igualdade está inclusa no fato de o produto tensorial ser um functor na a categoria dos espaços vetoriais. Mas
 
 \begin{tikzpicture}{disp}
@@ -279,7 +269,7 @@ No mundo dos produtos tensoriais, existe um único isomorfismo $B_{V,W}:V\ot{}W\
 (0,0) to[in=90,out=-90] (4mm,-5mm)
 (4mm,0) to[in=90,out=-90] (0,-5mm); } -->
 de fios trocados. Assim, o diagrama
-\begin{center}
+
   \begin{tikzpicture}{disp}
     \matrix (c) {
     \draw[oes={->-l}] 
@@ -294,7 +284,7 @@ de fios trocados. Assim, o diagrama
       (8mm,0)--(8mm,-1)--(8mm,-2);\\
     };
   \end{tikzpicture}
-\end{center}
+
 expressa a igualdade $B_{V,W}\comp{}B_{W,V}=\id_{V\ot{}W}$.
 Como os diagramas são em si funções lineares, também podemos fazer com eles as operações usuais de um espaço vetorial. Por exemplo, se $\car(\F)\neq2$, o diagrama abaixo é uma função linear:
 <!-- $$ 
@@ -389,11 +379,10 @@ $$ T(\coev{V})(v)=T\left(\sum_{i=1}^n e_i^*\ot e_i\right)(v)
 =\sum_{i=1}^n e_i^*(v)e_i=v. $$
 Com isso em mente, passaremos a representar $\coev{V}$ nos diagramas da seguinte forma:
 % \ev e \coev
-\begin{center}
+
 \begin{tikzpicture}{disp}
   \matrix (c) {
     \tcoev{1,0}\\
-    % \draw[->-] (0,0) arc(180:0:.5);\\
   };
   \eq{c};
   \matrix[rofeq] (c) {
@@ -403,12 +392,12 @@ Com isso em mente, passaremos a representar $\coev{V}$ nos diagramas da seguinte
   \eq{c};
   \node[rofeq] {$\displaystyle1\mapsto\sum_{i=1}^{n}e^*_i\otimes e_i$};
 \end{tikzpicture}
-\end{center}
+
 As identidades mais importantes, que tanto justificam chamar $\coev{V}$ de dual de $\ev{V}$ como mostram uma "interpretação topológica" dos diagramas, são as \emph{identidades zig-zag}:
 % Zig-zag
-\begin{center}
+
 \begin{tikzpicture}{disp}
-  \matrix[rofeq,matd] (m) {
+  \matrix[matd] (m) {
     &&\\&&\\&&\\
   };
   \tcoev[m-2-2]{m-2-3};
@@ -436,115 +425,108 @@ As identidades mais importantes, que tanto justificam chamar $\coev{V}$ de dual 
     \draw[->-] (0,-1.4) to (0,0);\\
   };
 \end{tikzpicture}
-\end{center}
+
 Podemos provar essas identidades: a identidade da esquerda é, por definição, o fato que $T(\coev{V})=\id_V$, e na direita podemos mostrar a igualdade aplicando uma $f\in V^*$ ao diagrama, e assim obtendo:
 $$ f\xmapsto{\coev{V}\ot\id_{V^*}}
 \sum_{i=1}^n e_i^*\ot e_i\ot f
 \xmapsto{\id_{V^*}\ot\ev{V}} \sum_{i=1}^n f(e_i)e_i^* = f. $$
 Usando o morfismo $B_{V^*,V}$, também podemos definir $\ev{V^*}$ e $\coev{V^*}$, respectivamente:
-\begin{center}
-  \begin{tikzpicture}{disp}
-    \matrix (c) {
-      \tev[1,0]{0,0}
-      \node[vs,above] at (1,0) {$V$};
-      \node[vs,above] at (0,0) {$V^*$};\\
-      % \draw[->-] (0,0) arc(180:0:.5);\\
-    };
-    \defeq{c};
-    \matrix[rofeq] (c) {
-      \tev[0,0]{1,0}
-      \draw
-      (1,.8) to[in=90,out=-90] (0,0)
-      (1,0) to[in=-90,out=90] (0,.8);\\
-    };
 
-    \matrix[right= 2 of c] (c) {
-      \tcoev[1,0]{0,0}
-      \node[vs,below] at (0,0) {$V$};
-      \node[vs,below] at (1,0) {$V^*$};\\
-      % \draw[->-] (0,0) arc(180:0:.5);\\
-    };
-    \defeq{c};
-    \matrix[rofeq] (c) {
-      \tcoev{1,0}
-      \draw
-      (1,-.8) to[in=-90,out=90] (0,0)
-      (1,0) to[in=90,out=-90] (0,-.8);\\
-    };
-  \end{tikzpicture}
-\end{center}
+\begin{tikzpicture}{disp}
+  \matrix (c) {
+    \tev[1,0]{0,0}
+    \node[vs,above] at (1,0) {$V$};
+    \node[vs,above] at (0,0) {$V^*$};\\
+  };
+  \defeq{c};
+  \matrix[rofeq] (c) {
+    \tev[0,0]{1,0}
+    \draw
+    (1,.8) to[in=90,out=-90] (0,0)
+    (1,0) to[in=-90,out=90] (0,.8);\\
+  };
+
+  \matrix[right= 2 of c] (c) {
+    \tcoev[1,0]{0,0}
+    \node[vs,below] at (0,0) {$V$};
+    \node[vs,below] at (1,0) {$V^*$};\\
+  };
+  \defeq{c};
+  \matrix[rofeq] (c) {
+    \tcoev{1,0}
+    \draw
+    (1,-.8) to[in=-90,out=90] (0,0)
+    (1,0) to[in=90,out=-90] (0,-.8);\\
+  };
+\end{tikzpicture}
+
 e similarmente, podemos obter outras duas identidades zig-zag com essas versões. Observe que a notação também sugere uma identificação do bidual $(V^*)^*$ com o espaço $V$. Isso se justifica pela existência de um isomorfismo $\Phi:V\to (V^*)^*$ dado por $\Phi(v)(g)=g(v)$, que é canônico no sentido que não depende de uma escolha de base do espaço. O mesmo não vale para $V^*$, entretanto.
 Na linguagem categórica, os espaços vetoriais de dimensão finita formam uma \emph{categoria fechada compacta}.
 
 Poderíamos provar algumas igualdades apenas substituindo pedaços do diagrama por identidades anteriores, por exemplo:
-\begin{center}
-  \begin{adjustbox}{width=.7\linewidth}    
-    \begin{tikzpicture}{disp}
-      \matrix[matd,column sep=7mm] (m) {
-        &&\\&&\\&&\\&&\\
-      };
-      \draw[oes={-<-l}]
-      (m-4-3)--(m-3-3) to[out=90,in=-90] (m-2-2);
-      \tcoev[m-2-1]{m-2-2};
-      \draw (m-2-1) -- (m-3-1);
-      \tev[m-3-2]{m-3-1};
-      \draw[oes={-<-l}]
-      (m-3-2) to[out=90,in=-90] (m-2-3) -- (m-1-3);
-      \node[box,fit=(m-1-1) (m-2-3),red] {};
-      \eq{m};
-      
-      \matrix[rofeq,matd,column sep=7mm] (m) {
-        &&\\&&\\&&\\&&\\&&\\&&\\
-      };
-      \draw[oes={-<-l}]
-      (m-6-3)--(m-5-3) to[out=90,in=-90] (m-4-2)
-      to[out=90,in=-90] (m-3-3)--(m-2-3);
-      \tcoev[m-2-2]{m-2-3};
-      \draw[oes={-<-l}]
-      (m-2-2) to[out=-90,in=90] (m-3-1)--(m-4-1)--(m-5-1);
-      \tev[m-5-2]{m-5-1};
-      \draw[oes={-<-l}]
-      (m-5-2) to[out=90,in=-90] (m-4-3)
-      to[out=90,in=-90] (m-3-2)
-      to[out=90,in=-90] (m-2-1) -- (m-1-1);
-      \node[box,fit=(m-1-1) (m-4-3),red,opacity=.2] {};
-      \node[box,fit=(m-5-2) (m-3-3),violet] {};
+\begin{tikzpicture}{disp}
+  \matrix[matd,column sep=7mm] (m) {
+    &&\\&&\\&&\\&&\\
+  };
+  \draw[oes={-<-l}]
+  (m-4-3)--(m-3-3) to[out=90,in=-90] (m-2-2);
+  \tcoev[m-2-1]{m-2-2};
+  \draw (m-2-1) -- (m-3-1);
+  \tev[m-3-2]{m-3-1};
+  \draw[oes={-<-l}]
+  (m-3-2) to[out=90,in=-90] (m-2-3) -- (m-1-3);
+  \node[box,fit=(m-1-1) (m-2-3),red] {};
+  \eq{m};
   
-      \eq{m};
-      \matrix[rofeq,matd,column sep=7mm] (m) {
-        &&\\&&\\&&\\&&\\
-      };
-      \draw[oes={-<-l}]
-      (m-4-3)--(m-2-3);
-      \tcoev[m-2-2]{m-2-3};
-      \draw[oes={-<-l}]
-      (m-2-2) to[out=-90,in=90] (m-3-1);
-      \tev[m-3-2]{m-3-1};
-      \draw[oes={-<-l}]
-      (m-3-2) to[out=90,in=-90] (m-2-1)--(m-1-1);
-      \node[box,fit=(m-4-1) (m-2-2),olive] {};
-      
-      \eq{m};
+  \matrix[rofeq,matd,column sep=7mm] (m) {
+    &&\\&&\\&&\\&&\\&&\\&&\\
+  };
+  \draw[oes={-<-l}]
+  (m-6-3)--(m-5-3) to[out=90,in=-90] (m-4-2)
+  to[out=90,in=-90] (m-3-3)--(m-2-3);
+  \tcoev[m-2-2]{m-2-3};
+  \draw[oes={-<-l}]
+  (m-2-2) to[out=-90,in=90] (m-3-1)--(m-4-1)--(m-5-1);
+  \tev[m-5-2]{m-5-1};
+  \draw[oes={-<-l}]
+  (m-5-2) to[out=90,in=-90] (m-4-3)
+  to[out=90,in=-90] (m-3-2)
+  to[out=90,in=-90] (m-2-1) -- (m-1-1);
+  \node[box,fit=(m-1-1) (m-4-3),red,opacity=.2] {};
+  \node[box,fit=(m-5-2) (m-3-3),violet] {};
+
+  \eq{m};
+  \matrix[rofeq,matd,column sep=7mm] (m) {
+    &&\\&&\\&&\\&&\\
+  };
+  \draw[oes={-<-l}]
+  (m-4-3)--(m-2-3);
+  \tcoev[m-2-2]{m-2-3};
+  \draw[oes={-<-l}]
+  (m-2-2) to[out=-90,in=90] (m-3-1);
+  \tev[m-3-2]{m-3-1};
+  \draw[oes={-<-l}]
+  (m-3-2) to[out=90,in=-90] (m-2-1)--(m-1-1);
+  \node[box,fit=(m-4-1) (m-2-2),olive] {};
   
-      \matrix[rofeq,matd,column sep=7mm] (m) {
-        &&\\&&\\&&\\
-      };
-      \tcoev[m-2-2]{m-2-3};
-      \draw[->-] (m-1-1)--(m-2-1);
-      \tev[m-2-1]{m-2-2};
-      \draw[->-] (m-2-3)--(m-3-3);
-      \node[box,fit=(m-2-1) (m-3-2),olive,opacity=.2] {};
-  
-      \eq{m};
-    
-      \matrix[rofeq] (m) {
-        \draw[->-] (0,1.4) to (0,0);\\
-      };
-    \end{tikzpicture}
-  \end{adjustbox}
-\end{center}
+  \eq{m};
+
+  \matrix[rofeq,matd,column sep=7mm] (m) {
+    &&\\&&\\&&\\
+  };
+  \tcoev[m-2-2]{m-2-3};
+  \draw[->-] (m-1-1)--(m-2-1);
+  \tev[m-2-1]{m-2-2};
+  \draw[->-] (m-2-3)--(m-3-3);
+  \node[box,fit=(m-2-1) (m-3-2),olive,opacity=.2] {};
+
+  \eq{m};
+
+  \matrix[rofeq] (m) {
+    \draw[->-] (0,1.4) to (0,0);\\
+  };
+\end{tikzpicture}
 Mas de forma mais geral, é possível demonstrar que é sempre permitido "desembaraçar" os diagramas. Faremos isso com algums lemas que mostram como uma função $f$ comuta com os fios dobrados. Por exemplo, é simples ver que:
-\begin{center}
   \begin{tikzpicture}{disp}
     \matrix[matd,row sep=1.2cm] (m) {
       &\\&\\
@@ -570,11 +552,9 @@ Mas de forma mais geral, é possível demonstrar que é sempre permitido "desemb
     \draw[oes={->-l}] (m-1-1 |- fs) -- (m-2-1 |- f.south) 
     to[out=-90,in=90] (m-2-2);
   \end{tikzpicture}
-\end{center}
 Definimos a \emph{transposta} de funções lineares $f:V\to W$, $g:W^*\to V^*$ pelos diagramas:
-\begin{center}
 \begin{tikzpicture}{disp}
-  \matrix[rofeq] (c) {
+  \matrix (c) {
     \node[box] (ft) {$f^t$};
     \fheads{ft}{1};
     \ftails{ft}{0};\\
@@ -616,11 +596,9 @@ Definimos a \emph{transposta} de funções lineares $f:V\to W$, $g:W^*\to V^*$ p
   % (m-1-1) -- (m-2-1 |- f.south)
   % (m-1-3 |- f.north) -- (m-3-3);
 \end{tikzpicture}
-\end{center}
 Podemos checar que a primeira transposta $f^t$ concorda com a transposta usual ao aplicá-la a um vetor $w\in W^*$. Pelas definições do diagrama acima e de $\ev{V}$, sabemos que para todo $v\in V$, $(f^t(w))(v)$ é igual a:
-\begin{center}
   \begin{tikzpicture}{disp}
-    \matrix[rofeq] (c) {
+    \matrix (c) {
       \node[vec] (w) {$w$};
       \node[box,below=.2 of w] (ft) {$f^t$};
       \node[vec,left=.3 of ft] (v) {$v$};
@@ -652,9 +630,7 @@ Podemos checar que a primeira transposta $f^t$ concorda com a transposta usual a
     \eq{m};
     \node[rofeq,xshift=-3mm] {$(w\circ f)(v)$};
   \end{tikzpicture}
-\end{center}
 Como isso vale para todos $v$ e $w$, $f^t$ concorda com a transposta usual. Para $g^t$, isso é apenas parcialmente verdade; ela é a transposta usual "a menos" do isomorfismo canônico $\Phi$. Com a transposta, andamos pelos fios com os \emph{lemas do deslizamento} \cite{2012}: % Já no caso de $g^t$ como definida acima, obtemos algo um pouco diferente: $w(g^t(v))=(\Phi(v)\circ g)(w)$.
-\begin{center}
   \begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &\\&\\&\\
@@ -686,9 +662,7 @@ Como isso vale para todos $v$ e $w$, $f^t$ concorda com a transposta usual. Para
     (f.north) -- (m-1-2)
     (m-1-1) -- (m-2-1 |- f.south);
   \end{tikzpicture}
-\end{center}
 Usando o mesmo argumento,
-\begin{center}
   \begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &\\&\\&\\
@@ -720,9 +694,7 @@ Usando o mesmo argumento,
     (f) -- (m-3-2)
     (m-3-1) -- (m-2-1 |- f.north);
   \end{tikzpicture}
-\end{center}
 e também:
-\begin{center}
   \begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &\\&\\&\\
@@ -783,11 +755,9 @@ e também:
     (m-1-2) -- (f)
     (m-2-1 |- f.south) -- (m-1-1);
   \end{tikzpicture}
-\end{center}
 Os mesmos lemas valem para uma função $g:W^*\to V^*$ pelas mesmas provas, basta inverter as setas. Mas também note que poderíamos ter definido as transpostas de uma forma diferente, dobrando os fios na direção oposta. Porém, usando os lemas anteriores, provar que essa transposta alternativa é igual a que já foi definida é uma tarefa simples de "deslizar" a função:
-\begin{center}
   \begin{tikzpicture}{disp}
-    \matrix[rofeq,matd] (m) {
+    \matrix[matd] (m) {
       &&\\&&\\&&\\
     };
     \node[box] (f) at (m-2-2) {$f$};
@@ -818,14 +788,13 @@ Os mesmos lemas valem para uma função $g:W^*\to V^*$ pelas mesmas provas, bast
       \ftails{ft}{0};\\
     };
   \end{tikzpicture}
-\end{center}
 Se compormos as duas versões da transposta e aplicarmos a identidade zig-zag, mostramos também que $(f^t)^t=f$ (para a transposta que definimos, claro). Juntos, esses fatos garantem que podemos "desembaraçar" fios soltos nos diagramas simplesmente deslizando as funções ao longo dos fios; no máximo, os fios trocam a função para sua transposta ou vice-versa. 
 
 \subsection{Calculando com os diagramas}
 Até então, nós aprendemos um formalismo relativamente abstrato para os diagramas, mas ainda não é fácil calcular valores numéricos. Para nos ajudar nisso, vamos escolher uma base $(e_i)_{i=1}^n$ do espaço $V$, e denotar $e^i=e_i^*$ para todo $i\in\{0,...,n\}$. O truque principal é uma decomposição da função identidade:
-\begin{center}
+
   \begin{tikzpicture}{disp}
-    \matrix[rofeq] (m) {
+    \matrix (m) {
       \draw[->-] (0,1.4) to (0,0);\\
     };
     \eq{m};
@@ -838,9 +807,9 @@ Até então, nós aprendemos um formalismo relativamente abstrato para os diagra
     \ftails[1]{dv}{1};
     \fheads[1]{v}{0};
   \end{tikzpicture}
-\end{center}
+
 Estaremos sempre identificando $\F^*\cong\F$, de forma que $(e_i)^t=\Phi(e_i): V^*\to\F$ e $(e^i)^t=e^i : \F\to V^*$ (lembrando: os vetores estão sendo vistos como funções). As transpostas desses elementos serão representadas com a mesma etiqueta, mas com um fio na direção oposta (já que são essencialmente os mesmos). Por exemplo, um diagrama curioso:
-\begin{center}
+
 \begin{tikzpicture}{disp}
   \matrix (c) {
     \node[tbox] (f) {$f$};
@@ -877,11 +846,11 @@ Estaremos sempre identificando $\F^*\cong\F$, de forma que $(e_i)^t=\Phi(e_i): V
   \eq[.3]{m};
   \node[right=of eq] {$\tr(f)$};
 \end{tikzpicture}
-\end{center}
+
 Com isso, fica extremamente simples mostrar que $\tr(f\circ g)=\tr(g\circ f)$:
-\begin{center}
+
 \begin{tikzpicture}{disp}
-  \matrix[rofeq,matd] (m) {
+  \matrix[matd] (m) {
     &\\&\\
   };
   \node[box] (f) at (m-1-2) {$f$};
@@ -915,7 +884,7 @@ Com isso, fica extremamente simples mostrar que $\tr(f\circ g)=\tr(g\circ f)$:
   (m-2-1 |- g.south) -- (m-1-1 |- f.north)
   (f) -- (g);
 \end{tikzpicture}
-\end{center}
+
 
 \subsection{Diagramas por aí}
 
