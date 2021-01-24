@@ -31,6 +31,8 @@ function env_cap(com, _)
 end
 
 function env_latex(e, _)
+  content = replace(strip(Franklin.content(e)), r"%.*" => "")
+  return content
 end
 
 function env_tikzpicture(e, _)
@@ -50,10 +52,8 @@ function env_tikzpicture(e, _)
   isdir(outdir) || mkpath(outdir)
   # save the file and show it
   save(SVG(outpath), TikzPicture(content,adjustboxOptions="scale=1.5",options=opt,preamble=preamble))
-  return "\\fig{/$(Franklin.unixify(rpath))}"
+  return "\\svg{/$(Franklin.unixify(rpath))}"
 end
-
-include("utils/theorems.jl")
 
 tqmf_pages = blog_page_data("blog/cadernos/tqmf")
 ism_pages = blog_page_data("blog/cadernos/ism")
