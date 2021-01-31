@@ -1,3 +1,8 @@
++++
+title = "Diagramas de tensores"
+date = Date(2021,1,26)
++++
+
 
 @@hide
 $$
