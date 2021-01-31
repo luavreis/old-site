@@ -43,7 +43,7 @@ function env_tikzpicture(e, _)
                       "tikzpreamble.tex")) do file
     strip(read(file,String)) 
   end
-  name = sha256(content)[1:16]
+  name = (content |> sha256 |> bytes2hex)[1:8]
 
   rpath = joinpath("assets", splitext(Franklin.locvar(:fd_rpath))[1], "$name.svg")
   outpath = joinpath(Franklin.path(:site), rpath)
