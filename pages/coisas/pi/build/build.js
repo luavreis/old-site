@@ -1,4 +1,3 @@
-var katex = require('katex');
 var tex;
 var par;
 var rc1;
