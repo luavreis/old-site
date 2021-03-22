@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{tikz-cd}
+\begin{document}
+\begin{adjustbox}{scale=1.5}
+\begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
+& f^* E_V\arrow[dl,Mapsto]\arrow[rr]\arrow[dd] & & E_V\arrow[dl]\arrow[dd] \\
+    f^* E\arrow[rr,crossing over]\arrow[dd] & & E \\
+    & U\arrow[dl]\arrow[rr] &  & V\arrow[dl] \\
+    M\arrow[rr,Leftrightarrow]{}{\textrm{Clique!}} & & N\arrow[from=uu,crossing over]\\
+\end{tikzcd}
+\end{adjustbox}
+\end{document}
