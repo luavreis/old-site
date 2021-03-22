@@ -1,7 +1,9 @@
 using Dates
 using Franklin: pagevar, fd_date, locvar
-using TikzPictures
+using TikzPictures, FranklinUtils
+using TikzCDs
 using SHA
+using Glob
 
 function get_date(fpath)
   date = pagevar(fpath, "date")
@@ -21,13 +23,6 @@ function blog_page_data(dir)
     end
   end
   return data
-end
-
-function env_cap(com, _)
-  option = Franklin.content(com.braces[1])
-  content = Franklin.content(com)
-  output = replace(content, option => uppercase(option))
-  return "~~~<b>~~~$output~~~</b>~~~"
 end
 
 function env_latex(e, _)
@@ -56,7 +51,32 @@ function env_tikzpicture(e, _)
       println(content)
     end
   end
-  return "\\svg{/$(Franklin.unixify(rpath))}"
+  return "\\svg{$name}{/$(Franklin.unixify(rpath))}"
+end
+
+function env_tikzcd(e, _)
+  content = strip(Franklin.content(e))
+  opts = lxargs(e)
+  id, opt = opts[1]
+  hash = (content |> sha256 |> bytes2hex)[1:6]
+  rpath = joinpath("assets", splitext(Franklin.locvar(:fd_rpath))[1], "tikzcd", "$(id)_$hash.svg")
+  outpath = joinpath(Franklin.path(:site), rpath)
+  
+  if !isfile(outpath) || !isnothing(locvar("recompiletikz"))
+    outdir = dirname(outpath)
+    isdir(outdir) || mkpath(outdir)
+    
+    for f in glob("$(id)_*.svg", outdir) rm(f) end
+
+    try
+      println("Tikz is compiling $(id)...")
+      save(SVG(outpath), TikzCD(content,adjustboxOptions="scale=1.5",options=opt))
+    catch e
+      @warn "Could not compile TikzCD. Error:"
+      println(e)
+    end
+  end
+  return "\\svg{$id}{/$(Franklin.unixify(rpath))}"
 end
 
 tqmf_pages = blog_page_data("blog/cadernos/tqmf")

@@ -2,122 +2,170 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>pages/coisas/atratores/bedhead/index.html</loc>
-    <lastmod>2020-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/index.html</loc>
-    <lastmod>2021-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>sobre/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/index.html</loc>
-    <lastmod>2021-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>index.html</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/atratores/clifford/index.html</loc>
-    <lastmod>2020-03-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>blog/cadernos/sicm/sicm/index.html</loc>
-    <lastmod>2020-03-12</lastmod>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/cadernos/ism/mapas-suaves/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/ic/diagramas/teste/index.html</loc>
-    <lastmod>2021-01-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/gifs/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/ic/autovalores/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/cadernos/ism/espaco-tangente-e-derivadas/index.html</loc>
-    <lastmod>2020-05-30</lastmod>
+    <loc>pages/coisas/pi/node_modules/%40types/katex/README/index.html</loc>
+    <lastmod>2019-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>blog/cadernos/ism/exercicios/index.html</loc>
-    <lastmod>2020-05-31</lastmod>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/cadernos/ism/variedades-topologicas/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
+    <loc>blog/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/projetos/textos/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
+    <loc>blog/cadernos/ism/espaco-tangente-e-derivadas/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/coisas/bolas-din/index.html</loc>
-    <lastmod>2020-12-12</lastmod>
+    <loc>blog/ic/teste/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/index.html</loc>
+    <lastmod>2021-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/pi/node_modules/typescript/AUTHORS/index.html</loc>
+    <lastmod>1985-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>pages/projetos/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/coisas/atratores/index.html</loc>
-    <lastmod>2020-11-02</lastmod>
+    <loc>sobre/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>index.html</loc>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>blog/cadernos/tqmf/tqcomyao/index.html</loc>
-    <lastmod>2020-12-04</lastmod>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/atratores/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/ic/autovalores/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/bolas-din/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/projetos/textos/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/cadernos/ism/variedades-topologicas/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/pi/node_modules/typescript/README/index.html</loc>
+    <lastmod>1985-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/cadernos/ism/mapas-suaves/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/pi/index.html</loc>
+    <lastmod>2021-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/gifs/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/atratores/bedhead/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/ic/diagramas/teste/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/atratores/clifford/index.html</loc>
+    <lastmod>2021-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/pi/node_modules/typescript/lib/README/index.html</loc>
+    <lastmod>1985-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/pi/node_modules/%40types/p5/README/index.html</loc>
+    <lastmod>2020-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>pages/coisas/pi/node_modules/typescript/CODE_OF_CONDUCT/index.html</loc>
+    <lastmod>1985-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>pages/coisas/bolas-din/dynamics.jl</loc>
-    <lastmod>2020-12-11</lastmod>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
