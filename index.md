@@ -1,8 +1,7 @@
 @def title = "gat-ergódico"
 
-Olá, essa é a página principal de gat-ergódico. Seja bem vindo \temoji{slightly-smiling-face}
+Olá! <!-- \temoji{slightly-smiling-face}-->
 
-Novidades!
  - \temoji{new-button} [Bolas dinâmicas](/pages/coisas/bolas-din)
  - \temoji{new-button} [Deslocamentos de Markov](/blog/ic/autovalores)
 

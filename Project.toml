@@ -1,3 +1,7 @@
 [deps]
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+FranklinUtils = "dcd8a645-c81d-482f-af4b-568f72f3e16d"
+Glob = "c27321d9-0574-5035-807b-f59d2c89b15c"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+TikzCDs = "1e332c56-9431-4126-8a34-92cbdf251ae4"
 TikzPictures = "37f6aa50-8035-52d0-81c2-5a1d08754b2d"

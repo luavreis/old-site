@@ -9,6 +9,8 @@ website_descr = "matemática e entrelinhas"
 
 author = "Lucas Viana Reis"
 
+hasjquery = false
+
 date_format = raw"dd \d\e U \d\e yyyy"
 date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
@@ -50,9 +52,9 @@ mintoclevel=2
 </div>
 ~~~}
 
-\newcommand{\svg}[1]{~~~
+\newcommand{\svg}[2]{~~~
 <figure style="text-align:center;">
-<object data="!#1" type="image/svg+xml"></object>
+<object id="!#1" data="!#2" type="image/svg+xml"></object>
 </figure>
 ~~~}
 
