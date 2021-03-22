@@ -2,9 +2,11 @@
 title = "Pi em lugares improváveis"
 +++
 
+# $\pi$ em lugares (im)prováveis
+
 ~~~
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
-<script src="build/build.js"></script>
+<!-- <script src="build/build.js"></script> -->
 
 <style>
   #sketch-holder {
@@ -18,7 +20,7 @@ title = "Pi em lugares improváveis"
 </style>
 ~~~
 
-# $\pi$ em lugares (im)prováveis
+$$aaaa\int$$
 
 @@center
 Corda de comprimento um
