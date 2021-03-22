@@ -8,12 +8,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/coisas/pi/node_modules/%40types/katex/README/index.html</loc>
-    <lastmod>2019-12-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>blog/cadernos/ism/exercicios/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -40,12 +34,6 @@
 <url>
     <loc>pages/coisas/index.html</loc>
     <lastmod>2021-03-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/pi/node_modules/typescript/AUTHORS/index.html</loc>
-    <lastmod>1985-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -104,12 +92,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/coisas/pi/node_modules/typescript/README/index.html</loc>
-    <lastmod>1985-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>blog/cadernos/ism/mapas-suaves/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -142,24 +124,6 @@
 <url>
     <loc>pages/coisas/atratores/clifford/index.html</loc>
     <lastmod>2021-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/pi/node_modules/typescript/lib/README/index.html</loc>
-    <lastmod>1985-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/pi/node_modules/%40types/p5/README/index.html</loc>
-    <lastmod>2020-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/coisas/pi/node_modules/typescript/CODE_OF_CONDUCT/index.html</loc>
-    <lastmod>1985-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
