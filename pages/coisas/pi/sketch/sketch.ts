@@ -1,4 +1,3 @@
-const katex = require('katex')
 let tex: { [name: string]: p5.Element }
 let par: any
 let rc1: p5.Color
