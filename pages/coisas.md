@@ -5,6 +5,7 @@
 - [Bolas dinâmicas](bolas-din)
 - [Atratores estranhos](atratores)
 - [Gifs](gifs)
+- [Textos](textos)
 <!-- 
 ## coisas de fora
 ### linguagens

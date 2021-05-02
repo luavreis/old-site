@@ -19,7 +19,6 @@ date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julh
 mintoclevel=2
 +++
 
-
 <!-- Latex-like syntax -->
 
 \newcommand{\emph}[1]{_!#1_}
@@ -68,8 +67,10 @@ mintoclevel=2
 \newenvironment{details}[1]
 {~~~
 <details><summary>#1</summary>
+<div class="details">
 ~~~}
 {~~~
+</div>
 </details>
 ~~~}
 

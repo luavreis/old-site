@@ -2,49 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>blog/cadernos/sicm/sicm/index.html</loc>
+    <loc>blog/ic/ism/mapas-suaves/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/cadernos/ism/exercicios/index.html</loc>
+    <loc>blog/ic/ism/exercicios/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <loc>blog/disciplinas/grupos-e-representacoes/contraexemplos/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/cadernos/ism/espaco-tangente-e-derivadas/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/ic/teste/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <loc>blog/disciplinas/algelin-avancada/autovalores/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>pages/coisas/index.html</loc>
-    <lastmod>2021-03-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>pages/projetos/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>sobre/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/ic/ism/variedades-topologicas/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -56,19 +50,13 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/cadernos/tqmf/tqcomyao/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <loc>blog/disciplinas/quantica/quantica/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>pages/coisas/atratores/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/ic/autovalores/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -80,26 +68,20 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/projetos/textos/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <loc>pages/coisas/textos/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/cadernos/ism/variedades-topologicas/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/cadernos/ism/mapas-suaves/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <loc>blog/ic/ism/espaco-tangente-e-derivadas/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>pages/coisas/pi/index.html</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -110,13 +92,13 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>pages/coisas/atratores/bedhead/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <loc>blog/disciplinas/algelin-avancada/diagramas/index.html</loc>
+    <lastmod>2021-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/ic/diagramas/teste/index.html</loc>
+    <loc>pages/coisas/atratores/bedhead/index.html</loc>
     <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

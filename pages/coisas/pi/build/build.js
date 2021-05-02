@@ -109,7 +109,7 @@ function newPoint(x) {
     remain = 2 * (rW % (gap / 2));
     var mremain = remain / (2 * rW);
     pool.push(mremain);
-    katex.render("\\vec{\\textbf{x}} =~(".concat(pool.map(function(x1) {
+    katex.render("\\vec{\\textbf{x}} =~(".concat(pool.reverse().slice(0, 10).map(function(x1) {
         return x1.toFixed(3);
     }).join('\\,;\\,'), ")"), tex.xs1.elt);
     var reducer = function(a, c) {

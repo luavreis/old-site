@@ -1,7 +1,6 @@
 # Sobre
 
-
-Me contate em _lucasvreis at protonmail dot com_. Ou bata na minha porta em [whereby.com/toc-toc-lucas](https://whereby.com/toc-toc-lucas) \temoji{door} (não precisa de conta; me avise por e-mail antes).
+Olá! Ainda preciso escrever isso melhor.
 
 Links:
  - [\temoji{desktop-computer} Github](https://github.com/lucasvreis/)
