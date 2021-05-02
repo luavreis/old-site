@@ -1,3 +1,5 @@
+import katex = require('katex');
+
 let tex: { [name: string]: p5.Element }
 let par: any
 let rc1: p5.Color
@@ -34,7 +36,7 @@ function setup() {
   katex.render(`\vec{\textbf{x}} = ()`, tex.xs1.elt)
 
   katex.render(`π ≈ {?}`, tex.pi1.elt, { displayMode: true })
-  
+
   tex.xn.style('display', 'none')
   katex.render(`x_n`, tex.xn.elt, { displayMode: true })
 
@@ -45,7 +47,6 @@ function setup() {
   drawThings(-rW)
   ready = true
 }
-
 let clickX = 0
 let gap = rW
 let remain = 0
@@ -58,7 +59,7 @@ function bt1pressed() {
   newPoint(random(-rW, rW))
 }
 
-function drawThings(x:number) {
+function drawThings(x: number) {
   clear()
 
   noStroke()
@@ -117,7 +118,7 @@ function mouseMoved() {
   return false
 }
 
-function newPoint(x:number) {
+function newPoint(x: number) {
   if (pool.length == 0) {
     tex.xn.style('display', 'inline')
   }
@@ -128,12 +129,12 @@ function newPoint(x:number) {
 
   let mremain = remain / (2 * rW)
   pool.push(mremain)
-  katex.render(`\vec{\textbf{x}} =~(${pool.map(x => x.toFixed(3)).join('\\,;\\,')})`, tex.xs1.elt)
+  katex.render(`\vec{\textbf{x}} =~(${pool.reverse().slice(0, 10).map(x => x.toFixed(3)).join('\\,;\\,')})`, tex.xs1.elt)
 
   const reducer = (a: number, c: number) => a + c;
   let mean = pool.reduce(reducer) / pool.length
   katex.render(`x̄ := \text{média}(\vec{\textbf{x}})≈${mean.toFixed(5)}`, tex.xmean.elt)
-  
+
   katex.render(`π ≈ \sqrt{12(1 - x̄)} ≈ ${Math.sqrt(12 * (1 - mean)).toFixed(5)}`, tex.pi1.elt, { displayMode: true })
 
   tex.xn.position(width / 2 + rW - remain / 2 - 7, height / 2 - 4 * rH - 66)

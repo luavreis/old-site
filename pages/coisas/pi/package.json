@@ -9,5 +9,8 @@
     "@types/katex": "^0.11.0",
     "@types/p5": "^0.9.0",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "katex": "^0.13.1"
   }
 }

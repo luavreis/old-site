@@ -1,0 +1,8 @@
+[deps]
+Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+FranklinUtils = "dcd8a645-c81d-482f-af4b-568f72f3e16d"
+Glob = "c27321d9-0574-5035-807b-f59d2c89b15c"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+TikzCDs = "1e332c56-9431-4126-8a34-92cbdf251ae4"
+TikzPictures = "37f6aa50-8035-52d0-81c2-5a1d08754b2d"
