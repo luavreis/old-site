@@ -19,10 +19,10 @@ $G$, então $N \triangleleft G$.
 E se trocamos os papéis supondo que $N$ é característico em $H$ e $H$ é normal
 em $G$?
 
-Um contraexemplo em que $N \not\trianglelefteq G$ é em $D_8$, onde o subgrupo da
-reflexão vertical $(\cong \Z_2)$ é característico no subgrupo normal {reflexão
-horizontal, reflexão vertical} $(\cong \Z_2\oplus\Z_2)$ mas não é normal em
-$D_8$.
+<!-- Um contraexemplo em que $N \not\trianglelefteq G$ é em $D_8$, onde o subgrupo da -->
+<!-- reflexão vertical $(\cong \Z_2)$ é característico no subgrupo normal {reflexão -->
+<!-- horizontal, reflexão vertical} $(\cong \Z_2\oplus\Z_2)$ mas não é normal em -->
+<!-- $D_8$. -->
 
 Outro teorema:
 
