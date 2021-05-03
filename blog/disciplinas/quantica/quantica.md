@@ -10,9 +10,9 @@ date = Date(2020,4,12)
 
 Muitas coisas acontecendo pelo mundo. Algumas delas particularmente assustadoras. Sobre isso, por ora apenas peço que fique em casa o máximo possível, ajude seus conhecidos mais velhos, lembre dos idosos e das pessoas em risco, e não saia de casa se não for necessário. Eu repeti alguma coisa?
 
-Pois bem, nesse semestre me matriculei em uma disciplina um pouco estranha. O nome dela é [Teoria Quântica para Matemátic@s em Formação](https://www.ime.unicamp.br/~tcunha/Teach/TopQuant-1S20.html), ministrada pelo Marcelo Terra Cunha. Tivemos apenas três aulas, uma das quais não pude ir e outra que o professor não pôde ir. Agora, as aulas estão suspensas. Mas com essa uma aula, e o que tivemos até agora de EAD, ainda tenho um pouco sobre o que escrever.
+Pois bem, nesse semestre me matriculei em uma disciplina um pouco estranha. O nome dela é Teoria Quântica para Matemátic@s em Formação[⁽¹⁾](https://www.ime.unicamp.br/~tcunha/Teach/TopQuant-1S20.html), ministrada pelo Marcelo Terra Cunha. Tivemos apenas três aulas, uma das quais não pude ir e outra que o professor não pôde ir. Agora, as aulas estão suspensas. Mas com essa uma aula, e o que tivemos até agora de EAD, ainda tenho um pouco sobre o que escrever.
 
-A disciplina é até então exclusiva desse semestre e serviria como motivação para o Marcelo escrever um livro sobre o assunto, com o mesmo nome. Nesse sentido, ele já foi um dos autores de um outro livro com nome tão parecido que até agora não entendi muito bem qual vai ser a diferença entre os dois. Segundo o Marcelo, eles são "parecidos em espírito". Segundo o índice e a ementa da disciplina, o novo é uma reestruturação do anterior com coisas novas, mas sem o "prelúdio" que tinha alguns pré-requisitos e que achei muito bom. Enfim, o livro pai se chama \cite{mqmf}, e talvez você queira voltar ao parágrafo anterior para encontrar a diferença dos nomes (além do @ bem colocado).
+A disciplina é até então exclusiva desse semestre e serviria como motivação para o Marcelo escrever um livro sobre o assunto, com o mesmo nome. Nesse sentido, ele já foi um dos autores de um outro livro com nome tão parecido que até agora não entendi muito bem qual vai ser a diferença entre os dois. Segundo o Marcelo, eles são "parecidos em espírito". Segundo o índice e a ementa da disciplina, o novo é uma reestruturação do anterior com coisas novas, mas sem o "prelúdio" que tinha alguns pré-requisitos e que achei muito bom. Enfim, o livro pai se chama Mecânica Quântica para Matemáticos em Formação[⁽²⁾](https://impa.br/wp-content/uploads/2017/04/28CBM_12.pdf), e talvez você queira voltar ao parágrafo anterior para encontrar a diferença dos nomes (além do @ bem colocado).
 
 Vou precisar que você saiba um pouco de álgebra linear e números complexos no que se segue. No "Mecânica [...] em Formação" tem um "prelúdio" bom sobre isso, e você acha muitas coisas na internet.
 
@@ -34,7 +34,7 @@ Um _espaço de estados_ de um sistema quântico é um espaço vetorial complexo 
 \newcommand{\z}{| 0 ⟩}
 \newcommand{\u}{| 1 ⟩}
 \newcommand{\braket}[2]{\langle #1 | #2 ⟩}
-\newcommand{\proj}[2]{\text{proj}_{\ket{#1}} \ket{#2}}
+\newcommand{\proj}[2]{\text{proj}\_{\ket{#1}} \ket{#2}}
 
 Assim, seguindo essa definição, temos espaço de estados $\Bbb{E}≅\Complex^n$ para algum $n≥1$, e escrevemos $\ket{\,\cdot\,}$ para denotar os elementos do espaço vetorial (os estados), e seguindo a convenção do Marcelo, também chamados de _crianças_, onde o "$\,\cdot\,$" é o _nome da nossa criança_. Dados estados $\ket{a}$ e $\ket{b}$, escrevemos o produto interno entre eles como $\braket{a}{b}$.
 
@@ -78,7 +78,7 @@ Bom, sabemos que $\ket{a} = ψ(ϕ_a,φ_a,δ_a)$ para alguma combinação desses 
 
 \begin{align}
 |\braket{a}{v}| &= |⟨e^{iφ_a}ψ^⋆_a|e^{iφ}ψ^⋆_v⟩| = |e^{i(φ-φ_a)}⟨ψ^⋆_a|ψ^⋆_v⟩| \\\\
- &= |e^{i(φ-φ_a)}|⋅|⟨ψ^⋆_a|ψ^⋆_v⟩| = 1⋅|⟨ψ^⋆_a|ψ^⋆_v⟩|
+&= |e^{i(φ-φ_a)}|⋅|⟨ψ^⋆_a|ψ^⋆_v⟩| = 1⋅|⟨ψ^⋆_a|ψ^⋆_v⟩|
 \end{align}
 
 Ou seja, os resultados dos testes só dependem dos parâmetros $ϕ$ e $δ$, e podemos
@@ -93,7 +93,7 @@ Agora, com duas dimensões, estamos bem mais pertos da esfera da imagem. Perceba
 Presumivelmente, é ela que aparece internet afora dando caras ao qubit. E
 para o leitor, talvez agora com um pouco mais sentido.
 
-<!-- 
+<!--
 A "redução" que fizemos da esfera $\Bbb{S}^3$ para a $\Bbb{S}^2$, "retirando"
 uma circunferência de cada ponto, tem um nome matemático: se chama Fibração de Hopf. Com ela, conseguimos demonstrar que a esfera em $\R^4$ localmente se parece
 com um espaço produto de uma circunferência e uma esfera em $\R^3$, gerando o

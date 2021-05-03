@@ -14,7 +14,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>blog/index.html</loc>
+    <loc>blog/disciplinas/grupos-e-representacoes/contraexemplos/index.html</loc>
     <lastmod>2021-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -51,7 +51,7 @@
 </url>
 <url>
     <loc>blog/disciplinas/quantica/quantica/index.html</loc>
-    <lastmod>2021-05-02</lastmod>
+    <lastmod>2021-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -63,7 +63,7 @@
 </url>
 <url>
     <loc>pages/coisas/bolas-din/index.html</loc>
-    <lastmod>2021-02-22</lastmod>
+    <lastmod>2021-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -106,12 +106,6 @@
 <url>
     <loc>pages/coisas/atratores/clifford/index.html</loc>
     <lastmod>2021-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>blog/disciplinas/grupos-e-representacoes/contraexemplos/index.html</loc>
-    <lastmod>2021-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

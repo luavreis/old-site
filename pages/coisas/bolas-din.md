@@ -10,12 +10,12 @@ A parte preta nas imagens abaixo é o conjunto dos pontos que ficam a menos de $
 
 Usamos essas bolas em uma das formas de definir a entropia topológica de uma dinâmica; se a dinâmica tem entropia topológica positiva, quando o $n$ aumenta precisamos de cada vez mais bolas de raio $r$ para cobrir uma parte do espaço: a dinâmica "gera informação" (a entropia) "evidenciando os detalhes" ao afastar os pontos uns dos outros, e assim as bolas dinâmicas tendem a perder pontos a cada iterado.
 
-![](1-5.png)
+![](https://live.staticflickr.com/65535/51155270717_d61e5e62c6_o.png)
 
-![](6.png)
+![](https://live.staticflickr.com/65535/51157051050_f78fedd2fb_o_d.png)
 
-![](7.png)
+![](https://live.staticflickr.com/65535/51156179448_1b0d05e762_o_d.png)
 
-![](8.png)
+![](https://live.staticflickr.com/65535/51155280107_b710f11a06_o_d.png)
 
 Código fonte: [.html](dynamics.jl) / [.jl](notebook.jl)
