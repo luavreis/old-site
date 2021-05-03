@@ -4,7 +4,7 @@ date_months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julh
 title = "Escritos"
 +++
 
-# \temoji{memo} Escritos
+# \temoji{memo} Notas e escritos
 
 ## \temoji{notebook-with-decorative-cover} Disciplinas
 
@@ -20,10 +20,8 @@ title = "Escritos"
 \list{blog/disciplinas/quantica}
 \end{details}
 
-## \temoji{notebook-with-decorative-cover} Cadernos
+## \temoji{notebook-with-decorative-cover} Outros
 
 ### iniciação científica
 
 \list{blog/ic}
-
-

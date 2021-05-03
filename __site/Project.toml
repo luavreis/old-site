@@ -1,5 +1,6 @@
 [deps]
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+FranklinTheorems = "f9b7297b-b8b9-4883-a559-829bcd556a2f"
 FranklinUtils = "dcd8a645-c81d-482f-af4b-568f72f3e16d"
 Glob = "c27321d9-0574-5035-807b-f59d2c89b15c"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
