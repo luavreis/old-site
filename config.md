@@ -32,7 +32,9 @@ mintoclevel=2
 
 \newcommand{\tikz}[1]{}
 
-\newenvironment{proposition}{### Proposição}{}
+\newenvironment{proposition}
+{@@teorema}
+{@@}
 \newenvironment{center}{}{}
 
 <!-- end Latex-like syntax -->

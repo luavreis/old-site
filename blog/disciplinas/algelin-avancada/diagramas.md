@@ -37,11 +37,32 @@ date = Date(2021,1,26)
 
 \contents
 
-\section{O que são tensores?}
+## O que são tensores?
 
-Em várias partes da ciência e da matemática, precisamos lidar com um conjunto de vetores e obter um outro vetor ou escalar como resultado; um dos exemplos mais simples é o de calcular o volume de paralelogramos, paralelepípedos e seus correspondentes em dimensões maiores. Por conta da estrutura linear dos espaços vetoriais, é natural considerar que a transformação envolvida seja multilinear, agindo como uma transformação linear quando são fixadas todas menos uma das entradas. Por exemplo, uma função $f:\R^2\times\R^2\to\R$ que calcula o volume do paralelogramo gerado por dois vetores em $\R^2$ é $2$-linear, e na segunda entrada isso significa que $f(u,v+\lambda w)=f(u,v)+\lambda f(u,w).$
+Em várias partes da ciência e da matemática, precisamos lidar com um conjunto de
+vetores e obter um outro vetor ou escalar como resultado; um dos exemplos mais
+simples é o de calcular o volume de paralelogramos, paralelepípedos e seus
+correspondentes em dimensões maiores. Por conta da estrutura linear dos espaços
+vetoriais, é natural considerar que a transformação envolvida seja multilinear,
+agindo como uma transformação linear quando são fixadas todas menos uma das
+entradas. Por exemplo, uma função $f:\R^2\times\R^2\to\R$ que calcula o volume
+do paralelogramo gerado por dois vetores em $\R^2$ é $2$-linear, e na segunda
+entrada isso significa que $f(u,v+\lambda w)=f(u,v)+\lambda f(u,w).$
 
-A ideia dos tensores é construir uma correspondência entre as funções multilineares, que têm domínios em produtos cartesianos de espaços vetoriais, e funções lineares, com domínio no \emph{produto tensorial} desses espaços. Com isso em mente, definimos este produto especificando as propriedades que ele deve ter: se $V_1,\dots,V_k$ são espaços vetoriais, o seu produto tensorial constitui uma dupla $(\otimes,V)$ de um espaço vetorial $V$ e uma função $k~$-linear $\otimes:\prod_{i=1}^k V_i\to V$ que satisfazem uma "propriedade universal": para toda função $k$-linear $\psi:\prod_{i=1}^kV_i\to W$, existe uma única função linear $\tilde\psi:V\to W$ tal que $\psi=\tilde\psi\circ\otimes$. Podemos mostrar que a imagem de $\otimes$ gera $V$ (mesmo sendo, em geral, menor que $V$), os elementos de $V$ são chamados de tensores, e $V$ é denotado por $V_1\otimes...\otimes V_k$. A correspondência entre formas multilineares e mapas lineares com domínio no produto tensorial fica condensada na seguinte preposição:
+A ideia dos tensores é construir uma correspondência entre as funções
+multilineares, que têm domínios em produtos cartesianos de espaços vetoriais, e
+funções lineares, com domínio no \emph{produto tensorial} desses espaços. Com
+isso em mente, definimos este produto especificando as propriedades que ele deve
+ter: se $V_1,\dots,V_k$ são espaços vetoriais, o seu produto tensorial constitui
+uma dupla $(\otimes,V)$ de um espaço vetorial $V$ e uma função $k~$-linear
+$\otimes:\prod_{i=1}^k V_i\to V$ que satisfazem uma "propriedade universal":
+para toda função $k$-linear $\psi:\prod_{i=1}^kV_i\to W$, existe uma única
+função linear $\tilde\psi:V\to W$ tal que $\psi=\tilde\psi\circ\otimes$. Podemos
+mostrar que a imagem de $\otimes$ gera $V$ (mesmo sendo, em geral, menor que
+$V$), os elementos de $V$ são chamados de tensores, e $V$ é denotado por
+$V_1\otimes...\otimes V_k$. A correspondência entre formas multilineares e mapas
+lineares com domínio no produto tensorial fica condensada na seguinte
+preposição:
 
 \begin{proposition}
   Para todo espaço vetorial $W$, a função $\Gamma:\Hom_\F^k(V_1,...,V_k, W)\to\Hom_\F(V_1\otimes...\otimes V_k,W)$ dada por $\Gamma(\psi)=\tilde\psi$ é um isomorfismo linear entre os dois espaços, com inversa $\Gamma^{-1}(f)=f\circ\otimes$.
@@ -49,19 +70,44 @@ A ideia dos tensores é construir uma correspondência entre as funções multil
 
 \subsection{Uma pequena motivação: teoria quântica}
 
-É bem sabido que o produto tensorial tem um papel bastante relevante na teoria quântica. Na teoria, os estados de um sistema são vetores em um espaço vetorial complexo com produto interno (um espaço de Hilbert). Quando queremos "juntar" vários sistemas quânticos para formar um novo sistema, o sistema resultante tem como espaço de estados o produto tensorial dos espaços originais. Nesse espaço produto, aparecem os tensores não puros, tensores que não estão na imagem da função $\otimes$: vistos assim, eles são justamente os estados que não podem ser formados pelo produto de um estado de cada componente, e são chamados de estados \emph{emaranhados}.
+É bem sabido que o produto tensorial tem um papel bastante relevante na teoria
+quântica. Na teoria, os estados de um sistema são vetores em um espaço vetorial
+complexo com produto interno (um espaço de Hilbert). Quando queremos "juntar"
+vários sistemas quânticos para formar um novo sistema, o sistema resultante tem
+como espaço de estados o produto tensorial dos espaços originais. Nesse espaço
+produto, aparecem os tensores não puros, tensores que não estão na imagem da
+função $\otimes$: vistos assim, eles são justamente os estados que não podem ser
+formados pelo produto de um estado de cada componente, e são chamados de estados
+\emph{emaranhados}.
 
-Transformações em um sistema quântico são representadas por operadores lineares unitários (operadores sobrejetivos que preservam o produto interno). Se temos dois sistemas $\cat{H}_1,\cat{H}_2$ com operatores $f:\cat{H}_1\to\cat{H}_1$ e $g:\cat{H}_2\to\cat{H}_2$, podemos nos perguntar se faz sentido existir uma transformação em $\cat{H}_1\otimes\cat{H}_2$ que representa as duas transformações sendo feitas em paralelo, ao mesmo tempo:
+Transformações em um sistema quântico são representadas por operadores lineares
+unitários (operadores sobrejetivos que preservam o produto interno). Se temos
+dois sistemas $\cat{H}_1,\cat{H}_2$ com operatores $f:\cat{H}_1\to\cat{H}_1$ e
+$g:\cat{H}_2\to\cat{H}_2$, podemos nos perguntar se faz sentido existir uma
+transformação em $\cat{H}_1\otimes\cat{H}_2$ que representa as duas
+transformações sendo feitas em paralelo, ao mesmo tempo:
+
 \begin{proposition}
   Sejam $V_1,V_2,W_1,W_2$ espaços vetoriais. Então existe e é única uma transformação linear injetora
   $$ \Omega:\HomF(V_1,W_1)\otimes\HomF(V_2,W_2)\to\HomF(V_1\otimes W_1,V_2\otimes W_2) $$ 
   tal que para todas as transformações lineares $S:V_1\to W_1$, $T:V_2\to W_2$ e quaisquer vetores $v_1\in V_1$ e $v_2\in V_2$, vale $\Gamma(S\otimes T)(v_1\otimes v_2)=S(v_1)\otimes T(v_2)$. Para simplificar a notação, passaremos a chamar $\Gamma(S\otimes T)$ simplesmente de $S\otimes T$.
 \end{proposition}
 
-É intuitivo pensar em "processos" que agem sobre os sistemas compondo operadores em paralelo ou sequencialmente, de várias maneiras distintas. Como podemos usar desenhos de maneira formal para pensar sobre processos que envolvem tensores?
+É intuitivo pensar em "processos" que agem sobre os sistemas compondo operadores
+em paralelo ou sequencialmente, de várias maneiras distintas. Como podemos usar
+desenhos de maneira formal para pensar sobre processos que envolvem tensores?
 
-\section{Diagramas}
-Os diagramas são compostos de caixas e fios, onde as caixas representam funções lineares e os fios servem como forma compor essas transformações. Para deixar a notação mais clara, podemos etiquetar as caixas com os nomes das transformações e os fios com os respectivos espaços vetoriais que são domínios ou contradomínios dessas transformações. Como exemplo, veja a transformação $f:V\to W$ abaixo. Quando as funções envolvidas agem sobre produtos tensoriais, como $g:V_1\otimes\dots\otimes V_n\to W_1\otimes\dots\otimes W_m$, desenhamos as caixas com vários fios que entram ou saem, um para cada fator do produto:
+\section{Diagramas} 
+
+Os diagramas são compostos de caixas e fios, onde as caixas representam funções
+lineares e os fios servem como forma compor essas transformações. Para deixar a
+notação mais clara, podemos etiquetar as caixas com os nomes das transformações
+e os fios com os respectivos espaços vetoriais que são domínios ou
+contradomínios dessas transformações. Como exemplo, veja a transformação $f:V\to
+W$ abaixo. Quando as funções envolvidas agem sobre produtos tensoriais, como
+$g:V_1\otimes\dots\otimes V_n\to W_1\otimes\dots\otimes W_m$, desenhamos as
+caixas com vários fios que entram ou saem, um para cada fator do produto:
+
 \begin{tikzpicture}{disp}
   \centering
   \matrix (c) {
@@ -88,8 +134,6 @@ Os diagramas são compostos de caixas e fios, onde as caixas representam funçõ
   {$...$};
 \end{tikzpicture}
 
-% Composição
-
 \begin{tikzpicture}{disp}
     \matrix (c2) {
       \node (s)   {};
@@ -114,10 +158,15 @@ Os diagramas são compostos de caixas e fios, onde as caixas representam funçõ
     -- node[vs] {$U$} (e);
 \end{tikzpicture}
 
-Conhecemos duas "receitas de bolo" para produzir uma transformação linear a partir de outras duas, $f$ e $g$: o produto tensorial $f\otimes g$, e, se $f$ e $g$ concordarem domínio com contradomínio, a composta $f\circ g$. 
-Nos diagramas, a composição de duas funções é ilustrada como na figura da direita.
-Note que se tivermos mais caixas empilhadas, a associatividade da composição garante que não precisamos nos importar com parênteses. \\
-Representamos produtos tensoriais de funções ao colocar as suas caixas lado a lado:
+Conhecemos duas "receitas de bolo" para produzir uma transformação linear a
+partir de outras duas, $f$ e $g$: o produto tensorial $f\otimes g$, e, se $f$ e
+$g$ concordarem domínio com contradomínio, a composta $f\circ g$. Nos diagramas,
+a composição de duas funções é ilustrada como na figura da direita. Note que se
+tivermos mais caixas empilhadas, a associatividade da composição garante que não
+precisamos nos importar com parênteses.
+
+Representamos produtos tensoriais de funções ao colocar as suas caixas lado a
+lado:
 
 \begin{tikzpicture}{disp}
   
@@ -195,13 +244,27 @@ Representamos produtos tensoriais de funções ao colocar as suas caixas lado a 
   to[out=-60,in=90] node[vs] {$U$} (e2);
 \end{tikzpicture}
 
-Em geral, os diagramas sempre corresponderão a transformações lineares que saem de um produto tensorial de espaços e vão a outro produto tensorial. De fato, os diagramas podem ser convertidos para a notação algébrica usual ao serem lidos linha por linha como uma composição de funções, e vice-versa. Mesmo sendo equivalentes à notação usual, a mágica dos diagramas é que a representação gráfica deixa algumas das regras para manipular tensores mais intuitivas.
+Em geral, os diagramas sempre corresponderão a transformações lineares que saem
+de um produto tensorial de espaços e vão a outro produto tensorial. De fato, os
+diagramas podem ser convertidos para a notação algébrica usual ao serem lidos
+linha por linha como uma composição de funções, e vice-versa. Mesmo sendo
+equivalentes à notação usual, a mágica dos diagramas é que a representação
+gráfica deixa algumas das regras para manipular tensores mais intuitivas.
 
-Seguindo as definições que vimos acima, os diagramas de tensores têm uma estrutura formada por linhas, onde cada linha corresponde a um produto tensorial de funções e os fios indicam como compor as linhas verticalmente. Como as linhas dos diagramas são lidas de cima para baixo, em muitas passagens ficará mais claro para a leitura introduzir a notação $g\comp f\comp...\comp h$ para significar a composição $h\circ...\circ f\circ g$ de funções escrita na ordem reversa (assim, a leitura da esquerda para direita acompanha a leitura de cima para baixo do diagrama), e usaremos ela no decorrer do texto. A função identidade é ilustrada por um fio vazio e vertical 
-<!-- \tikz[baseline=-3.5mm,thick,minimum width=4mm]
-{\node {};\draw[->-] (0,0)--(0,-5mm); }. -->
-Note que pela igualdade $(g\comp f)\otimes(h\comp w)=(g\otimes h)\comp(f\otimes w)$, não precisamos nos preocupar com a ordem que interpretamos as operações composição e produto:
-% Comutatividade entre o produto tensorial e a composição
+Seguindo as definições que vimos acima, os diagramas de tensores têm uma
+estrutura formada por linhas, onde cada linha corresponde a um produto tensorial
+de funções e os fios indicam como compor as linhas verticalmente. Como as linhas
+dos diagramas são lidas de cima para baixo, em muitas passagens ficará mais
+claro para a leitura introduzir a notação $g\comp f\comp...\comp h$ para
+significar a composição $h\circ...\circ f\circ g$ de funções escrita na ordem
+reversa (assim, a leitura da esquerda para direita acompanha a leitura de cima
+para baixo do diagrama), e usaremos ela no decorrer do texto. A função
+identidade é ilustrada por um fio vazio e vertical <!--
+\tikz[baseline=-3.5mm,thick,minimum width=4mm] {\node {};\draw[->-]
+(0,0)--(0,-5mm); }. --> Note que pela igualdade $(g\comp f)\otimes(h\comp
+w)=(g\otimes h)\comp(f\otimes w)$, não precisamos nos preocupar com a ordem que
+interpretamos as operações composição e produto: % Comutatividade entre o
+produto tensorial e a composição
 
   \begin{tikzpicture}{disp}
     
@@ -253,7 +316,16 @@ Note que pela igualdade $(g\comp f)\otimes(h\comp w)=(g\otimes h)\comp(f\otimes 
     \node[box,fit=(f) (w)] {};
   \end{tikzpicture}
 
-Mas basta considerar diagramas com mais de duas colunas que vemos que outros detalhes do formalismo também ficam escondidos na maneira que representamos os diagramas; por exemplo, quando colocamos três funções $f,g$ e $h$ lado a lado, subentende-se ser possível identificar as funções $f\ot (g\ot h)$ e $(f\ot g)\ot h$ entre si de "maneira natural", mesmo que elas atuem em espaços diferentes. Por enquanto, vamos subentender que sempre que preciso, aplicamos os isomorfismos canônicos entre esses espaços para que se adequem aos domínios e contradomínios das funções -- é possível abordar essas noções de maneira um pouco mais formal a partir de transformações naturais e outros conceitos da teoria das categorias, mas não faremos isso aqui. %Como vimos anteriormente, essa igualdade está inclusa no fato de o produto tensorial ser um functor na a categoria dos espaços vetoriais. Mas
+Mas basta considerar diagramas com mais de duas colunas que vemos que outros
+detalhes do formalismo também ficam escondidos na maneira que representamos os
+diagramas; por exemplo, quando colocamos três funções $f,g$ e $h$ lado a lado,
+subentende-se ser possível identificar as funções $f\ot (g\ot h)$ e $(f\ot g)\ot
+h$ entre si de "maneira natural", mesmo que elas atuem em espaços diferentes.
+Por enquanto, vamos subentender que sempre que preciso, aplicamos os
+isomorfismos canônicos entre esses espaços para que se adequem aos domínios e
+contradomínios das funções -- é possível abordar essas noções de maneira um
+pouco mais formal a partir de transformações naturais e outros conceitos da
+teoria das categorias, mas não faremos isso aqui. Mas
 
 \begin{tikzpicture}{disp}
   \centering
@@ -265,8 +337,20 @@ Mas basta considerar diagramas com mais de duas colunas que vemos que outros det
   \draw[oes={->-}] (v)
   -- node[vs] {$V$} (e);
 \end{tikzpicture}
-Podemos representar um escalar $\lambda\in\F$ ou um vetor $v\in V$ como na figura da direita.
-Porque falamos de transformações antes de escalares ou vetores? A razão para isso é que do ponto de vista formal, as coisas ficam um pouco mais simples se pensarmos que escalares e vetores também são funções lineares: cada escalar $\lambda$ pode ser visto como a transformação $\lambda:\F\to\F$ dada por $t\mapsto\lambda t$, e cada vetor $v$ pode ser representado pela função $v:\F\to V$ definida por $t\mapsto tv$. Com essa mudança, todos os elementos dos diagramas serão transformações lineares, e os fios que carregam escalares ficam invisíveis. Não precisamos nos preocupar com eles pois sempre que preciso, lançamos mão do isomorfismo canônico $\F\otimes V\cong V$ dado por $\lambda\otimes v\mapsto\lambda v$. 
+
+Podemos representar um escalar $\lambda\in\F$ ou um vetor $v\in V$ como na
+figura da direita. 
+
+Porque falamos de transformações antes de escalares ou vetores? A razão para
+isso é que do ponto de vista formal, as coisas ficam um pouco mais simples se
+pensarmos que escalares e vetores também são funções lineares: cada escalar
+$\lambda$ pode ser visto como a transformação $\lambda:\F\to\F$ dada por
+$t\mapsto\lambda t$, e cada vetor $v$ pode ser representado pela função $v:\F\to
+V$ definida por $t\mapsto tv$. Com essa mudança, todos os elementos dos
+diagramas serão transformações lineares, e os fios que carregam escalares ficam
+invisíveis. Não precisamos nos preocupar com eles pois sempre que preciso,
+lançamos mão do isomorfismo canônico $\F\otimes V\cong V$ dado por
+$\lambda\otimes v\mapsto\lambda v$.
 
 No mundo dos produtos tensoriais, existe um único isomorfismo $B_{V,W}:V\ot{}W\to{}W\ot{}V$ que troca os vetores $v\ot{}w\mapsto{}w\ot{}v$. Nos diagramas, ele é desenhado como um par 
 <!-- \tikz[baseline=-3.5mm,thick,minimum width=4mm]
@@ -290,10 +374,12 @@ de fios trocados. Assim, o diagrama
     };
   \end{tikzpicture}
 
-expressa a igualdade $B_{V,W}\comp{}B_{W,V}=\id_{V\ot{}W}$.
-Como os diagramas são em si funções lineares, também podemos fazer com eles as operações usuais de um espaço vetorial. Por exemplo, se $\car(\F)\neq2$, o diagrama abaixo é uma função linear:
-<!-- $$ 
-\tikz[disp,baseline=-0.65ex]{\matrix {
+expressa a igualdade $B_{V,W}\comp{}B_{W,V}=\id_{V\ot{}W}$. Como os diagramas
+são em si funções lineares, também podemos fazer com eles as operações usuais de
+um espaço vetorial. Por exemplo, se $\car(\F)\neq2$, o diagrama abaixo é uma
+função linear:
+
+<!-- \tikz[disp,baseline=-0.65ex]{\matrix {
   \node[box] (s) {$s_2$};
   \heads[2]{s}{0};
   \tails[2]{s}{2}; \\
@@ -310,9 +396,16 @@ Como os diagramas são em si funções lineares, também podemos fazer com eles 
     (0,0)--(0,-1)
     (8mm,0)--(8mm,-1);\\
   };
-\end{tikzpicture}\right)
- $$ -->
-e o leitor curioso pode checar que $s_2\comp s_2=s_2$ usando a identidade que vimos logo acima. Outra transformação interessante é o funcional avaliação $\ev{V}: V\ot{}V^*\to\F$ definido por $\ev{V}(v\ot{f})=f(v)$. Nos inspirando na existência desse funcional, introduziremos a partir daqui uma notação para fios que carregam o espaço dual $V^*$ de um espaço $V$ ao representá-los como um fio também etiquetado por $V$, mas com a orientação (a seta) invertida. Com essa notação e com a justificativa de que $\ev{V}$ é o funcional "canônico" nesse espaço, passaremos a escrever o mapa $\ev{V}$ como um simples fio dobrado:
+\end{tikzpicture}\right) -->
+
+e o leitor curioso pode checar que $s_2\comp s_2=s_2$ usando a identidade que
+vimos logo acima. Outra transformação interessante é o funcional avaliação
+$\ev{V}: V\ot{}V^*\to\F$ definido por $\ev{V}(v\ot{f})=f(v)$. Nos inspirando na
+existência desse funcional, introduziremos a partir daqui uma notação para fios
+que carregam o espaço dual $V^*$ de um espaço $V$ ao representá-los como um fio
+também etiquetado por $V$, mas com a orientação (a seta) invertida. Com essa
+notação e com a justificativa de que $\ev{V}$ é o funcional "canônico" nesse
+espaço, passaremos a escrever o mapa $\ev{V}$ como um simples fio dobrado:
 
 \begin{tikzpicture}{disp}
   \matrix (c0) {
@@ -337,8 +430,9 @@ e o leitor curioso pode checar que $s_2\comp s_2=s_2$ usando a identidade que vi
   };
 \end{tikzpicture}
 
-
-Assim, também fica simples descobrir algumas correspondências entre tensores e mapas lineares, por exemplo, $T:V^*\ot W\to\HomF(V,W)$ dada por:
+Assim, também fica simples descobrir algumas correspondências entre tensores e
+mapas lineares, por exemplo, $T:V^*\ot W\to\HomF(V,W)$ dada por:
+    
 <!-- $$ 
   \tikz[disp] {
     \matrix (c0) {
@@ -377,8 +471,19 @@ ou seja, $T(f\ot w)(v)=f(v)w$.
 <!-- \footnotetext[1]{Se formos mais precisos, $(\id_V\ot\, u)$ é uma função $V\ot\F\to V\ot (V^*\ot W)$ e $(\ev{V}\ot\id_W)$ é uma função $(V\ot V^*)\ot W\to \F\ot W$. Quando mesmo assim compomos as duas e "omitimos" os escalares, estaremos sempre fazendo uso implícito dos isomorfismos canônicos entre esses espaços, e por isso não há ambiguidade na notação.} -->
 
 \subsection{Dimensão finita}
-Diagramas de tensores envolvendo espaços de dimensões finitas são especiais. Nesse contexto, conseguimos definir um dual $\coev{V}$ do funcional $\ev{V}$ que tem o efeito de dobrar os fios para baixo, chamado de coavaliação. Explicitamente, em dimensão finita o morfismo $T$ visto acima é um isomorfismo, e definiremos $\coev{V}=T^{-1}(\id_V)$. % . Isso se deve principalmente à existência de um isomorfismo canônico $\Phi:V\to (V^*)^*$ dado por $\Phi(v)(g)=g(v)$ que é independente de uma escolha de base do espaço
-Note que essa definição não depende de uma escolha da base, mas se tomarmos uma base $\{e_i\}_{i=1}^n$ de $V$, podemos mostrar que $\coev{V}=\sum_{i=1}^n e_i^*\ot e_i$:
+
+Diagramas de tensores envolvendo espaços de dimensões finitas são especiais.
+Nesse contexto, conseguimos definir um dual $\coev{V}$ do funcional $\ev{V}$ que
+tem o efeito de dobrar os fios para baixo, chamado de coavaliação.
+Explicitamente, em dimensão finita o morfismo $T$ visto acima é um isomorfismo,
+e definiremos $\coev{V}=T^{-1}(\id_V)$. % . Isso se deve principalmente à
+existência de um isomorfismo canônico $\Phi:V\to (V^*)^*$ dado por
+$\Phi(v)(g)=g(v)$ que é independente de uma escolha de base do espaço.
+
+Note que essa definição não depende de uma escolha da base, mas se tomarmos uma
+base $\{e_i\}_{i=1}^n$ de $V$, podemos mostrar que $\coev{V}=\sum_{i=1}^n
+e_i^*\ot e_i$:
+
 $$ T(\coev{V})(v)=T\left(\sum_{i=1}^n e_i^*\ot e_i\right)(v)
 =\sum_{i=1}^nT(e_i^*\ot e_i)(v)
 =\sum_{i=1}^n e_i^*(v)e_i=v. $$
@@ -398,8 +503,9 @@ Com isso em mente, passaremos a representar $\coev{V}$ nos diagramas da seguinte
   \node[rofeq] {$\displaystyle1\mapsto\sum_{i=1}^{n}e^*_i\otimes e_i$};
 \end{tikzpicture}
 
-As identidades mais importantes, que tanto justificam chamar $\coev{V}$ de dual de $\ev{V}$ como mostram uma "interpretação topológica" dos diagramas, são as \emph{identidades zig-zag}:
-% Zig-zag
+As identidades mais importantes, que tanto justificam chamar $\coev{V}$ de dual
+de $\ev{V}$ como mostram uma "interpretação topológica" dos diagramas, são as
+\emph{identidades zig-zag}:
 
 \begin{tikzpicture}{disp}
   \matrix[matd] (m) {
@@ -431,7 +537,10 @@ As identidades mais importantes, que tanto justificam chamar $\coev{V}$ de dual 
   };
 \end{tikzpicture}
 
-Podemos provar essas identidades: a identidade da esquerda é, por definição, o fato que $T(\coev{V})=\id_V$, e na direita podemos mostrar a igualdade aplicando uma $f\in V^*$ ao diagrama, e assim obtendo:
+Podemos provar essas identidades: a identidade da esquerda é, por definição, o
+fato que $T(\coev{V})=\id_V$, e na direita podemos mostrar a igualdade aplicando
+uma $f\in V^*$ ao diagrama, e assim obtendo:
+
 $$ f\xmapsto{\coev{V}\ot\id_{V^*}}
 \sum_{i=1}^n e_i^*\ot e_i\ot f
 \xmapsto{\id_{V^*}\ot\ev{V}} \sum_{i=1}^n f(e_i)e_i^* = f. $$
@@ -465,10 +574,17 @@ Usando o morfismo $B_{V^*,V}$, também podemos definir $\ev{V^*}$ e $\coev{V^*}$
   };
 \end{tikzpicture}
 
-e similarmente, podemos obter outras duas identidades zig-zag com essas versões. Observe que a notação também sugere uma identificação do bidual $(V^*)^*$ com o espaço $V$. Isso se justifica pela existência de um isomorfismo $\Phi:V\to (V^*)^*$ dado por $\Phi(v)(g)=g(v)$, que é canônico no sentido que não depende de uma escolha de base do espaço. O mesmo não vale para $V^*$, entretanto.
-Na linguagem categórica, os espaços vetoriais de dimensão finita formam uma \emph{categoria fechada compacta}.
+e similarmente, podemos obter outras duas identidades zig-zag com essas versões.
+Observe que a notação também sugere uma identificação do bidual $(V^*)^*$ com o
+espaço $V$. Isso se justifica pela existência de um isomorfismo $\Phi:V\to
+(V^*)^*$ dado por $\Phi(v)(g)=g(v)$, que é canônico no sentido que não depende
+de uma escolha de base do espaço. O mesmo não vale para $V^*$, entretanto. Na
+linguagem categórica, os espaços vetoriais de dimensão finita formam uma
+\emph{categoria fechada compacta}.
 
-Poderíamos provar algumas igualdades apenas substituindo pedaços do diagrama por identidades anteriores, por exemplo:
+Poderíamos provar algumas igualdades apenas substituindo pedaços do diagrama por
+identidades anteriores, por exemplo:
+
 \begin{tikzpicture}{disp}
   \matrix[matd,column sep=7mm] (m) {
     &&\\&&\\&&\\&&\\
@@ -531,8 +647,12 @@ Poderíamos provar algumas igualdades apenas substituindo pedaços do diagrama p
     \draw[->-] (0,1.4) to (0,0);\\
   };
 \end{tikzpicture}
-Mas de forma mais geral, é possível demonstrar que é sempre permitido "desembaraçar" os diagramas. Faremos isso com algums lemas que mostram como uma função $f$ comuta com os fios dobrados. Por exemplo, é simples ver que:
-  \begin{tikzpicture}{disp}
+
+Mas de forma mais geral, é possível demonstrar que é sempre permitido
+"desembaraçar" os diagramas. Faremos isso com algums lemas que mostram como uma
+função $f$ comuta com os fios dobrados. Por exemplo, é simples ver que:
+
+\begin{tikzpicture}{disp}
     \matrix[matd,row sep=1.2cm] (m) {
       &\\&\\
     };
@@ -556,8 +676,10 @@ Mas de forma mais geral, é possível demonstrar que é sempre permitido "desemb
     \draw[->-l] (f) to[out=-90,in=90] (m-2-1);
     \draw[oes={->-l}] (m-1-1 |- fs) -- (m-2-1 |- f.south) 
     to[out=-90,in=90] (m-2-2);
-  \end{tikzpicture}
+\end{tikzpicture}
+
 Definimos a \emph{transposta} de funções lineares $f:V\to W$, $g:W^*\to V^*$ pelos diagramas:
+
 \begin{tikzpicture}{disp}
   \matrix (c) {
     \node[box] (ft) {$f^t$};
@@ -601,8 +723,12 @@ Definimos a \emph{transposta} de funções lineares $f:V\to W$, $g:W^*\to V^*$ p
   % (m-1-1) -- (m-2-1 |- f.south)
   % (m-1-3 |- f.north) -- (m-3-3);
 \end{tikzpicture}
-Podemos checar que a primeira transposta $f^t$ concorda com a transposta usual ao aplicá-la a um vetor $w\in W^*$. Pelas definições do diagrama acima e de $\ev{V}$, sabemos que para todo $v\in V$, $(f^t(w))(v)$ é igual a:
-  \begin{tikzpicture}{disp}
+
+Podemos checar que a primeira transposta $f^t$ concorda com a transposta usual
+ao aplicá-la a um vetor $w\in W^*$. Pelas definições do diagrama acima e de
+$\ev{V}$, sabemos que para todo $v\in V$, $(f^t(w))(v)$ é igual a:
+
+\begin{tikzpicture}{disp}
     \matrix (c) {
       \node[vec] (w) {$w$};
       \node[box,below=.2 of w] (ft) {$f^t$};
@@ -634,9 +760,15 @@ Podemos checar que a primeira transposta $f^t$ concorda com a transposta usual a
     \draw (v)--(f);
     \eq{m};
     \node[rofeq,xshift=-3mm] {$(w\circ f)(v)$};
-  \end{tikzpicture}
-Como isso vale para todos $v$ e $w$, $f^t$ concorda com a transposta usual. Para $g^t$, isso é apenas parcialmente verdade; ela é a transposta usual "a menos" do isomorfismo canônico $\Phi$. Com a transposta, andamos pelos fios com os \emph{lemas do deslizamento} \cite{2012}: % Já no caso de $g^t$ como definida acima, obtemos algo um pouco diferente: $w(g^t(v))=(\Phi(v)\circ g)(w)$.
-  \begin{tikzpicture}{disp}
+\end{tikzpicture}
+
+Como isso vale para todos $v$ e $w$, $f^t$ concorda com a transposta usual. Para
+$g^t$, isso é apenas parcialmente verdade; ela é a transposta usual "a menos" do
+isomorfismo canônico $\Phi$. Com a transposta, andamos pelos fios com os
+\emph{lemas do deslizamento} \cite{2012}: % Já no caso de $g^t$ como definida
+acima, obtemos algo um pouco diferente: $w(g^t(v))=(\Phi(v)\circ g)(w)$.
+
+\begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &\\&\\&\\
     };
@@ -666,9 +798,11 @@ Como isso vale para todos $v$ e $w$, $f^t$ concorda com a transposta usual. Para
     \draw[oes={->-}] 
     (f.north) -- (m-1-2)
     (m-1-1) -- (m-2-1 |- f.south);
-  \end{tikzpicture}
+\end{tikzpicture}
+
 Usando o mesmo argumento,
-  \begin{tikzpicture}{disp}
+
+\begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &\\&\\&\\
     };
@@ -698,9 +832,11 @@ Usando o mesmo argumento,
     \draw[oes={->-}] 
     (f) -- (m-3-2)
     (m-3-1) -- (m-2-1 |- f.north);
-  \end{tikzpicture}
+\end{tikzpicture}
+
 e também:
-  \begin{tikzpicture}{disp}
+
+\begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &\\&\\&\\
     };
@@ -759,9 +895,15 @@ e também:
     \draw[oes={->-}]
     (m-1-2) -- (f)
     (m-2-1 |- f.south) -- (m-1-1);
-  \end{tikzpicture}
-Os mesmos lemas valem para uma função $g:W^*\to V^*$ pelas mesmas provas, basta inverter as setas. Mas também note que poderíamos ter definido as transpostas de uma forma diferente, dobrando os fios na direção oposta. Porém, usando os lemas anteriores, provar que essa transposta alternativa é igual a que já foi definida é uma tarefa simples de "deslizar" a função:
-  \begin{tikzpicture}{disp}
+\end{tikzpicture}
+
+Os mesmos lemas valem para uma função $g:W^*\to V^*$ pelas mesmas provas, basta
+inverter as setas. Mas também note que poderíamos ter definido as transpostas de
+uma forma diferente, dobrando os fios na direção oposta. Porém, usando os lemas
+anteriores, provar que essa transposta alternativa é igual a que já foi definida
+é uma tarefa simples de "deslizar" a função:
+
+\begin{tikzpicture}{disp}
     \matrix[matd] (m) {
       &&\\&&\\&&\\
     };
@@ -792,11 +934,21 @@ Os mesmos lemas valem para uma função $g:W^*\to V^*$ pelas mesmas provas, bast
       \fheads{ft}{1};
       \ftails{ft}{0};\\
     };
-  \end{tikzpicture}
-Se compormos as duas versões da transposta e aplicarmos a identidade zig-zag, mostramos também que $(f^t)^t=f$ (para a transposta que definimos, claro). Juntos, esses fatos garantem que podemos "desembaraçar" fios soltos nos diagramas simplesmente deslizando as funções ao longo dos fios; no máximo, os fios trocam a função para sua transposta ou vice-versa. 
+\end{tikzpicture}
+
+Se compormos as duas versões da transposta e aplicarmos a identidade zig-zag,
+mostramos também que $(f^t)^t=f$ (para a transposta que definimos, claro).
+Juntos, esses fatos garantem que podemos "desembaraçar" fios soltos nos
+diagramas simplesmente deslizando as funções ao longo dos fios; no máximo, os
+fios trocam a função para sua transposta ou vice-versa.
 
 \subsection{Calculando com os diagramas}
-Até então, nós aprendemos um formalismo relativamente abstrato para os diagramas, mas ainda não é fácil calcular valores numéricos. Para nos ajudar nisso, vamos escolher uma base $(e_i)_{i=1}^n$ do espaço $V$, e denotar $e^i=e_i^*$ para todo $i\in\{0,...,n\}$. O truque principal é uma decomposição da função identidade:
+
+Até então, nós aprendemos um formalismo relativamente abstrato para os
+diagramas, mas ainda não é fácil calcular valores numéricos. Para nos ajudar
+nisso, vamos escolher uma base $(e_i)_{i=1}^n$ do espaço $V$, e denotar
+$e^i=e_i^*$ para todo $i\in\{0,...,n\}$. O truque principal é uma decomposição
+da função identidade:
 
   \begin{tikzpicture}{disp}
     \matrix (m) {
@@ -813,7 +965,11 @@ Até então, nós aprendemos um formalismo relativamente abstrato para os diagra
     \fheads[1]{v}{0};
   \end{tikzpicture}
 
-Estaremos sempre identificando $\F^*\cong\F$, de forma que $(e_i)^t=\Phi(e_i): V^*\to\F$ e $(e^i)^t=e^i : \F\to V^*$ (lembrando: os vetores estão sendo vistos como funções). As transpostas desses elementos serão representadas com a mesma etiqueta, mas com um fio na direção oposta (já que são essencialmente os mesmos). Por exemplo, um diagrama curioso:
+Estaremos sempre identificando $\F^*\cong\F$, de forma que $(e_i)^t=\Phi(e_i):
+V^*\to\F$ e $(e^i)^t=e^i : \F\to V^*$ (lembrando: os vetores estão sendo vistos
+como funções). As transpostas desses elementos serão representadas com a mesma
+etiqueta, mas com um fio na direção oposta (já que são essencialmente os
+mesmos). Por exemplo, um diagrama curioso:
 
 \begin{tikzpicture}{disp}
   \matrix (c) {
@@ -893,13 +1049,35 @@ Com isso, fica extremamente simples mostrar que $\tr(f\circ g)=\tr(g\circ f)$:
 
 \subsection{Diagramas por aí}
 
-Os diagramas de tensores como discutimos são essencialmente exemplos de "diagramas de fios" de categorias monoidais. Os espaços vetoriais formam uma categoria monoidal simétrica, e os espaços vetoriais finitos, uma categoria compacta e fechada, mas eles não são os únicos exemplos dessas categorias. Por isso, existem notações gráficas sobre outros objetos que são construídas de forma bastante parecida, como diagramas de Feynman, que podem ser vistos como diagramas de fios sobre outra categoria (\cite{baez2011}).
+Os diagramas de tensores como discutimos são essencialmente exemplos de
+"diagramas de fios" de categorias monoidais. Os espaços vetoriais formam uma
+categoria monoidal simétrica, e os espaços vetoriais finitos, uma categoria
+compacta e fechada, mas eles não são os únicos exemplos dessas categorias. Por
+isso, existem notações gráficas sobre outros objetos que são construídas de
+forma bastante parecida, como diagramas de Feynman, que podem ser vistos como
+diagramas de fios sobre outra categoria (\cite{baez2011}).
 
-A notação gráfica de Penrose é um exemplo de extensão dos diagramas que vimos aqui, e foi pensada originalmente como uma forma de simplificar a contração de tensores como são definidos na física. Lá, os tensores são objetos com vários índices, e a contração desses índices se relaciona com a decomposição dos fios como vimos na seção passada. Mas a notação de Penrose também tem representações para derivadas, desenhos diferentes para tensores especiais e outras coisas que a deixam mais adequada para ser usada na física.
+A notação gráfica de Penrose é um exemplo de extensão dos diagramas que vimos
+aqui, e foi pensada originalmente como uma forma de simplificar a contração de
+tensores como são definidos na física. Lá, os tensores são objetos com vários
+índices, e a contração desses índices se relaciona com a decomposição dos fios
+como vimos na seção passada. Mas a notação de Penrose também tem representações
+para derivadas, desenhos diferentes para tensores especiais e outras coisas que
+a deixam mais adequada para ser usada na física.
 
-Outro exemplo relacionado são os diagramas de ($n$-)traço, abordados com mais detalhes em \cite{morse2009}. Eles formam uma linguagem conveniente para ganhar intuição sobre algumas identidades envolvendo funções multilineares, como o produto escalar e o produto vetorial, inspirada na notação de Penrose.
+Outro exemplo relacionado são os diagramas de ($n$-)traço, abordados com mais
+detalhes em \cite{morse2009}. Eles formam uma linguagem conveniente para ganhar
+intuição sobre algumas identidades envolvendo funções multilineares, como o
+produto escalar e o produto vetorial, inspirada na notação de Penrose.
 
-Por fim, diagramas de tensores são bastante utilizados na computação quântica a começar pelo "diagrama de circuito", que representa algoritmos para computadores quânticos e basicamente se resume a compor operações lado a lado ou verticalmente, como vimos nesse trabalho. Uma linguagem gráfica complementar a esses diagramas é o \emph{ZX-cálculo}, que incorpora as flexibilidades dos diagramas de fio e algumas regras de reescrita, como pode ser visto em \cite{zotero-92}. Essa linguagem vem sendo utilizada para simplificar circuitos quânticos \cite{kissinger2020}, por exemplo.
+Por fim, diagramas de tensores são bastante utilizados na computação quântica a
+começar pelo "diagrama de circuito", que representa algoritmos para computadores
+quânticos e basicamente se resume a compor operações lado a lado ou
+verticalmente, como vimos nesse trabalho. Uma linguagem gráfica complementar a
+esses diagramas é o \emph{ZX-cálculo}, que incorpora as flexibilidades dos
+diagramas de fio e algumas regras de reescrita, como pode ser visto em
+\cite{zotero-92}. Essa linguagem vem sendo utilizada para simplificar circuitos
+quânticos \cite{kissinger2020}, por exemplo.
 
 
 \end{latex}
