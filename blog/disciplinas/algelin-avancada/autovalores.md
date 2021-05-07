@@ -553,7 +553,7 @@ robustas o suficiente para serem levadas a sério.
 
 \section{Referências}
 
-* _Orientação da IC e notas_, Prof. Dr. Christian S. Rodrigues.  (Imecc -- Unicamp).
 * Krerley Oliveira e Marcelo Viana. _Fundamentos Da Teoria Ergódica_. 2ª ed. SBM, 2019.
+* _Orientação (ic) e notas_, prof. Christian S. Rodrigues.
 * _Edward Norton Lorenz_. Em: [Wikipedia](https://en.wikipedia.org/w/index.php?title=Edward_Norton_Lorenz&oldid=976386700). 2 de set. de 2020. (consultado em 15/10/2020).
 * Joshua Sokol. _The Hidden Heroines of Chaos_. Em: [Quanta Magazine](https://www.quantamagazine.org/hidden-heroines-of-chaos-ellen-fetter-and-margaret-hamilton-20190520). (consultado em 30/10/2020).
