@@ -24,6 +24,10 @@ em $G$?
 <!-- horizontal, reflexão vertical} $(\cong \Z_2\oplus\Z_2)$ mas não é normal em -->
 <!-- $D_8$. -->
 
+\
+
+\
+
 Outro teorema:
 
 @@teorema
@@ -76,3 +80,43 @@ $$\mu(1,0)\in\{(0,1,0), (1,1,0)\}, \quad \mu(0,1)\in\{(0,0,1), (1,0,1)\}$$
 
 e é simples ver que em qualquer escolha eles não comutam (precisam comutar para
 ser homomorfismo).
+
+\
+
+\
+
+Mais um, sugerido por [@franchico](https://twitter.com/chico_melllo):
+
+@@teorema
+
+Suponha que $H \cong G$ são grupos isomorfos, $N \triangleleft G$, $M
+\triangleleft H$ e $N \cong M$. É verdade que $G/N \cong H/M$?
+
+@@
+
+
+<!-- \begin{details}{Resposta} -->
+
+Não é difícil ver que a preposição é equivalente ao caso particular "$M, N
+\triangleleft G$ e $M \cong N$ implica $G/N \cong G/M$?".
+
+Um contraexemplo: no grupo $S_3 \times \Z_6$, os subgrupos $\{1\}\times\Z_3$ e
+$A_3\times\{1\}$ são normais e isomorfos entre si, já que $A_3\cong\Z_3$. Mas:
+
+$$(S_3\times\Z_6) / (\{1\}\times\Z_3) \cong S_3\times\Z_2,$$
+$$(S_3\times\Z_6) / (A_3\times\{1\}) \cong \Z_2\times\Z_6,$$
+
+segundo é abeliano, mas o primeiro não! Então os dois quocientes não são
+isomorfos. c.n.q.d.
+
+<!-- \end{details} -->
+
+\
+
+---
+
+\
+
+\figenv{(a parte pintada se extende infinitamente, preenchendo o
+universo.)}{../cnqd.svg}{width:15em; padding-right: 3em}
+

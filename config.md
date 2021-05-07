@@ -38,26 +38,28 @@ mintoclevel=2
 <!-- end Latex-like syntax -->
 
 
-\newcommand{\temoji}[1]{~~~
+\newcommand{\temoji}[1]
+{~~~
 <i class="twa twa-!#1"  aria-role="presentation" aria-label="!#1"></i>
 ~~~}
 
 
-\newcommand{\style}[2]{~~~
+\newcommand{\style}[2]
+{~~~
 <div style="!#1;margin-left:auto;margin-right:auto;">
-~~~
-!#2
-~~~
+~~~ !#2 ~~~
 </div>
 ~~~}
 
-\newcommand{\svg}[2]{~~~
+\newcommand{\svg}[2]
+{~~~
 <figure style="text-align:center;">
 <object id="!#1" data="!#2" type="image/svg+xml"></object>
 </figure>
 ~~~}
 
-\newcommand{\figenv}[3]{~~~
+\newcommand{\figenv}[3]
+{~~~
 <figure style="text-align:center;">
 <img src="!#2" style="padding:0;#3" alt="#1"/>
 <figcaption>#1</figcaption>
