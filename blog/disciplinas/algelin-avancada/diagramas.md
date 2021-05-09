@@ -1,8 +1,11 @@
 +++
-title = "Diagramas de tensores"
+title = "Diagramas de tensores (trabalho de algelin avançada)"
 date = Date(2021,1,26)
 +++
 
+Esse foi o segundo (e último) trabalho da disciplina de Álgebra Linear Avançada, novamente pensei que seria interessante postar aqui. Por enquanto, ainda não consegui adaptar totalmente o tikz e a parte de referências para o modelo de site, então recomendo fortemente ler em PDF!
+
+[Arquivo em PDF](trabalho2.pdf)
 
 @@hide
 \[

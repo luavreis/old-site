@@ -1,6 +1,6 @@
 +++
 date = Date(2020,11,1)
-title = "Autovalores e dinâmicas (trabalho de álgebra linear)"
+title = "Autovalores e dinâmicas (trabalho de algelin avançada)"
 +++
 
 # Autovalores nas propriedades estatísticas de dinâmicas
@@ -8,7 +8,7 @@ title = "Autovalores e dinâmicas (trabalho de álgebra linear)"
 \newcommand{\floor}[1]{\lfloor #1 \rfloor}
 
 
-O texto a seguir foi feito como um trabalho para a disciplina de álgebra linear avançada, achei que poderia ser útil postar aqui.
+O texto a seguir foi feito como um trabalho para a disciplina de álgebra linear avançada, achei que seria interessante postar aqui.
 
 \contents
 
@@ -283,7 +283,7 @@ ou seja, cada cilindro é um subconjunto de $\Sigma$ contendo todas as
 sequências cujos elementos nos índices de $m$ até $n$ são $a_m,...,a_n$.
 
 O interessante dos cilindros é que eles geram, de uma forma que pode ser
-feita precisa, a coleção de subconjuntos mensuráveis$\mathcal{F}$ de
+feita precisa, a coleção de subconjuntos mensuráveis $\mathcal{F}$ de
 $\Sigma$. Por isso, a teoria da medida diz que uma probabilidade
 invariante nos cilindros se estende automaticamente a uma única
 probabilidade invariante em todo o $\mathcal{F}$. Se temos um vetor de
