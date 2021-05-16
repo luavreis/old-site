@@ -88,10 +88,8 @@ ser homomorfismo).
 Mais um, sugerido por [@franchico](https://twitter.com/chico_melllo):
 
 @@teorema
-
 Suponha que $H \cong G$ são grupos isomorfos, $N \triangleleft G$, $M
 \triangleleft H$ e $N \cong M$. É verdade que $G/N \cong H/M$?
-
 @@
 
 
@@ -113,10 +111,16 @@ isomorfos. c.n.q.d.
 
 \
 
----
+\figenv{(a parte pintada se extende infinitamente, preenchendo o
+universo.)}{../cnqd.svg}{width:15em; padding-right: 3em}
 
 \
 
-\figenv{(a parte pintada se extende infinitamente, preenchendo o
-universo.)}{../cnqd.svg}{width:15em; padding-right: 3em}
+Mais um:
+
+@@teorema
+Suponha que $H \leq G$ e $[G : H]$ é finito. O número de conjugados de $H$ é finito?
+@@
+
+
 

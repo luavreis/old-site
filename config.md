@@ -4,7 +4,7 @@ website.
 The website_* must be defined for the RSS to work
 ----------------------------------------------------- -->
 +++
-website_title = "gat-ergódico"
+website_title = "interseções"
 website_descr = "matemática e entrelinhas"
 
 author = "Lucas Viana Reis"
