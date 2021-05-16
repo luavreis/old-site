@@ -15,7 +15,7 @@
 </url>
 <url>
     <loc>blog/disciplinas/grupos-e-representacoes/contraexemplos/index.html</loc>
-    <lastmod>2021-05-07</lastmod>
+    <lastmod>2021-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -52,6 +52,12 @@
 <url>
     <loc>blog/disciplinas/quantica/quantica/index.html</loc>
     <lastmod>2021-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/ic/sdds/notas/index.html</loc>
+    <lastmod>2021-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -94,6 +100,12 @@
 <url>
     <loc>blog/disciplinas/algelin-avancada/diagramas/index.html</loc>
     <lastmod>2021-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>blog/disciplinas/analise/lema-concava/index.html</loc>
+    <lastmod>2021-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
